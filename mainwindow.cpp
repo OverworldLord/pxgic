@@ -12,3 +12,10 @@ MainWindow::~MainWindow()
 {
     delete ui;
 }
+
+void MainWindow::on_pushButton_2_clicked()
+{
+    ContactUs* contactWindow = new ContactUs(this);
+    this->close();
+    contactWindow->show();
+}
