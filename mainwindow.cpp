@@ -19,3 +19,9 @@ void MainWindow::on_pushButton_2_clicked()
     this->close();
     contactWindow->show();
 }
+
+void MainWindow::on_pushButton_clicked()
+{
+    LoginWindow* loginWindow = new LoginWindow;
+    loginWindow->show();
+}
