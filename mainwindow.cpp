@@ -25,3 +25,10 @@ void MainWindow::on_pushButton_clicked()
     LoginWindow* loginWindow = new LoginWindow;
     loginWindow->show();
 }
+
+void MainWindow::on_pushButton_3_clicked()
+{
+    MoreInformation* moreInfo = new MoreInformation(this);
+    this->close();
+    moreInfo->show();
+}

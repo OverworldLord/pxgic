@@ -28,15 +28,18 @@ SOURCES += \
         mainwindow.cpp \
     contactus.cpp \
     databasemanager.cpp \
-    loginWindow.cpp
+    loginWindow.cpp \
+    moreinformation.cpp
 
 HEADERS += \
         mainwindow.h \
     contactus.h \
     databasemanager.h \
-    loginWindow.h
+    loginWindow.h \
+    moreinformation.h
 
 FORMS += \
         mainwindow.ui \
     contactus.ui \
-    loginwindow.ui
+    loginwindow.ui \
+    moreinformation.ui
