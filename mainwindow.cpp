@@ -23,6 +23,7 @@ void MainWindow::on_pushButton_2_clicked()
 void MainWindow::on_pushButton_clicked()
 {
     LoginWindow* loginWindow = new LoginWindow;
+    this->close();
     loginWindow->show();
 }
 

@@ -1,0 +1,12 @@
+INPUT(
+./debug\main.o
+./debug\mainwindow.o
+./debug\contactus.o
+./debug\databasemanager.o
+./debug\loginWindow.o
+./debug\moreinformation.o
+./debug\moc_mainwindow.o
+./debug\moc_contactus.o
+./debug\moc_loginWindow.o
+./debug\moc_moreinformation.o
+);

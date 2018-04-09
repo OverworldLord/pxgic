@@ -8,7 +8,7 @@ DataBaseManager::DataBaseManager()
 bool DataBaseManager::openDB()
 {
     db = QSqlDatabase::addDatabase("QSQLITE");          // "QSQLITE" Defines the type of database(in this case sqlite version3)
-    db.setDatabaseName("Z:\\Documents\\College\\Computer Science 1C\\Projects\\Group Project 2\\04-05-2018_merge\\Security.db");
+    db.setDatabaseName(DB_DIRECTORY);
                                                         // Links the  the directory to the database file to the database object
 
     if (!db.open())                                     // Opens a connection to the database and tests for connection failure

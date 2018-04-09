@@ -1,3 +1,4 @@
+#include "mainwindow.h"
 #include "loginwindow.h"
 #include "ui_loginWindow.h"
 
@@ -20,9 +21,10 @@ void LoginWindow::on_LoginButton_clicked()
 
     if(dBManager.testUser(username, password) == 1)
     {
-        //WindowObject* nameObject = new WindowObject;
+        qDebug() << "Needs to be changed to bring the signed in user to admin menu\n";
+        MainWindow* adminMenu = new MainWindow;
         this->close();
-        //Window.show();
+        adminMenu->show();
     }
     else if (dBManager.testUser(username, password) == 0)
     {

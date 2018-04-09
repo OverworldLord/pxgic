@@ -5,6 +5,7 @@
 #include <QtDebug>
 #include <QFileInfo>
 #include <QString>
+#include "constants.h"
 
 class DataBaseManager
 {

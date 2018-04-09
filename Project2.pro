@@ -36,7 +36,8 @@ HEADERS += \
     contactus.h \
     databasemanager.h \
     loginWindow.h \
-    moreinformation.h
+    moreinformation.h \
+    constants.h
 
 FORMS += \
         mainwindow.ui \
