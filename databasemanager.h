@@ -19,6 +19,7 @@ public:
     QSqlDatabase returnDB();                      // Returns database object value
     void qryExec(QSqlQuery &query, QString locOfErr);
     int testUser(QString user, QString pass);
+    void showCustomerTable();
 
 };
 

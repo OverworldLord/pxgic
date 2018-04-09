@@ -29,7 +29,9 @@ SOURCES += \
     contactus.cpp \
     databasemanager.cpp \
     loginWindow.cpp \
-    moreinformation.cpp
+    moreinformation.cpp \
+    adminmenu.cpp \
+    customerlisting.cpp
 
 HEADERS += \
         mainwindow.h \
@@ -37,10 +39,14 @@ HEADERS += \
     databasemanager.h \
     loginWindow.h \
     moreinformation.h \
-    constants.h
+    constants.h \
+    adminmenu.h \
+    customerlisting.h
 
 FORMS += \
         mainwindow.ui \
     contactus.ui \
     loginwindow.ui \
-    moreinformation.ui
+    moreinformation.ui \
+    adminmenu.ui \
+    customerlisting.ui

@@ -5,8 +5,12 @@ INPUT(
 ./release\databasemanager.o
 ./release\loginWindow.o
 ./release\moreinformation.o
+./release\adminmenu.o
+./release\customerlisting.o
 ./release\moc_mainwindow.o
 ./release\moc_contactus.o
 ./release\moc_loginWindow.o
 ./release\moc_moreinformation.o
+./release\moc_adminmenu.o
+./release\moc_customerlisting.o
 );
