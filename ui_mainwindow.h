@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'mainwindow.ui'
 **
-** Created by: Qt User Interface Compiler version 5.8.0
+** Created by: Qt User Interface Compiler version 5.10.1
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -63,10 +63,10 @@ public:
 
     void retranslateUi(QMainWindow *MainWindow)
     {
-        MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", Q_NULLPTR));
-        pushButton->setText(QApplication::translate("MainWindow", "Login as Administrator", Q_NULLPTR));
-        label->setText(QApplication::translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:16pt;\">iCyberSecurity Inc.</span></p></body></html>", Q_NULLPTR));
-        pushButton_2->setText(QApplication::translate("MainWindow", "Contact Us", Q_NULLPTR));
+        MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", nullptr));
+        pushButton->setText(QApplication::translate("MainWindow", "Login as Administrator", nullptr));
+        label->setText(QApplication::translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:16pt;\">iCyberSecurity Inc.</span></p></body></html>", nullptr));
+        pushButton_2->setText(QApplication::translate("MainWindow", "Contact Us", nullptr));
         textBrowser->setHtml(QApplication::translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
@@ -77,8 +77,8 @@ public:
                         "x; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt;\">    We carry several packages that, when given to our customers, allow them to learn about potential and active breaches. These breaches are detected by using our incredibly advanced port monitoring system, as well as several background processes. Once a threat is detected, it can be responded to using several methods.</span></p>\n"
 "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;\"><br /></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt;\">    Customers with our package may choose to either suspend their network's access to the internet, or actively combat the attacker while keeping their connection to the internet. Our tools allow them to pinpoint where the attack"
-                        "er currently is, determine how they are attacking, and how to deal with the attacker. Our tools have prevented over 100,000 potentially fatal attacks.</span></p></body></html>", Q_NULLPTR));
-        pushButton_3->setText(QApplication::translate("MainWindow", "More Information", Q_NULLPTR));
+                        "er currently is, determine how they are attacking, and how to deal with the attacker. Our tools have prevented over 100,000 potentially fatal attacks.</span></p></body></html>", nullptr));
+        pushButton_3->setText(QApplication::translate("MainWindow", "More Information", nullptr));
     } // retranslateUi
 
 };

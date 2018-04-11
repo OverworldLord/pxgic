@@ -34,12 +34,18 @@ QSqlDatabase DataBaseManager::returnDB()
     return db;
 }
 
-void DataBaseManager::qryExec(QSqlQuery &query, QString locOfErr) // Runs query.exec() and outputs if error
+bool DataBaseManager::qryExec(QSqlQuery &query, QString locOfErr) // Runs query.exec() and outputs if error
 {
     if(!query.exec())
     {
         qDebug() <<  locOfErr << " Error:"
                  << query.lastError();
+
+        return false;
+    }
+    else
+    {
+        return true;
     }
 }
 
@@ -61,4 +67,27 @@ int DataBaseManager::testUser(QString user, QString pass)
     closeDB();
 
     return userType;
+}
+
+bool DataBaseManager::addCustomer(QString name, QString address, QString city, QString state, QString zip, QString interest, QString importance)
+{
+    bool isSuccess;
+
+    openDB();
+    QSqlQuery query;
+
+    query.prepare("INSERT INTO Customers (Name, Address, City, State, Zip, Interest, Importance) VALUES (:name, :address, :city, :state, :zip, :interest, :importance)");
+    query.bindValue(":name", name);
+    query.bindValue(":address", address);
+    query.bindValue(":city", city);
+    query.bindValue(":state", state);
+    query.bindValue(":zip", zip);
+    query.bindValue(":interest", interest);
+    query.bindValue(":importance", importance);
+
+    isSuccess = qryExec(query, "addCustomer()");
+
+    closeDB();
+
+    return isSuccess;
 }

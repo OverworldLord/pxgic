@@ -9,10 +9,16 @@ CustomerListing::CustomerListing(QWidget *parent) :
     ui->setupUi(this);
 
     dBManager.openDB();
-    qDebug() << "here";
-    QSqlQueryModel *modal = new QSqlQueryModel;
+    QSqlQueryModel * modal = new QSqlQueryModel(this);
     modal->setQuery("SELECT * FROM Customers");
-    ui->tableView->setModel(modal);
+
+    QSortFilterProxyModel * sortModal=new QSortFilterProxyModel(this);
+    sortModal->setDynamicSortFilter(true);
+    sortModal->setSourceModel(modal);
+
+    ui->tableView->setSortingEnabled(true);
+    ui->tableView->setModel(sortModal);
+    dBManager.closeDB();
 }
 
 CustomerListing::~CustomerListing()
@@ -22,16 +28,36 @@ CustomerListing::~CustomerListing()
 
 void CustomerListing::on_pushButton_clicked()
 {
-    AdminMenu* menu = new AdminMenu;
+    AdminMenu *menu = new AdminMenu(this);
     this->close();
     menu->show();
 }
 
-void CustomerListing::on_tableView_activated(const QModelIndex &index)
+void CustomerListing::on_checkBox_stateChanged(int arg1)
 {
     dBManager.openDB();
-    qDebug() << "here";
-    QSqlQueryModel *modal = new QSqlQueryModel;
-    modal->setQuery("SELECT * FROM Customers");
-    ui->tableView->setModel(modal);
+    QSqlQueryModel *modal = new QSqlQueryModel(this);
+
+    switch (arg1)
+    {
+    case 0: modal->setQuery("SELECT * FROM Customers");
+        break;
+    case 2: modal->setQuery("SELECT * FROM Customers WHERE Importance LIKE 'key'");
+        break;
+    }
+
+    QSortFilterProxyModel *sortModal=new QSortFilterProxyModel(this);
+    sortModal->setDynamicSortFilter(true);
+    sortModal->setSourceModel(modal);
+
+    ui->tableView->setSortingEnabled(true);
+    ui->tableView->setModel(sortModal);
+    dBManager.closeDB();
+}
+
+void CustomerListing::on_pushButton_2_clicked()
+{
+    AddCustomer *addCustomerWindow = new AddCustomer(this);
+    this->close();
+    addCustomerWindow->show();
 }

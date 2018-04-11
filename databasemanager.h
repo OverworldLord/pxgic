@@ -17,9 +17,10 @@ public:
     bool openDB();                                // Adds the database and opens the connection
     void closeDB();                               // Closes connection and removes the database
     QSqlDatabase returnDB();                      // Returns database object value
-    void qryExec(QSqlQuery &query, QString locOfErr);
+    bool qryExec(QSqlQuery &query, QString locOfErr);
     int testUser(QString user, QString pass);
     void showCustomerTable();
+    bool addCustomer(QString name, QString address, QString city, QString state, QString Zip, QString interest, QString isKey);
 
 };
 

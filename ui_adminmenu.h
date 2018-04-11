@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'adminmenu.ui'
 **
-** Created by: Qt User Interface Compiler version 5.8.0
+** Created by: Qt User Interface Compiler version 5.10.1
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -49,10 +49,10 @@ public:
 
     void retranslateUi(QDialog *AdminMenu)
     {
-        AdminMenu->setWindowTitle(QApplication::translate("AdminMenu", "Dialog", Q_NULLPTR));
-        label->setText(QApplication::translate("AdminMenu", "<html><head/><body><p align=\"center\"><span style=\" font-size:16pt;\">Admin Menu</span></p></body></html>", Q_NULLPTR));
-        pushButton->setText(QApplication::translate("AdminMenu", "Logout", Q_NULLPTR));
-        pushButton_2->setText(QApplication::translate("AdminMenu", "Customers", Q_NULLPTR));
+        AdminMenu->setWindowTitle(QApplication::translate("AdminMenu", "Dialog", nullptr));
+        label->setText(QApplication::translate("AdminMenu", "<html><head/><body><p align=\"center\"><span style=\" font-size:16pt;\">Admin Menu</span></p></body></html>", nullptr));
+        pushButton->setText(QApplication::translate("AdminMenu", "Logout", nullptr));
+        pushButton_2->setText(QApplication::translate("AdminMenu", "Customers", nullptr));
     } // retranslateUi
 
 };

@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'loginwindow.ui'
 **
-** Created by: Qt User Interface Compiler version 5.8.0
+** Created by: Qt User Interface Compiler version 5.10.1
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -119,15 +119,15 @@ public:
 
     void retranslateUi(QMainWindow *LoginWindow)
     {
-        LoginWindow->setWindowTitle(QApplication::translate("LoginWindow", "Bulk Club Login", Q_NULLPTR));
+        LoginWindow->setWindowTitle(QApplication::translate("LoginWindow", "Bulk Club Login", nullptr));
         label->setText(QApplication::translate("LoginWindow", "iCyberSecurity\n"
-"Login", Q_NULLPTR));
-        label_3->setText(QApplication::translate("LoginWindow", "Username:", Q_NULLPTR));
-        label_4->setText(QApplication::translate("LoginWindow", "Password:", Q_NULLPTR));
-        Password->setPlaceholderText(QApplication::translate("LoginWindow", "Enter password", Q_NULLPTR));
+"Login", nullptr));
+        label_3->setText(QApplication::translate("LoginWindow", "Username:", nullptr));
+        label_4->setText(QApplication::translate("LoginWindow", "Password:", nullptr));
+        Password->setPlaceholderText(QApplication::translate("LoginWindow", "Enter password", nullptr));
         Username->setText(QString());
-        Username->setPlaceholderText(QApplication::translate("LoginWindow", "Enter username", Q_NULLPTR));
-        LoginButton->setText(QApplication::translate("LoginWindow", "Log In", Q_NULLPTR));
+        Username->setPlaceholderText(QApplication::translate("LoginWindow", "Enter username", nullptr));
+        LoginButton->setText(QApplication::translate("LoginWindow", "Log In", nullptr));
     } // retranslateUi
 
 };

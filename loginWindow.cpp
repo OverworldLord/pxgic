@@ -21,7 +21,7 @@ void LoginWindow::on_LoginButton_clicked()
 
     if(dBManager.testUser(username, password) == 1)
     {
-        AdminMenu* menu = new AdminMenu;
+        AdminMenu *menu = new AdminMenu;
         this->close();
         menu->show();
     }
