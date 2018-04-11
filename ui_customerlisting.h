@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'customerlisting.ui'
 **
-** Created by: Qt User Interface Compiler version 5.10.1
+** Created by: Qt User Interface Compiler version 5.8.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -30,6 +30,7 @@ public:
     QTableView *tableView;
     QCheckBox *checkBox;
     QPushButton *pushButton_2;
+    QPushButton *pushButton_3;
 
     void setupUi(QDialog *CustomerListing)
     {
@@ -47,10 +48,13 @@ public:
         tableView->setGeometry(QRect(10, 50, 381, 211));
         checkBox = new QCheckBox(CustomerListing);
         checkBox->setObjectName(QStringLiteral("checkBox"));
-        checkBox->setGeometry(QRect(10, 270, 121, 17));
+        checkBox->setGeometry(QRect(10, 270, 121, 21));
         pushButton_2 = new QPushButton(CustomerListing);
         pushButton_2->setObjectName(QStringLiteral("pushButton_2"));
         pushButton_2->setGeometry(QRect(234, 270, 81, 23));
+        pushButton_3 = new QPushButton(CustomerListing);
+        pushButton_3->setObjectName(QStringLiteral("pushButton_3"));
+        pushButton_3->setGeometry(QRect(140, 270, 91, 23));
 
         retranslateUi(CustomerListing);
 
@@ -59,11 +63,12 @@ public:
 
     void retranslateUi(QDialog *CustomerListing)
     {
-        CustomerListing->setWindowTitle(QApplication::translate("CustomerListing", "Dialog", nullptr));
-        label->setText(QApplication::translate("CustomerListing", "<html><head/><body><p align=\"center\"><span style=\" font-size:20pt;\">Customer List</span></p></body></html>", nullptr));
-        pushButton->setText(QApplication::translate("CustomerListing", "Admin Menu", nullptr));
-        checkBox->setText(QApplication::translate("CustomerListing", "Key Customers Only", nullptr));
-        pushButton_2->setText(QApplication::translate("CustomerListing", "Add Customer", nullptr));
+        CustomerListing->setWindowTitle(QApplication::translate("CustomerListing", "Dialog", Q_NULLPTR));
+        label->setText(QApplication::translate("CustomerListing", "<html><head/><body><p align=\"center\"><span style=\" font-size:20pt;\">Customer List</span></p></body></html>", Q_NULLPTR));
+        pushButton->setText(QApplication::translate("CustomerListing", "Admin Menu", Q_NULLPTR));
+        checkBox->setText(QApplication::translate("CustomerListing", "Key Customers Only", Q_NULLPTR));
+        pushButton_2->setText(QApplication::translate("CustomerListing", "Add Customer", Q_NULLPTR));
+        pushButton_3->setText(QApplication::translate("CustomerListing", "Delete Customer", Q_NULLPTR));
     } // retranslateUi
 
 };

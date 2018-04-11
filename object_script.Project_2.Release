@@ -8,6 +8,8 @@ INPUT(
 ./release\loginWindow.o
 ./release\mainwindow.o
 ./release\moreinformation.o
+./release\delcustomer.o
+./release\makepurchase.o
 ./release\moc_addcustomer.o
 ./release\moc_adminmenu.o
 ./release\moc_contactus.o
@@ -15,4 +17,6 @@ INPUT(
 ./release\moc_loginWindow.o
 ./release\moc_mainwindow.o
 ./release\moc_moreinformation.o
+./release\moc_delcustomer.o
+./release\moc_makepurchase.o
 );

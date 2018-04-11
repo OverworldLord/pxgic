@@ -5,6 +5,7 @@
 #include <QSqlQuery>
 #include "databasemanager.h"
 #include "addcustomer.h"
+#include "delcustomer.h"
 
 namespace Ui {
 class CustomerListing;
@@ -24,6 +25,9 @@ private slots:
     void on_checkBox_stateChanged(int arg1);
 
     void on_pushButton_2_clicked();
+
+    void on_pushButton_3_clicked();
+
 
 private:
     Ui::CustomerListing *ui;

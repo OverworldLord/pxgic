@@ -33,3 +33,10 @@ void MainWindow::on_pushButton_3_clicked()
     this->close();
     moreInfo->show();
 }
+
+void MainWindow::on_pushButton_4_clicked()
+{
+    MakePurchase* menu = new MakePurchase;
+    this->close();
+    menu->show();
+}

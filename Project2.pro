@@ -1,6 +1,6 @@
 #-------------------------------------------------
 #
-# Project created by QtCreator 2018-04-05T15:27:21
+# Project created by QtCreator 2018-04-10T18:06:47
 #
 #-------------------------------------------------
 
@@ -8,7 +8,7 @@ QT       += core gui sql
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-TARGET = Project2
+TARGET = Project_2
 TEMPLATE = app
 
 # The following define makes your compiler emit warnings if you use
@@ -25,28 +25,37 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
         main.cpp \
-        mainwindow.cpp \
+    addcustomer.cpp \
+    adminmenu.cpp \
     contactus.cpp \
+    customerlisting.cpp \
     databasemanager.cpp \
     loginWindow.cpp \
+    mainwindow.cpp \
     moreinformation.cpp \
-    adminmenu.cpp \
-    customerlisting.cpp
+    delcustomer.cpp \
+    makepurchase.cpp
 
 HEADERS += \
-        mainwindow.h \
+    addcustomer.h \
+    adminmenu.h \
+    constants.h \
     contactus.h \
+    customerlisting.h \
     databasemanager.h \
     loginWindow.h \
+    mainwindow.h \
     moreinformation.h \
-    constants.h \
-    adminmenu.h \
-    customerlisting.h
+    delcustomer.h \
+    makepurchase.h
 
 FORMS += \
-        mainwindow.ui \
-    contactus.ui \
-    loginwindow.ui \
-    moreinformation.ui \
+    addcustomer.ui \
     adminmenu.ui \
-    customerlisting.ui
+    contactus.ui \
+    customerlisting.ui \
+    loginwindow.ui \
+    mainwindow.ui \
+    moreinformation.ui \
+    delcustomer.ui \
+    makepurchase.ui

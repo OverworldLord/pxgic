@@ -8,6 +8,8 @@ INPUT(
 ./debug\loginWindow.o
 ./debug\mainwindow.o
 ./debug\moreinformation.o
+./debug\delcustomer.o
+./debug\makepurchase.o
 ./debug\moc_addcustomer.o
 ./debug\moc_adminmenu.o
 ./debug\moc_contactus.o
@@ -15,4 +17,6 @@ INPUT(
 ./debug\moc_loginWindow.o
 ./debug\moc_mainwindow.o
 ./debug\moc_moreinformation.o
+./debug\moc_delcustomer.o
+./debug\moc_makepurchase.o
 );

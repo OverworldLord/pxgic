@@ -91,3 +91,19 @@ bool DataBaseManager::addCustomer(QString name, QString address, QString city, Q
 
     return isSuccess;
 }
+
+bool DataBaseManager::deleteCustomer(QString name) {
+    bool isSuccess;
+
+    openDB();
+    QSqlQuery query;
+
+    query.prepare("DELETE FROM Customers WHERE Name = :name");
+    query.bindValue(":name", name);
+
+    isSuccess = qryExec(query, "deleteCustomer()");
+
+    closeDB();
+
+    return isSuccess;
+}

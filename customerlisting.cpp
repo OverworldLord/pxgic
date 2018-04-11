@@ -61,3 +61,11 @@ void CustomerListing::on_pushButton_2_clicked()
     this->close();
     addCustomerWindow->show();
 }
+
+void CustomerListing::on_pushButton_3_clicked()
+{
+    DelCustomer *delCustomerWindow = new DelCustomer(this);
+    this->close();
+    delCustomerWindow->show();
+}
+

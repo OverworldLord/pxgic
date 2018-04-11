@@ -15,9 +15,9 @@ AddCustomer::~AddCustomer()
 
 void AddCustomer::on_pushButton_2_clicked()
 {
-    AdminMenu *menu = new AdminMenu(this);
+    CustomerListing *list = new CustomerListing(this);
     this->close();
-    menu->show();
+    list->show();
 }
 
 void AddCustomer::on_pushButton_clicked()

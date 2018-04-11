@@ -21,7 +21,7 @@ public:
     int testUser(QString user, QString pass);
     void showCustomerTable();
     bool addCustomer(QString name, QString address, QString city, QString state, QString Zip, QString interest, QString isKey);
-
+    bool deleteCustomer(QString name);
 };
 
 #endif // DATABASEMANAGER_H
