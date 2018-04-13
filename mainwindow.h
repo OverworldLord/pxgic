@@ -4,7 +4,7 @@
 #include <QMainWindow>
 #include "contactus.h"
 #include "moreinformation.h"
-#include "loginWindow.h"
+#include "loginwindow.h"
 #include "makepurchase.h"
 
 namespace Ui {

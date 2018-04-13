@@ -2,6 +2,7 @@
 #define MOREINFORMATION_H
 
 #include <QDialog>
+#include "makepurchase.h"
 
 namespace Ui {
 class MoreInformation;

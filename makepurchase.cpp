@@ -19,3 +19,10 @@ void MakePurchase::on_pushButton_clicked()
     this->close();
     menu->show();
 }
+
+void MakePurchase::on_pushButton_2_clicked()
+{
+    GuaranteePolicy* policy = new GuaranteePolicy;
+    this->close();
+    policy->show();
+}

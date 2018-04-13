@@ -30,11 +30,12 @@ SOURCES += \
     contactus.cpp \
     customerlisting.cpp \
     databasemanager.cpp \
-    loginWindow.cpp \
     mainwindow.cpp \
     moreinformation.cpp \
     delcustomer.cpp \
-    makepurchase.cpp
+    makepurchase.cpp \
+    guaranteepolicy.cpp \
+    loginwindow.cpp \
 
 HEADERS += \
     addcustomer.h \
@@ -43,11 +44,12 @@ HEADERS += \
     contactus.h \
     customerlisting.h \
     databasemanager.h \
-    loginWindow.h \
     mainwindow.h \
     moreinformation.h \
     delcustomer.h \
-    makepurchase.h
+    makepurchase.h \
+    guaranteepolicy.h \
+    loginwindow.h \
 
 FORMS += \
     addcustomer.ui \
@@ -58,4 +60,5 @@ FORMS += \
     mainwindow.ui \
     moreinformation.ui \
     delcustomer.ui \
-    makepurchase.ui
+    makepurchase.ui \
+    guaranteepolicy.ui \

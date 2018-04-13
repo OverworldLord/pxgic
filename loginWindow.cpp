@@ -1,6 +1,6 @@
 #include "adminmenu.h"
 #include "loginwindow.h"
-#include "ui_loginWindow.h"
+#include "ui_loginwindow.h"
 
 LoginWindow::LoginWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -50,4 +50,11 @@ void LoginWindow::on_Password_returnPressed()
 void LoginWindow::on_Username_returnPressed()
 {
     on_LoginButton_clicked();
+}
+
+void LoginWindow::on_pushButton_clicked()
+{
+    MainWindow* menu = new MainWindow;
+    this->close();
+    menu->show();
 }

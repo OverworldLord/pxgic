@@ -35,6 +35,7 @@ public:
     QLineEdit *Password;
     QLineEdit *Username;
     QPushButton *LoginButton;
+    QPushButton *pushButton;
     QMenuBar *menuBar;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
@@ -88,10 +89,14 @@ public:
         Username->setFont(font3);
         LoginButton = new QPushButton(centralWidget);
         LoginButton->setObjectName(QStringLiteral("LoginButton"));
-        LoginButton->setGeometry(QRect(140, 270, 80, 21));
+        LoginButton->setGeometry(QRect(210, 270, 80, 21));
         QFont font4;
         font4.setPointSize(8);
         LoginButton->setFont(font4);
+        pushButton = new QPushButton(centralWidget);
+        pushButton->setObjectName(QStringLiteral("pushButton"));
+        pushButton->setGeometry(QRect(60, 270, 75, 23));
+        pushButton->setFont(font4);
         LoginWindow->setCentralWidget(centralWidget);
         label->raise();
         label_3->raise();
@@ -99,6 +104,7 @@ public:
         Password->raise();
         LoginButton->raise();
         Username->raise();
+        pushButton->raise();
         menuBar = new QMenuBar(LoginWindow);
         menuBar->setObjectName(QStringLiteral("menuBar"));
         menuBar->setGeometry(QRect(0, 0, 366, 21));
@@ -128,6 +134,7 @@ public:
         Username->setText(QString());
         Username->setPlaceholderText(QApplication::translate("LoginWindow", "Enter username", nullptr));
         LoginButton->setText(QApplication::translate("LoginWindow", "Log In", nullptr));
+        pushButton->setText(QApplication::translate("LoginWindow", "Back", nullptr));
     } // retranslateUi
 
 };

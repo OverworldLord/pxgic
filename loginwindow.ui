@@ -141,7 +141,7 @@ Login</string>
    <widget class="QPushButton" name="LoginButton">
     <property name="geometry">
      <rect>
-      <x>140</x>
+      <x>210</x>
       <y>270</y>
       <width>80</width>
       <height>21</height>
@@ -156,12 +156,31 @@ Login</string>
      <string>Log In</string>
     </property>
    </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>270</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Back</string>
+    </property>
+   </widget>
    <zorder>label</zorder>
    <zorder>label_3</zorder>
    <zorder>label_4</zorder>
    <zorder>Password</zorder>
    <zorder>LoginButton</zorder>
    <zorder>Username</zorder>
+   <zorder>pushButton</zorder>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
