@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>400</width>
-    <height>300</height>
+    <height>358</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -29,9 +29,9 @@
   <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
-     <x>320</x>
-     <y>270</y>
-     <width>71</width>
+     <x>300</x>
+     <y>320</y>
+     <width>91</width>
      <height>23</height>
     </rect>
    </property>
@@ -54,38 +54,51 @@
     <rect>
      <x>10</x>
      <y>270</y>
-     <width>121</width>
+     <width>161</width>
      <height>21</height>
     </rect>
    </property>
    <property name="text">
-    <string>Key Customers Only</string>
+    <string>Display Key Customers Only</string>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton_2">
    <property name="geometry">
     <rect>
-     <x>234</x>
-     <y>270</y>
-     <width>81</width>
+     <x>10</x>
+     <y>290</y>
+     <width>141</width>
      <height>23</height>
     </rect>
    </property>
    <property name="text">
-    <string>Add Customer</string>
+    <string>Add Customer Maunally</string>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton_3">
    <property name="geometry">
     <rect>
-     <x>140</x>
-     <y>270</y>
+     <x>300</x>
+     <y>290</y>
      <width>91</width>
      <height>23</height>
     </rect>
    </property>
    <property name="text">
     <string>Delete Customer</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_4">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>320</y>
+     <width>141</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Add Customer from File</string>
    </property>
   </widget>
  </widget>

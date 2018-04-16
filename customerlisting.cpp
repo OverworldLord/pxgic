@@ -1,6 +1,8 @@
 #include "adminmenu.h"
 #include "customerlisting.h"
 #include "ui_customerlisting.h"
+#include <QFileDialog>
+#include <fstream>
 
 CustomerListing::CustomerListing(QWidget *parent) :
     QDialog(parent),
@@ -69,3 +71,17 @@ void CustomerListing::on_pushButton_3_clicked()
     delCustomerWindow->show();
 }
 
+
+void CustomerListing::on_pushButton_4_clicked()
+{
+    std::ifstream inFile;
+    std::string testString;
+    QString fileName = QFileDialog::getOpenFileName(this, tr("Open File"),"/home", tr("Txt Files (*.txt)"));
+
+    inFile.open(fileName.toStdString());
+
+    while(inFile) {
+        getline(inFile, testString);
+        qDebug() << QString::fromStdString(testString);
+    }
+}
