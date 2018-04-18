@@ -22,6 +22,8 @@ public:
     void showCustomerTable();
     bool addCustomer(QString name, QString address, QString city, QString state, QString Zip, QString interest, QString isKey);
     bool deleteCustomer(QString name);
+    bool customerExists(QString name);
+    void addPurchase(QString cName, QString pName, int amtBought, double price);
 };
 
 #endif // DATABASEMANAGER_H

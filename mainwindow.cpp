@@ -40,3 +40,10 @@ void MainWindow::on_pushButton_4_clicked()
     this->close();
     menu->show();
 }
+
+void MainWindow::on_pushButton_5_clicked()
+{
+    pamphlet* requestP = new pamphlet;
+    this->close();
+    requestP->show();
+}

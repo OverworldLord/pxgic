@@ -11,6 +11,7 @@ INPUT(
 ./debug\makepurchase.o
 ./debug\guaranteepolicy.o
 ./debug\loginwindow.o
+./debug\pamphlet.o
 ./debug\moc_addcustomer.o
 ./debug\moc_adminmenu.o
 ./debug\moc_contactus.o
@@ -21,4 +22,5 @@ INPUT(
 ./debug\moc_makepurchase.o
 ./debug\moc_guaranteepolicy.o
 ./debug\moc_loginwindow.o
+./debug\moc_pamphlet.o
 );

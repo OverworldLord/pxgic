@@ -13,7 +13,6 @@
 #include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QButtonGroup>
-#include <QtWidgets/QCheckBox>
 #include <QtWidgets/QDialog>
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
@@ -31,9 +30,6 @@ public:
     QPushButton *pushButton_2;
     QLabel *label;
     QTextBrowser *textBrowser;
-    QCheckBox *checkBox;
-    QCheckBox *checkBox_2;
-    QCheckBox *checkBox_3;
     QSpinBox *spinBox;
     QSpinBox *spinBox_2;
     QSpinBox *spinBox_3;
@@ -41,9 +37,12 @@ public:
     QTextBrowser *textBrowser_2;
     QLabel *label_2;
     QLabel *label_3;
-    QCheckBox *checkBox_4;
     QSpinBox *spinBox_4;
     QPushButton *pushButton_3;
+    QLabel *label_4;
+    QLabel *label_5;
+    QLabel *label_6;
+    QLabel *label_7;
 
     void setupUi(QDialog *MakePurchase)
     {
@@ -62,15 +61,6 @@ public:
         textBrowser = new QTextBrowser(MakePurchase);
         textBrowser->setObjectName(QStringLiteral("textBrowser"));
         textBrowser->setGeometry(QRect(10, 40, 581, 221));
-        checkBox = new QCheckBox(MakePurchase);
-        checkBox->setObjectName(QStringLiteral("checkBox"));
-        checkBox->setGeometry(QRect(400, 330, 70, 17));
-        checkBox_2 = new QCheckBox(MakePurchase);
-        checkBox_2->setObjectName(QStringLiteral("checkBox_2"));
-        checkBox_2->setGeometry(QRect(400, 360, 70, 17));
-        checkBox_3 = new QCheckBox(MakePurchase);
-        checkBox_3->setObjectName(QStringLiteral("checkBox_3"));
-        checkBox_3->setGeometry(QRect(400, 390, 81, 17));
         spinBox = new QSpinBox(MakePurchase);
         spinBox->setObjectName(QStringLiteral("spinBox"));
         spinBox->setGeometry(QRect(550, 330, 42, 22));
@@ -94,15 +84,24 @@ public:
         label_3 = new QLabel(MakePurchase);
         label_3->setObjectName(QStringLiteral("label_3"));
         label_3->setGeometry(QRect(10, 0, 581, 41));
-        checkBox_4 = new QCheckBox(MakePurchase);
-        checkBox_4->setObjectName(QStringLiteral("checkBox_4"));
-        checkBox_4->setGeometry(QRect(400, 420, 111, 17));
         spinBox_4 = new QSpinBox(MakePurchase);
         spinBox_4->setObjectName(QStringLiteral("spinBox_4"));
         spinBox_4->setGeometry(QRect(550, 420, 42, 22));
         pushButton_3 = new QPushButton(MakePurchase);
         pushButton_3->setObjectName(QStringLiteral("pushButton_3"));
         pushButton_3->setGeometry(QRect(400, 470, 191, 23));
+        label_4 = new QLabel(MakePurchase);
+        label_4->setObjectName(QStringLiteral("label_4"));
+        label_4->setGeometry(QRect(400, 331, 141, 20));
+        label_5 = new QLabel(MakePurchase);
+        label_5->setObjectName(QStringLiteral("label_5"));
+        label_5->setGeometry(QRect(400, 361, 141, 20));
+        label_6 = new QLabel(MakePurchase);
+        label_6->setObjectName(QStringLiteral("label_6"));
+        label_6->setGeometry(QRect(400, 391, 141, 20));
+        label_7 = new QLabel(MakePurchase);
+        label_7->setObjectName(QStringLiteral("label_7"));
+        label_7->setGeometry(QRect(400, 421, 141, 20));
 
         retranslateUi(MakePurchase);
 
@@ -136,9 +135,6 @@ public:
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:16pt; font-weight:600; font-style:italic; color:#00aaff;\">$9999</span><span style=\" font-size:16pt; font-weight:600; font-style:italic; color:#00aaff; vertical-align:super;\">99.99 </span><span style=\" font-size:16pt; font-weight:600; font-style:italic; color:#00aaff;\">per week</span></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><s"
                         "pan style=\" font-size:12pt; color:#000000;\">So let's get real. You don't really even care about security at this point, you've just got a ton of money that you're more than willing to give to us. Well, we'll give you both of the above plans plus a lifetime membership! Just keep paying weekly! You'll recieve a special edition T-Shirt, custom made to have your name on it! It says, 'I am rich' and iCyberSecurity is written on the back. Show all your friends how rich you are!</span></p></body></html>", nullptr));
-        checkBox->setText(QApplication::translate("MakePurchase", "Cardboard", nullptr));
-        checkBox_2->setText(QApplication::translate("MakePurchase", "Gold", nullptr));
-        checkBox_3->setText(QApplication::translate("MakePurchase", "Platinum VIP", nullptr));
         lineEdit->setText(QString());
         lineEdit->setPlaceholderText(QApplication::translate("MakePurchase", "Enter Your Company Name", nullptr));
         textBrowser_2->setHtml(QApplication::translate("MakePurchase", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
@@ -149,8 +145,11 @@ public:
                         "! This plan comes with a one coupon for iCyberSecurity Cardboard Plan! Just order within .10 milliseconds, and we'll throw it in for only 4</span><span style=\" font-size:12pt; vertical-align:super;\">99</span><span style=\" font-size:12pt;\">!</span></p></body></html>", nullptr));
         label_2->setText(QApplication::translate("MakePurchase", "<html><head/><body><p align=\"center\"><span style=\" font-size:16pt;\">Maintainance Plan - $400</span><span style=\" font-size:16pt; vertical-align:super;\">00</span></p></body></html>", nullptr));
         label_3->setText(QApplication::translate("MakePurchase", "<html><head/><body><p align=\"center\"><span style=\" font-size:16pt;\">Service Options</span></p></body></html>", nullptr));
-        checkBox_4->setText(QApplication::translate("MakePurchase", "Maintainance Plan", nullptr));
         pushButton_3->setText(QApplication::translate("MakePurchase", "Submit Order", nullptr));
+        label_4->setText(QApplication::translate("MakePurchase", "Cardboard", nullptr));
+        label_5->setText(QApplication::translate("MakePurchase", "Gold", nullptr));
+        label_6->setText(QApplication::translate("MakePurchase", "Platinum VIP", nullptr));
+        label_7->setText(QApplication::translate("MakePurchase", "Maintainance Plan", nullptr));
     } // retranslateUi
 
 };

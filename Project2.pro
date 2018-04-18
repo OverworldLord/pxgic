@@ -36,6 +36,7 @@ SOURCES += \
     makepurchase.cpp \
     guaranteepolicy.cpp \
     loginwindow.cpp \
+    pamphlet.cpp
 
 HEADERS += \
     addcustomer.h \
@@ -50,6 +51,7 @@ HEADERS += \
     makepurchase.h \
     guaranteepolicy.h \
     loginwindow.h \
+    pamphlet.h
 
 FORMS += \
     addcustomer.ui \
@@ -62,3 +64,4 @@ FORMS += \
     delcustomer.ui \
     makepurchase.ui \
     guaranteepolicy.ui \
+    pamphlet.ui

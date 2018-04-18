@@ -11,6 +11,7 @@ INPUT(
 ./release\makepurchase.o
 ./release\guaranteepolicy.o
 ./release\loginwindow.o
+./release\pamphlet.o
 ./release\moc_addcustomer.o
 ./release\moc_adminmenu.o
 ./release\moc_contactus.o
@@ -21,4 +22,5 @@ INPUT(
 ./release\moc_makepurchase.o
 ./release\moc_guaranteepolicy.o
 ./release\moc_loginwindow.o
+./release\moc_pamphlet.o
 );

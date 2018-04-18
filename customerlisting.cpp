@@ -74,14 +74,36 @@ void CustomerListing::on_pushButton_3_clicked()
 
 void CustomerListing::on_pushButton_4_clicked()
 {
-    std::ifstream inFile;
-    std::string testString;
-    QString fileName = QFileDialog::getOpenFileName(this, tr("Open File"),"/home", tr("Txt Files (*.txt)"));
+    qDebug() << "error";
 
+    QString fileName = QFileDialog::getOpenFileName(this, tr("Open File"),"/home", tr("Txt Files (*.txt)"));
+    std::ifstream inFile;
+    std::string name;
+    std::string address;
+    std::string cityStateZip;
+    std::string city;
+    std::string state;
+    std::string zip;
+    std::string interestLevel;
+    std::string key;
     inFile.open(fileName.toStdString());
 
     while(inFile) {
-        getline(inFile, testString);
-        qDebug() << QString::fromStdString(testString);
+        getline(inFile, name);
+        getline(inFile, address);
+        getline(inFile, city, ',');
+        inFile >> state;
+        inFile >> zip;
+        inFile.ignore(10000, '\n');
+        getline(inFile, interestLevel);
+        getline(inFile, key);
+        inFile.ignore(10000, '\n');
+        dBManager.addCustomer(QString::fromStdString(name),
+                              QString::fromStdString(address),
+                              QString::fromStdString(city),
+                              QString::fromStdString(state),
+                              QString::fromStdString(zip),
+                              QString::fromStdString(interestLevel),
+                              QString::fromStdString(key));
     }
 }

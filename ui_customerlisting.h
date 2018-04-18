@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'customerlisting.ui'
 **
-** Created by: Qt User Interface Compiler version 5.8.0
+** Created by: Qt User Interface Compiler version 5.10.1
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -67,13 +67,13 @@ public:
 
     void retranslateUi(QDialog *CustomerListing)
     {
-        CustomerListing->setWindowTitle(QApplication::translate("CustomerListing", "Dialog", Q_NULLPTR));
-        label->setText(QApplication::translate("CustomerListing", "<html><head/><body><p align=\"center\"><span style=\" font-size:20pt;\">Customer List</span></p></body></html>", Q_NULLPTR));
-        pushButton->setText(QApplication::translate("CustomerListing", "Admin Menu", Q_NULLPTR));
-        checkBox->setText(QApplication::translate("CustomerListing", "Display Key Customers Only", Q_NULLPTR));
-        pushButton_2->setText(QApplication::translate("CustomerListing", "Add Customer Maunally", Q_NULLPTR));
-        pushButton_3->setText(QApplication::translate("CustomerListing", "Delete Customer", Q_NULLPTR));
-        pushButton_4->setText(QApplication::translate("CustomerListing", "Add Customer from File", Q_NULLPTR));
+        CustomerListing->setWindowTitle(QApplication::translate("CustomerListing", "Dialog", nullptr));
+        label->setText(QApplication::translate("CustomerListing", "<html><head/><body><p align=\"center\"><span style=\" font-size:20pt;\">Customer List</span></p></body></html>", nullptr));
+        pushButton->setText(QApplication::translate("CustomerListing", "Admin Menu", nullptr));
+        checkBox->setText(QApplication::translate("CustomerListing", "Display Key Customers Only", nullptr));
+        pushButton_2->setText(QApplication::translate("CustomerListing", "Add Customer Maunally", nullptr));
+        pushButton_3->setText(QApplication::translate("CustomerListing", "Delete Customer", nullptr));
+        pushButton_4->setText(QApplication::translate("CustomerListing", "Add Customer from File", nullptr));
     } // retranslateUi
 
 };

@@ -32,32 +32,36 @@ public:
     QTextBrowser *textBrowser;
     QPushButton *pushButton_3;
     QPushButton *pushButton_4;
+    QPushButton *pushButton_5;
 
     void setupUi(QMainWindow *MainWindow)
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QStringLiteral("MainWindow"));
-        MainWindow->resize(400, 300);
+        MainWindow->resize(453, 300);
         centralWidget = new QWidget(MainWindow);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
         pushButton = new QPushButton(centralWidget);
         pushButton->setObjectName(QStringLiteral("pushButton"));
-        pushButton->setGeometry(QRect(270, 270, 121, 23));
+        pushButton->setGeometry(QRect(270, 270, 181, 23));
         label = new QLabel(centralWidget);
         label->setObjectName(QStringLiteral("label"));
-        label->setGeometry(QRect(0, 0, 401, 31));
+        label->setGeometry(QRect(0, 0, 451, 31));
         pushButton_2 = new QPushButton(centralWidget);
         pushButton_2->setObjectName(QStringLiteral("pushButton_2"));
-        pushButton_2->setGeometry(QRect(270, 30, 121, 23));
+        pushButton_2->setGeometry(QRect(270, 30, 181, 23));
         textBrowser = new QTextBrowser(centralWidget);
         textBrowser->setObjectName(QStringLiteral("textBrowser"));
         textBrowser->setGeometry(QRect(10, 30, 249, 261));
         pushButton_3 = new QPushButton(centralWidget);
         pushButton_3->setObjectName(QStringLiteral("pushButton_3"));
-        pushButton_3->setGeometry(QRect(270, 60, 121, 23));
+        pushButton_3->setGeometry(QRect(270, 60, 181, 23));
         pushButton_4 = new QPushButton(centralWidget);
         pushButton_4->setObjectName(QStringLiteral("pushButton_4"));
-        pushButton_4->setGeometry(QRect(270, 240, 121, 23));
+        pushButton_4->setGeometry(QRect(270, 240, 181, 23));
+        pushButton_5 = new QPushButton(centralWidget);
+        pushButton_5->setObjectName(QStringLiteral("pushButton_5"));
+        pushButton_5->setGeometry(QRect(270, 90, 181, 23));
         MainWindow->setCentralWidget(centralWidget);
 
         retranslateUi(MainWindow);
@@ -84,6 +88,7 @@ public:
                         "er currently is, determine how they are attacking, and how to deal with the attacker. Our tools have prevented over 100,000 potentially fatal attacks.</span></p></body></html>", nullptr));
         pushButton_3->setText(QApplication::translate("MainWindow", "More Information", nullptr));
         pushButton_4->setText(QApplication::translate("MainWindow", "Make A Purchase", nullptr));
+        pushButton_5->setText(QApplication::translate("MainWindow", "Request Copy Pamphlet", nullptr));
     } // retranslateUi
 
 };
