@@ -22,7 +22,7 @@
    <bool>false</bool>
   </property>
   <property name="windowTitle">
-   <string>Bulk Club Login</string>
+   <string>Login</string>
   </property>
   <widget class="QWidget" name="centralWidget">
    <widget class="QLabel" name="label">
