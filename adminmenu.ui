@@ -52,6 +52,19 @@
     <string>Customers</string>
    </property>
   </widget>
+  <widget class="QPushButton" name="pushButton_3">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>90</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Sales</string>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections/>

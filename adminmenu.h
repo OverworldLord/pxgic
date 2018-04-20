@@ -4,6 +4,7 @@
 #include <QDialog>
 #include "customerlisting.h"
 #include "mainwindow.h"
+#include "saleslisting.h"
 
 namespace Ui {
 class AdminMenu;
@@ -21,6 +22,8 @@ private slots:
     void on_pushButton_clicked();
 
     void on_pushButton_2_clicked();
+
+    void on_pushButton_3_clicked();
 
 private:
     Ui::AdminMenu *ui;

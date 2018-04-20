@@ -26,3 +26,10 @@ void AdminMenu::on_pushButton_2_clicked()
     this->close();
     list->show();
 }
+
+void AdminMenu::on_pushButton_3_clicked()
+{
+    salesListing* list = new salesListing;
+    this->close();
+    list->show();
+}

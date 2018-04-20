@@ -53,7 +53,7 @@ void MakePurchase::on_pushButton_3_clicked()
         if(ui->spinBox_3->value() > 0) {
             Product   = "Platinum VIP";
             AmtBought = ui->spinBox_3->value();
-            PricePer  = 999999.99;
+            PricePer  = 9999.99;
             Database->addPurchase(CustName, Product, AmtBought, PricePer);
         }
 

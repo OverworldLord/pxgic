@@ -43,7 +43,7 @@ public:
         label->setGeometry(QRect(10, 10, 381, 31));
         pushButton = new QPushButton(CustomerListing);
         pushButton->setObjectName(QStringLiteral("pushButton"));
-        pushButton->setGeometry(QRect(300, 320, 91, 23));
+        pushButton->setGeometry(QRect(300, 330, 91, 23));
         tableView = new QTableView(CustomerListing);
         tableView->setObjectName(QStringLiteral("tableView"));
         tableView->setGeometry(QRect(10, 50, 381, 211));
@@ -52,13 +52,13 @@ public:
         checkBox->setGeometry(QRect(10, 270, 161, 21));
         pushButton_2 = new QPushButton(CustomerListing);
         pushButton_2->setObjectName(QStringLiteral("pushButton_2"));
-        pushButton_2->setGeometry(QRect(10, 290, 141, 23));
+        pushButton_2->setGeometry(QRect(10, 300, 141, 23));
         pushButton_3 = new QPushButton(CustomerListing);
         pushButton_3->setObjectName(QStringLiteral("pushButton_3"));
-        pushButton_3->setGeometry(QRect(300, 290, 91, 23));
+        pushButton_3->setGeometry(QRect(300, 300, 91, 23));
         pushButton_4 = new QPushButton(CustomerListing);
         pushButton_4->setObjectName(QStringLiteral("pushButton_4"));
-        pushButton_4->setGeometry(QRect(10, 320, 141, 23));
+        pushButton_4->setGeometry(QRect(10, 330, 141, 23));
 
         retranslateUi(CustomerListing);
 
