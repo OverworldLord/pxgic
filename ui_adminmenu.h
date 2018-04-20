@@ -26,6 +26,7 @@ public:
     QLabel *label;
     QPushButton *pushButton;
     QPushButton *pushButton_2;
+    QPushButton *pushButton_3;
 
     void setupUi(QDialog *AdminMenu)
     {
@@ -41,6 +42,9 @@ public:
         pushButton_2 = new QPushButton(AdminMenu);
         pushButton_2->setObjectName(QStringLiteral("pushButton_2"));
         pushButton_2->setGeometry(QRect(310, 60, 75, 23));
+        pushButton_3 = new QPushButton(AdminMenu);
+        pushButton_3->setObjectName(QStringLiteral("pushButton_3"));
+        pushButton_3->setGeometry(QRect(310, 90, 75, 23));
 
         retranslateUi(AdminMenu);
 
@@ -53,6 +57,7 @@ public:
         label->setText(QApplication::translate("AdminMenu", "<html><head/><body><p align=\"center\"><span style=\" font-size:16pt;\">Admin Menu</span></p></body></html>", nullptr));
         pushButton->setText(QApplication::translate("AdminMenu", "Logout", nullptr));
         pushButton_2->setText(QApplication::translate("AdminMenu", "Customers", nullptr));
+        pushButton_3->setText(QApplication::translate("AdminMenu", "Sales", nullptr));
     } // retranslateUi
 
 };

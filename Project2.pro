@@ -8,7 +8,7 @@ QT       += core gui sql
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-TARGET = Project_2
+TARGET = Project2
 TEMPLATE = app
 
 # The following define makes your compiler emit warnings if you use
@@ -36,7 +36,8 @@ SOURCES += \
     makepurchase.cpp \
     guaranteepolicy.cpp \
     loginwindow.cpp \
-    pamphlet.cpp
+    pamphlet.cpp \
+    saleslisting.cpp
 
 HEADERS += \
     addcustomer.h \
@@ -51,7 +52,8 @@ HEADERS += \
     makepurchase.h \
     guaranteepolicy.h \
     loginwindow.h \
-    pamphlet.h
+    pamphlet.h \
+    saleslisting.h
 
 FORMS += \
     addcustomer.ui \
@@ -64,4 +66,5 @@ FORMS += \
     delcustomer.ui \
     makepurchase.ui \
     guaranteepolicy.ui \
-    pamphlet.ui
+    pamphlet.ui \
+    saleslisting.ui
