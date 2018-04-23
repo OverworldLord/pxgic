@@ -104,6 +104,6 @@ void CustomerListing::on_pushButton_4_clicked()
                               QString::fromStdString(state),
                               QString::fromStdString(zip),
                               QString::fromStdString(interestLevel),
-                              QString::fromStdString(key));
+                              QString::fromStdString(key), 1);
     }
 }

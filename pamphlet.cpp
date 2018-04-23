@@ -23,7 +23,11 @@ void pamphlet::on_pushButton_clicked()
 void pamphlet::on_commandLinkButton_clicked()
 {   DataBaseManager* Database = new DataBaseManager;
     if(Database->customerExists(ui->lineEdit->text())) {
-        QMessageBox::critical(this, "Email Sent!", "Your check your Email for confirmation.", QMessageBox::Ok);
+        if(Database->sendPamphlet(ui->lineEdit->text())) {
+            QMessageBox::information(this, "Additional Pamphlet sent.", "You have requested an additional pamphlet. Check your Email for confirmation.", QMessageBox::Ok);
+        } else {
+            QMessageBox::information(this, "Pamphlet sent.", "Check your Email for confirmation.", QMessageBox::Ok);
+        }
     } else {
         QMessageBox::critical(this, "Error: Company not found!", "Re-enter company name.", QMessageBox::Ok);
     }

@@ -5,6 +5,7 @@
 #include <QtDebug>
 #include <QFileInfo>
 #include <QString>
+#include <QMessageBox>
 #include "constants.h"
 
 class DataBaseManager
@@ -20,10 +21,11 @@ public:
     bool qryExec(QSqlQuery &query, QString locOfErr);
     int testUser(QString user, QString pass);
     void showCustomerTable();
-    bool addCustomer(QString name, QString address, QString city, QString state, QString Zip, QString interest, QString isKey);
+    bool addCustomer(QString name, QString address, QString city, QString state, QString Zip, QString interest, QString isKey, bool recievedpamphlet);
     bool deleteCustomer(QString name);
     bool customerExists(QString name);
     void addPurchase(QString cName, QString pName, int amtBought, double price);
+    bool sendPamphlet(QString name);
 };
 
 #endif // DATABASEMANAGER_H

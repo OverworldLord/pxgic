@@ -1,4 +1,5 @@
 #include "databasemanager.h"
+#include "QMessageBox"
 
 DataBaseManager::DataBaseManager()
 {
@@ -69,14 +70,15 @@ int DataBaseManager::testUser(QString user, QString pass)
     return userType;
 }
 
-bool DataBaseManager::addCustomer(QString name, QString address, QString city, QString state, QString zip, QString interest, QString importance)
+bool DataBaseManager::addCustomer(QString name, QString address, QString city, QString state, QString zip, QString interest, QString importance, bool recievedpamphlet)
 {
     bool isSuccess;
 
     openDB();
     QSqlQuery query;
 
-    query.prepare("INSERT INTO Customers (Name, Address, City, State, Zip, Interest, Importance) VALUES (:name, :address, :city, :state, :zip, :interest, :importance)");
+    query.prepare("INSERT INTO Customers (Name, Address, City, State, Zip, Interest, Importance, PamphletSent)"
+                  "VALUES (:name, :address, :city, :state, :zip, :interest, :importance, :recievedpamphlet)");
     query.bindValue(":name", name);
     query.bindValue(":address", address);
     query.bindValue(":city", city);
@@ -84,6 +86,7 @@ bool DataBaseManager::addCustomer(QString name, QString address, QString city, Q
     query.bindValue(":zip", zip);
     query.bindValue(":interest", interest);
     query.bindValue(":importance", importance);
+    query.bindValue(":recievedpamphlet", recievedpamphlet);
 
     isSuccess = qryExec(query, "addCustomer()");
 
@@ -160,4 +163,26 @@ void DataBaseManager::addPurchase(QString cName, QString pName, int amtBought, d
         qryExec(query, "addPurchase()");
     }
     closeDB();
+}
+
+bool DataBaseManager::sendPamphlet(QString name) {
+    bool pamphletSentMultTimes = false;
+    openDB();
+    QSqlQuery query;
+    query.prepare("SELECT PamphletSent FROM Customers WHERE Name = :name");
+    query.bindValue(":name", name);
+    qryExec(query, "sendPamphlet()");
+    query.next();
+    if(query.value(0).toInt() == 0) {
+        query.prepare("UPDATE Customers SET PamphletSent = :pamphletsent WHERE Name = :name");
+        query.bindValue(":name", name);
+        query.bindValue(":pamphletsent", 1);
+        qryExec(query, "sendPamphlet()");
+        pamphletSentMultTimes = false;
+    } else {
+        pamphletSentMultTimes = true;
+    }
+
+    closeDB();
+    return pamphletSentMultTimes;
 }

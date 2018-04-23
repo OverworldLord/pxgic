@@ -50,7 +50,7 @@ void AddCustomer::on_pushButton_clicked()
         importance = "nice to have";
     }
 
-    isSuccess = dBManager.addCustomer(name, address, city, state, zip, interest, importance);
+    isSuccess = dBManager.addCustomer(name, address, city, state, zip, interest, importance, 0);
 
     if (isSuccess == true)
     {
