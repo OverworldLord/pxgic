@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'addcustomer.ui'
 **
-** Created by: Qt User Interface Compiler version 5.8.0
+** Created by: Qt User Interface Compiler version 5.10.1
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -53,72 +53,72 @@ public:
         AddCustomer->resize(1600, 900);
         pushButton = new QPushButton(AddCustomer);
         pushButton->setObjectName(QStringLiteral("pushButton"));
-        pushButton->setGeometry(QRect(1290, 360, 261, 71));
+        pushButton->setGeometry(QRect(1140, 565, 281, 71));
         QFont font;
         font.setPointSize(28);
         pushButton->setFont(font);
         pushButton_2 = new QPushButton(AddCustomer);
         pushButton_2->setObjectName(QStringLiteral("pushButton_2"));
-        pushButton_2->setGeometry(QRect(1010, 360, 261, 71));
+        pushButton_2->setGeometry(QRect(20, 820, 341, 61));
         pushButton_2->setFont(font);
         nameLineEdit = new QLineEdit(AddCustomer);
         nameLineEdit->setObjectName(QStringLiteral("nameLineEdit"));
-        nameLineEdit->setGeometry(QRect(200, 90, 711, 61));
+        nameLineEdit->setGeometry(QRect(200, 215, 711, 61));
         QFont font1;
         font1.setPointSize(36);
         nameLineEdit->setFont(font1);
         addressLineEdit = new QLineEdit(AddCustomer);
         addressLineEdit->setObjectName(QStringLiteral("addressLineEdit"));
-        addressLineEdit->setGeometry(QRect(200, 160, 711, 61));
+        addressLineEdit->setGeometry(QRect(200, 300, 711, 61));
         addressLineEdit->setFont(font1);
         cityLineEdit = new QLineEdit(AddCustomer);
         cityLineEdit->setObjectName(QStringLiteral("cityLineEdit"));
-        cityLineEdit->setGeometry(QRect(200, 230, 711, 61));
+        cityLineEdit->setGeometry(QRect(200, 385, 711, 61));
         cityLineEdit->setFont(font1);
         label = new QLabel(AddCustomer);
         label->setObjectName(QStringLiteral("label"));
-        label->setGeometry(QRect(40, 90, 141, 61));
+        label->setGeometry(QRect(40, 215, 141, 61));
         QFont font2;
         font2.setPointSize(10);
         label->setFont(font2);
         label->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
         label_2 = new QLabel(AddCustomer);
         label_2->setObjectName(QStringLiteral("label_2"));
-        label_2->setGeometry(QRect(0, 160, 181, 61));
+        label_2->setGeometry(QRect(0, 300, 181, 61));
         label_2->setFont(font2);
         label_2->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
         label_3 = new QLabel(AddCustomer);
         label_3->setObjectName(QStringLiteral("label_3"));
-        label_3->setGeometry(QRect(50, 230, 131, 61));
+        label_3->setGeometry(QRect(50, 385, 131, 61));
         label_3->setFont(font2);
         label_3->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
         label_4 = new QLabel(AddCustomer);
         label_4->setObjectName(QStringLiteral("label_4"));
-        label_4->setGeometry(QRect(60, 300, 111, 61));
+        label_4->setGeometry(QRect(60, 475, 111, 61));
         label_4->setFont(font2);
         label_4->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
         label_5 = new QLabel(AddCustomer);
         label_5->setObjectName(QStringLiteral("label_5"));
-        label_5->setGeometry(QRect(50, 365, 121, 71));
+        label_5->setGeometry(QRect(50, 565, 121, 71));
         label_5->setFont(font2);
         label_5->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
         stateLineEdit = new QLineEdit(AddCustomer);
         stateLineEdit->setObjectName(QStringLiteral("stateLineEdit"));
-        stateLineEdit->setGeometry(QRect(200, 300, 711, 61));
+        stateLineEdit->setGeometry(QRect(200, 475, 711, 61));
         stateLineEdit->setFont(font1);
         zipLineEdit = new QLineEdit(AddCustomer);
         zipLineEdit->setObjectName(QStringLiteral("zipLineEdit"));
-        zipLineEdit->setGeometry(QRect(200, 370, 711, 61));
+        zipLineEdit->setGeometry(QRect(200, 570, 711, 61));
         zipLineEdit->setFont(font1);
         InterestSlider = new QSlider(AddCustomer);
         InterestSlider->setObjectName(QStringLiteral("InterestSlider"));
-        InterestSlider->setGeometry(QRect(1140, 150, 281, 41));
+        InterestSlider->setGeometry(QRect(1140, 295, 281, 41));
         InterestSlider->setMaximum(2);
         InterestSlider->setSliderPosition(1);
         InterestSlider->setOrientation(Qt::Horizontal);
         keyCheckBox = new QCheckBox(AddCustomer);
         keyCheckBox->setObjectName(QStringLiteral("keyCheckBox"));
-        keyCheckBox->setGeometry(QRect(1100, 240, 361, 71));
+        keyCheckBox->setGeometry(QRect(1100, 475, 361, 71));
         QPalette palette;
         QBrush brush(QColor(255, 255, 255, 255));
         brush.setStyle(Qt::SolidPattern);
@@ -141,19 +141,19 @@ public:
         keyCheckBox->setChecked(false);
         label_6 = new QLabel(AddCustomer);
         label_6->setObjectName(QStringLiteral("label_6"));
-        label_6->setGeometry(QRect(1030, 140, 91, 61));
+        label_6->setGeometry(QRect(1030, 285, 91, 61));
         QFont font4;
         font4.setPointSize(8);
         label_6->setFont(font4);
         label_6->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
         label_7 = new QLabel(AddCustomer);
         label_7->setObjectName(QStringLiteral("label_7"));
-        label_7->setGeometry(QRect(1130, 90, 301, 61));
+        label_7->setGeometry(QRect(1130, 215, 301, 61));
         label_7->setFont(font1);
         label_7->setAlignment(Qt::AlignCenter);
         label_8 = new QLabel(AddCustomer);
         label_8->setObjectName(QStringLiteral("label_8"));
-        label_8->setGeometry(QRect(1430, 130, 111, 81));
+        label_8->setGeometry(QRect(1430, 275, 111, 81));
         label_8->setFont(font4);
         label_9 = new QLabel(AddCustomer);
         label_9->setObjectName(QStringLiteral("label_9"));
@@ -194,25 +194,27 @@ public:
 
     void retranslateUi(QDialog *AddCustomer)
     {
-        AddCustomer->setWindowTitle(QApplication::translate("AddCustomer", "Dialog", Q_NULLPTR));
-        pushButton->setText(QApplication::translate("AddCustomer", "Submit", Q_NULLPTR));
-        pushButton_2->setText(QApplication::translate("AddCustomer", "Back", Q_NULLPTR));
-        nameLineEdit->setPlaceholderText(QApplication::translate("AddCustomer", "Insert Company Name", Q_NULLPTR));
-        addressLineEdit->setPlaceholderText(QApplication::translate("AddCustomer", "Insert Company Address", Q_NULLPTR));
-        cityLineEdit->setPlaceholderText(QApplication::translate("AddCustomer", "Insert Company City", Q_NULLPTR));
-        label->setText(QApplication::translate("AddCustomer", "<html><head/><body><p><span style=\" font-size:36pt; color:#ffffff;\">Name</span></p></body></html>", Q_NULLPTR));
-        label_2->setText(QApplication::translate("AddCustomer", "<html><head/><body><p><span style=\" font-size:36pt; color:#ffffff;\">Address</span></p></body></html>", Q_NULLPTR));
-        label_3->setText(QApplication::translate("AddCustomer", "<html><head/><body><p><span style=\" font-size:36pt; color:#ffffff;\">City</span></p></body></html>", Q_NULLPTR));
-        label_4->setText(QApplication::translate("AddCustomer", "<html><head/><body><p><span style=\" font-size:36pt; color:#ffffff;\">State</span></p></body></html>", Q_NULLPTR));
-        label_5->setText(QApplication::translate("AddCustomer", "<html><head/><body><p><span style=\" font-size:36pt; color:#ffffff;\">Zip</span></p></body></html>", Q_NULLPTR));
-        stateLineEdit->setPlaceholderText(QApplication::translate("AddCustomer", "Insert Company State", Q_NULLPTR));
-        zipLineEdit->setPlaceholderText(QApplication::translate("AddCustomer", "Insert Company Zip Code", Q_NULLPTR));
-        keyCheckBox->setText(QApplication::translate("AddCustomer", "Key Customer", Q_NULLPTR));
+        AddCustomer->setWindowTitle(QApplication::translate("AddCustomer", "Dialog", nullptr));
+        pushButton->setText(QApplication::translate("AddCustomer", "Submit", nullptr));
+        pushButton_2->setText(QApplication::translate("AddCustomer", "Back", nullptr));
+        nameLineEdit->setPlaceholderText(QApplication::translate("AddCustomer", "Insert Company Name", nullptr));
+        addressLineEdit->setPlaceholderText(QApplication::translate("AddCustomer", "Insert Company Address", nullptr));
+        cityLineEdit->setPlaceholderText(QApplication::translate("AddCustomer", "Insert Company City", nullptr));
+        label->setText(QApplication::translate("AddCustomer", "<html><head/><body><p><span style=\" font-size:36pt; color:#ffffff;\">Name</span></p></body></html>", nullptr));
+        label_2->setText(QApplication::translate("AddCustomer", "<html><head/><body><p><span style=\" font-size:36pt; color:#ffffff;\">Address</span></p></body></html>", nullptr));
+        label_3->setText(QApplication::translate("AddCustomer", "<html><head/><body><p><span style=\" font-size:36pt; color:#ffffff;\">City</span></p></body></html>", nullptr));
+        label_4->setText(QApplication::translate("AddCustomer", "<html><head/><body><p><span style=\" font-size:36pt; color:#ffffff;\">State</span></p></body></html>", nullptr));
+        label_5->setText(QApplication::translate("AddCustomer", "<html><head/><body><p><span style=\" font-size:36pt; color:#ffffff;\">Zip</span></p></body></html>", nullptr));
+        stateLineEdit->setPlaceholderText(QApplication::translate("AddCustomer", "Insert Company State", nullptr));
+        zipLineEdit->setPlaceholderText(QApplication::translate("AddCustomer", "Insert Company Zip Code", nullptr));
+        keyCheckBox->setText(QApplication::translate("AddCustomer", "Key Customer", nullptr));
+#ifndef QT_NO_SHORTCUT
         keyCheckBox->setShortcut(QString());
-        label_6->setText(QApplication::translate("AddCustomer", "<html><head/><body><p><span style=\" font-size:36pt; color:#ffffff;\">Low</span></p></body></html>", Q_NULLPTR));
-        label_7->setText(QApplication::translate("AddCustomer", "<html><head/><body><p><span style=\" color:#ffffff;\">Interest Level</span></p></body></html>", Q_NULLPTR));
-        label_8->setText(QApplication::translate("AddCustomer", "<html><head/><body><p><span style=\" font-size:36pt; color:#ffffff;\">High</span></p></body></html>", Q_NULLPTR));
-        label_9->setText(QApplication::translate("AddCustomer", "<html><head/><body><p><span style=\" font-size:48pt; color:#ffffff;\">Add Customer</span></p></body></html>", Q_NULLPTR));
+#endif // QT_NO_SHORTCUT
+        label_6->setText(QApplication::translate("AddCustomer", "<html><head/><body><p><span style=\" font-size:36pt; color:#ffffff;\">Low</span></p></body></html>", nullptr));
+        label_7->setText(QApplication::translate("AddCustomer", "<html><head/><body><p><span style=\" color:#ffffff;\">Interest Level</span></p></body></html>", nullptr));
+        label_8->setText(QApplication::translate("AddCustomer", "<html><head/><body><p><span style=\" font-size:36pt; color:#ffffff;\">High</span></p></body></html>", nullptr));
+        label_9->setText(QApplication::translate("AddCustomer", "<html><head/><body><p><span style=\" font-size:48pt; color:#ffffff;\">Add Customer</span></p></body></html>", nullptr));
         label_10->setText(QString());
     } // retranslateUi
 

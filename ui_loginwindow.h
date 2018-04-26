@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'loginwindow.ui'
 **
-** Created by: Qt User Interface Compiler version 5.8.0
+** Created by: Qt User Interface Compiler version 5.10.1
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -19,7 +19,6 @@
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QPushButton>
-#include <QtWidgets/QStatusBar>
 #include <QtWidgets/QToolBar>
 #include <QtWidgets/QWidget>
 
@@ -36,15 +35,15 @@ public:
     QLineEdit *Username;
     QPushButton *LoginButton;
     QPushButton *pushButton;
-    QMenuBar *menuBar;
+    QLabel *label_2;
     QToolBar *mainToolBar;
-    QStatusBar *statusBar;
+    QMenuBar *menuBar;
 
     void setupUi(QMainWindow *LoginWindow)
     {
         if (LoginWindow->objectName().isEmpty())
             LoginWindow->setObjectName(QStringLiteral("LoginWindow"));
-        LoginWindow->resize(366, 391);
+        LoginWindow->resize(1600, 901);
         QFont font;
         font.setPointSize(12);
         LoginWindow->setFont(font);
@@ -54,7 +53,7 @@ public:
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
         label = new QLabel(centralWidget);
         label->setObjectName(QStringLiteral("label"));
-        label->setGeometry(QRect(0, 40, 366, 71));
+        label->setGeometry(QRect(0, 0, 1601, 81));
         QFont font1;
         font1.setFamily(QStringLiteral("Alien Encounters"));
         font1.setPointSize(20);
@@ -64,7 +63,7 @@ public:
         label->setAlignment(Qt::AlignCenter);
         label_3 = new QLabel(centralWidget);
         label_3->setObjectName(QStringLiteral("label_3"));
-        label_3->setGeometry(QRect(60, 180, 91, 21));
+        label_3->setGeometry(QRect(550, 290, 231, 71));
         QFont font2;
         font2.setPointSize(11);
         font2.setUnderline(false);
@@ -72,32 +71,40 @@ public:
         label_3->setAutoFillBackground(false);
         label_4 = new QLabel(centralWidget);
         label_4->setObjectName(QStringLiteral("label_4"));
-        label_4->setGeometry(QRect(60, 220, 91, 21));
+        label_4->setGeometry(QRect(560, 380, 221, 71));
         QFont font3;
         font3.setPointSize(11);
         label_4->setFont(font3);
         label_4->setAutoFillBackground(false);
         Password = new QLineEdit(centralWidget);
         Password->setObjectName(QStringLiteral("Password"));
-        Password->setGeometry(QRect(160, 220, 131, 21));
-        Password->setFont(font3);
+        Password->setGeometry(QRect(810, 380, 681, 71));
+        QFont font4;
+        font4.setPointSize(36);
+        Password->setFont(font4);
         Password->setEchoMode(QLineEdit::Password);
         Password->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
         Username = new QLineEdit(centralWidget);
         Username->setObjectName(QStringLiteral("Username"));
-        Username->setGeometry(QRect(160, 180, 131, 21));
-        Username->setFont(font3);
+        Username->setGeometry(QRect(810, 290, 681, 71));
+        Username->setFont(font4);
         LoginButton = new QPushButton(centralWidget);
         LoginButton->setObjectName(QStringLiteral("LoginButton"));
-        LoginButton->setGeometry(QRect(210, 270, 80, 21));
-        QFont font4;
-        font4.setPointSize(8);
-        LoginButton->setFont(font4);
+        LoginButton->setGeometry(QRect(810, 460, 681, 71));
+        QFont font5;
+        font5.setPointSize(28);
+        LoginButton->setFont(font5);
         pushButton = new QPushButton(centralWidget);
         pushButton->setObjectName(QStringLiteral("pushButton"));
-        pushButton->setGeometry(QRect(60, 270, 75, 23));
-        pushButton->setFont(font4);
+        pushButton->setGeometry(QRect(20, 790, 341, 61));
+        pushButton->setFont(font5);
+        label_2 = new QLabel(centralWidget);
+        label_2->setObjectName(QStringLiteral("label_2"));
+        label_2->setGeometry(QRect(10, 0, 1581, 861));
+        label_2->setPixmap(QPixmap(QString::fromUtf8("CUSTOM IMAGES/icyber-background1.jpg")));
+        label_2->setScaledContents(true);
         LoginWindow->setCentralWidget(centralWidget);
+        label_2->raise();
         label->raise();
         label_3->raise();
         label_4->raise();
@@ -105,16 +112,13 @@ public:
         LoginButton->raise();
         Username->raise();
         pushButton->raise();
-        menuBar = new QMenuBar(LoginWindow);
-        menuBar->setObjectName(QStringLiteral("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 366, 21));
-        LoginWindow->setMenuBar(menuBar);
         mainToolBar = new QToolBar(LoginWindow);
         mainToolBar->setObjectName(QStringLiteral("mainToolBar"));
         LoginWindow->addToolBar(Qt::TopToolBarArea, mainToolBar);
-        statusBar = new QStatusBar(LoginWindow);
-        statusBar->setObjectName(QStringLiteral("statusBar"));
-        LoginWindow->setStatusBar(statusBar);
+        menuBar = new QMenuBar(LoginWindow);
+        menuBar->setObjectName(QStringLiteral("menuBar"));
+        menuBar->setGeometry(QRect(0, 0, 1600, 21));
+        LoginWindow->setMenuBar(menuBar);
         QWidget::setTabOrder(Username, Password);
         QWidget::setTabOrder(Password, LoginButton);
 
@@ -125,16 +129,16 @@ public:
 
     void retranslateUi(QMainWindow *LoginWindow)
     {
-        LoginWindow->setWindowTitle(QApplication::translate("LoginWindow", "Login", Q_NULLPTR));
-        label->setText(QApplication::translate("LoginWindow", "iCyberSecurity\n"
-"Login", Q_NULLPTR));
-        label_3->setText(QApplication::translate("LoginWindow", "Username:", Q_NULLPTR));
-        label_4->setText(QApplication::translate("LoginWindow", "Password:", Q_NULLPTR));
-        Password->setPlaceholderText(QApplication::translate("LoginWindow", "Enter password", Q_NULLPTR));
+        LoginWindow->setWindowTitle(QApplication::translate("LoginWindow", "Login", nullptr));
+        label->setText(QApplication::translate("LoginWindow", "<html><head/><body><p><span style=\" font-size:48pt; color:#ffffff;\">iCyberSecurity Administrator Login</span></p></body></html>", nullptr));
+        label_3->setText(QApplication::translate("LoginWindow", "<html><head/><body><p><span style=\" font-size:36pt; color:#ffffff;\">Username:</span></p></body></html>", nullptr));
+        label_4->setText(QApplication::translate("LoginWindow", "<html><head/><body><p><span style=\" font-size:36pt; color:#ffffff;\">Password:</span></p></body></html>", nullptr));
+        Password->setPlaceholderText(QApplication::translate("LoginWindow", "Enter password", nullptr));
         Username->setText(QString());
-        Username->setPlaceholderText(QApplication::translate("LoginWindow", "Enter username", Q_NULLPTR));
-        LoginButton->setText(QApplication::translate("LoginWindow", "Log In", Q_NULLPTR));
-        pushButton->setText(QApplication::translate("LoginWindow", "Back", Q_NULLPTR));
+        Username->setPlaceholderText(QApplication::translate("LoginWindow", "Enter username", nullptr));
+        LoginButton->setText(QApplication::translate("LoginWindow", "Log In", nullptr));
+        pushButton->setText(QApplication::translate("LoginWindow", "Back", nullptr));
+        label_2->setText(QString());
     } // retranslateUi
 
 };

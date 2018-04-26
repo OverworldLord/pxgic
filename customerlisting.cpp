@@ -20,6 +20,7 @@ CustomerListing::CustomerListing(QWidget *parent) :
 
     ui->tableView->setSortingEnabled(true);
     ui->tableView->setModel(sortModal);
+    ui->tableView->horizontalHeader()->setSectionResizeMode(QHeaderView::ResizeToContents);
     dBManager.closeDB();
 }
 
@@ -54,6 +55,7 @@ void CustomerListing::on_checkBox_stateChanged(int arg1)
 
     ui->tableView->setSortingEnabled(true);
     ui->tableView->setModel(sortModal);
+    ui->tableView->horizontalHeader()->setSectionResizeMode(QHeaderView::ResizeToContents);
     dBManager.closeDB();
 }
 

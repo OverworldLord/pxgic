@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>366</width>
-    <height>391</height>
+    <width>1600</width>
+    <height>901</height>
    </rect>
   </property>
   <property name="font">
@@ -29,9 +29,9 @@
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>40</y>
-      <width>366</width>
-      <height>71</height>
+      <y>0</y>
+      <width>1601</width>
+      <height>81</height>
      </rect>
     </property>
     <property name="font">
@@ -43,8 +43,7 @@
      </font>
     </property>
     <property name="text">
-     <string>iCyberSecurity
-Login</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:48pt; color:#ffffff;&quot;&gt;iCyberSecurity Administrator Login&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -53,10 +52,10 @@ Login</string>
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>60</x>
-      <y>180</y>
-      <width>91</width>
-      <height>21</height>
+      <x>550</x>
+      <y>290</y>
+      <width>231</width>
+      <height>71</height>
      </rect>
     </property>
     <property name="font">
@@ -69,16 +68,16 @@ Login</string>
      <bool>false</bool>
     </property>
     <property name="text">
-     <string>Username:</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:36pt; color:#ffffff;&quot;&gt;Username:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_4">
     <property name="geometry">
      <rect>
-      <x>60</x>
-      <y>220</y>
-      <width>91</width>
-      <height>21</height>
+      <x>560</x>
+      <y>380</y>
+      <width>221</width>
+      <height>71</height>
      </rect>
     </property>
     <property name="font">
@@ -90,21 +89,21 @@ Login</string>
      <bool>false</bool>
     </property>
     <property name="text">
-     <string>Password:</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:36pt; color:#ffffff;&quot;&gt;Password:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="Password">
     <property name="geometry">
      <rect>
-      <x>160</x>
-      <y>220</y>
-      <width>131</width>
-      <height>21</height>
+      <x>810</x>
+      <y>380</y>
+      <width>681</width>
+      <height>71</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <pointsize>11</pointsize>
+      <pointsize>36</pointsize>
      </font>
     </property>
     <property name="echoMode">
@@ -120,15 +119,15 @@ Login</string>
    <widget class="QLineEdit" name="Username">
     <property name="geometry">
      <rect>
-      <x>160</x>
-      <y>180</y>
-      <width>131</width>
-      <height>21</height>
+      <x>810</x>
+      <y>290</y>
+      <width>681</width>
+      <height>71</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <pointsize>11</pointsize>
+      <pointsize>36</pointsize>
      </font>
     </property>
     <property name="text">
@@ -141,15 +140,15 @@ Login</string>
    <widget class="QPushButton" name="LoginButton">
     <property name="geometry">
      <rect>
-      <x>210</x>
-      <y>270</y>
-      <width>80</width>
-      <height>21</height>
+      <x>810</x>
+      <y>460</y>
+      <width>681</width>
+      <height>71</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <pointsize>8</pointsize>
+      <pointsize>28</pointsize>
      </font>
     </property>
     <property name="text">
@@ -159,21 +158,41 @@ Login</string>
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>60</x>
-      <y>270</y>
-      <width>75</width>
-      <height>23</height>
+      <x>20</x>
+      <y>790</y>
+      <width>341</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <pointsize>8</pointsize>
+      <pointsize>28</pointsize>
      </font>
     </property>
     <property name="text">
      <string>Back</string>
     </property>
    </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>1581</width>
+      <height>861</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>CUSTOM IMAGES/icyber-background1.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <zorder>label_2</zorder>
    <zorder>label</zorder>
    <zorder>label_3</zorder>
    <zorder>label_4</zorder>
@@ -181,16 +200,6 @@ Login</string>
    <zorder>LoginButton</zorder>
    <zorder>Username</zorder>
    <zorder>pushButton</zorder>
-  </widget>
-  <widget class="QMenuBar" name="menuBar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>366</width>
-     <height>21</height>
-    </rect>
-   </property>
   </widget>
   <widget class="QToolBar" name="mainToolBar">
    <attribute name="toolBarArea">
@@ -200,7 +209,16 @@ Login</string>
     <bool>false</bool>
    </attribute>
   </widget>
-  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1600</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <tabstops>

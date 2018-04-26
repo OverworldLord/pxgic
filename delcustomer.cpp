@@ -17,6 +17,7 @@ DelCustomer::DelCustomer(QWidget *parent) :
 
     ui->tableView->setSortingEnabled(true);
     ui->tableView->setModel(sortModal);
+    ui->tableView->horizontalHeader()->setSectionResizeMode(QHeaderView::ResizeToContents);
     dBManager.closeDB();
 }
 
@@ -51,6 +52,7 @@ void DelCustomer::on_pushButton_2_clicked()
 
         ui->tableView->setSortingEnabled(true);
         ui->tableView->setModel(sortModal);
+        ui->tableView->horizontalHeader()->setSectionResizeMode(QHeaderView::ResizeToContents);
         dBManager.closeDB();
 
         QMessageBox::information(this,QObject::tr("System Message"),tr("Customer entry has been deleted!"),QMessageBox::Ok);

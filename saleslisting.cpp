@@ -17,6 +17,7 @@ salesListing::salesListing(QWidget *parent) :
 
     ui->tableView->setSortingEnabled(true);
     ui->tableView->setModel(sortModal);
+    ui->tableView->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
     dBManager.closeDB();
 }
 
