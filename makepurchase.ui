@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>598</width>
-    <height>499</height>
+    <width>1600</width>
+    <height>900</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,10 +17,15 @@
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>470</y>
-     <width>75</width>
-     <height>23</height>
+     <y>830</y>
+     <width>321</width>
+     <height>61</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>18</pointsize>
+    </font>
    </property>
    <property name="text">
     <string>Back</string>
@@ -29,11 +34,16 @@
   <widget class="QPushButton" name="pushButton_2">
    <property name="geometry">
     <rect>
-     <x>90</x>
-     <y>470</y>
-     <width>91</width>
-     <height>23</height>
+     <x>360</x>
+     <y>830</y>
+     <width>321</width>
+     <height>61</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>18</pointsize>
+    </font>
    </property>
    <property name="text">
     <string>Guarantee Policy</string>
@@ -42,83 +52,143 @@
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>400</x>
-     <y>260</y>
-     <width>191</width>
+     <x>1080</x>
+     <y>470</y>
+     <width>371</width>
      <height>41</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>28</pointsize>
+    </font>
+   </property>
    <property name="text">
-    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;Make A Purchase&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:28pt;&quot;&gt;Make A Purchase&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
   <widget class="QTextBrowser" name="textBrowser">
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>40</y>
-     <width>581</width>
-     <height>221</height>
+     <y>110</y>
+     <width>1581</width>
+     <height>341</height>
     </rect>
+   </property>
+   <property name="palette">
+    <palette>
+     <active>
+      <colorrole role="Base">
+       <brush brushstyle="SolidPattern">
+        <color alpha="150">
+         <red>255</red>
+         <green>255</green>
+         <blue>255</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </active>
+     <inactive>
+      <colorrole role="Base">
+       <brush brushstyle="SolidPattern">
+        <color alpha="150">
+         <red>255</red>
+         <green>255</green>
+         <blue>255</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </inactive>
+     <disabled>
+      <colorrole role="Base">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>240</red>
+         <green>240</green>
+         <blue>240</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </disabled>
+    </palette>
    </property>
    <property name="html">
     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16pt; text-decoration: underline; color:#9f6c05;&quot;&gt;Cardboard Plan&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16pt; color:#9f6c05;&quot;&gt;$4&lt;/span&gt;&lt;span style=&quot; font-size:16pt; color:#9f6c05; vertical-align:super;&quot;&gt;99&lt;/span&gt;&lt;span style=&quot; font-size:16pt; color:#9f6c05;&quot;&gt; per week&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; color:#000000;&quot;&gt;If you are confident in your own company's ability to stop a cyberattack, then you are mistaken. Nevertheless, we have a Cardboard Plan just for you. Cheap, Minimal, and likely Ineffective tools will be provided that will probably be able to stop a 12 year old from hacking into your company. Probably.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt; color:#000000;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt; color:#000000;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16pt; text-decoration: underline; color:#cfcf00;&quot;&gt;Gold Plan&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16pt; color:#cfcf00;&quot;&gt;$19&lt;/span&gt;&lt;span style=&quot; font-size:16pt; color:#cfcf00; vertical-align:super;&quot;&gt;99&lt;/span&gt;&lt;span style=&quot; font-size:16pt; color:#cfcf00;&quot;&gt; per week&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; color:#000000;&quot;&gt;If your company is more concerned about the very real and potentially critical attacks that will very likely be made upon your systems, you'll probably want to take it up a notch. More expensive means more effective, as everyone knows, and the tools we provide here are definetly both. This'll stop even the smartest 12 year old, and is effective against any hackers out there.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt; color:#000000;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt; color:#000000;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16pt; font-weight:600; font-style:italic; text-decoration: underline; color:#00aaff;&quot;&gt;Platinum VIP Plan&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16pt; font-weight:600; font-style:italic; color:#00aaff;&quot;&gt;$9999&lt;/span&gt;&lt;span style=&quot; font-size:16pt; font-weight:600; font-style:italic; color:#00aaff; vertical-align:super;&quot;&gt;99 &lt;/span&gt;&lt;span style=&quot; font-size:16pt; font-weight:600; font-style:italic; color:#00aaff;&quot;&gt;per week&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; color:#000000;&quot;&gt;So let's get real. You don't really even care about security at this point, you've just got a ton of money that you're more than willing to give to us. Well, we'll give you both of the above plans plus a lifetime membership! Just keep paying weekly! You'll recieve a special edition T-Shirt, custom made to have your name on it! It says, 'I am rich' and iCyberSecurity is written on the back. Show all your friends how rich you are!&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:18pt; text-decoration: underline; color:#9f6c05;&quot;&gt;Cardboard Plan&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:18pt; color:#9f6c05;&quot;&gt;$4&lt;/span&gt;&lt;span style=&quot; font-size:18pt; color:#9f6c05; vertical-align:super;&quot;&gt;99&lt;/span&gt;&lt;span style=&quot; font-size:18pt; color:#9f6c05;&quot;&gt; per week&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:18pt; color:#000000;&quot;&gt;If you are confident in your own company's ability to stop a cyberattack, then you are mistaken. Nevertheless, we have a Cardboard Plan just for you. Cheap, Minimal, and likely Ineffective tools will be provided that will probably be able to stop a 12 year old from hacking into your company. Probably.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:18pt; color:#000000;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:18pt; text-decoration: underline; color:#cfcf00;&quot;&gt;Gold Plan&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:18pt; color:#cfcf00;&quot;&gt;$19&lt;/span&gt;&lt;span style=&quot; font-size:18pt; color:#cfcf00; vertical-align:super;&quot;&gt;99&lt;/span&gt;&lt;span style=&quot; font-size:18pt; color:#cfcf00;&quot;&gt; per week&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:18pt; color:#000000;&quot;&gt;If your company is more concerned about the very real and potentially critical attacks that will very likely be made upon your systems, you'll probably want to take it up a notch. More expensive means more effective, as everyone knows, and the tools we provide here are definetly both. This'll stop even the smartest 12 year old, and is effective against any hackers out there.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:18pt; color:#000000;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:18pt; font-weight:600; font-style:italic; text-decoration: underline; color:#00aaff;&quot;&gt;Platinum VIP Plan&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:18pt; font-weight:600; font-style:italic; color:#00aaff;&quot;&gt;$9999&lt;/span&gt;&lt;span style=&quot; font-size:18pt; font-weight:600; font-style:italic; color:#00aaff; vertical-align:super;&quot;&gt;99 &lt;/span&gt;&lt;span style=&quot; font-size:18pt; font-weight:600; font-style:italic; color:#00aaff;&quot;&gt;per week&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:18pt; color:#000000;&quot;&gt;So let's get real. You don't really even care about security at this point, you've just got a ton of money that you're more than willing to give to us. Well, we'll give you both of the above plans plus a lifetime membership! Just keep paying weekly! You'll recieve a special edition T-Shirt, custom made to have your name on it! It says, 'I am rich' and iCyberSecurity is written on the back. Show all your friends how rich you are!&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
   <widget class="QSpinBox" name="spinBox">
    <property name="geometry">
     <rect>
-     <x>550</x>
-     <y>330</y>
-     <width>42</width>
-     <height>22</height>
+     <x>1509</x>
+     <y>520</y>
+     <width>81</width>
+     <height>51</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>22</pointsize>
+    </font>
    </property>
   </widget>
   <widget class="QSpinBox" name="spinBox_2">
    <property name="geometry">
     <rect>
-     <x>550</x>
-     <y>360</y>
-     <width>42</width>
-     <height>22</height>
+     <x>1510</x>
+     <y>580</y>
+     <width>81</width>
+     <height>51</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>22</pointsize>
+    </font>
    </property>
   </widget>
   <widget class="QSpinBox" name="spinBox_3">
    <property name="geometry">
     <rect>
-     <x>550</x>
-     <y>390</y>
-     <width>42</width>
-     <height>22</height>
+     <x>1510</x>
+     <y>640</y>
+     <width>81</width>
+     <height>51</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>22</pointsize>
+    </font>
    </property>
   </widget>
   <widget class="QLineEdit" name="lineEdit">
    <property name="geometry">
     <rect>
-     <x>400</x>
-     <y>300</y>
-     <width>191</width>
-     <height>20</height>
+     <x>940</x>
+     <y>770</y>
+     <width>651</width>
+     <height>41</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>18</pointsize>
+    </font>
    </property>
    <property name="cursor">
     <cursorShape>IBeamCursor</cursorShape>
@@ -137,30 +207,69 @@ p, li { white-space: pre-wrap; }
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>301</y>
-     <width>381</width>
-     <height>161</height>
+     <y>520</y>
+     <width>911</width>
+     <height>291</height>
     </rect>
+   </property>
+   <property name="palette">
+    <palette>
+     <active>
+      <colorrole role="Base">
+       <brush brushstyle="SolidPattern">
+        <color alpha="150">
+         <red>255</red>
+         <green>255</green>
+         <blue>255</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </active>
+     <inactive>
+      <colorrole role="Base">
+       <brush brushstyle="SolidPattern">
+        <color alpha="150">
+         <red>255</red>
+         <green>255</green>
+         <blue>255</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </inactive>
+     <disabled>
+      <colorrole role="Base">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>240</red>
+         <green>240</green>
+         <blue>240</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </disabled>
+    </palette>
    </property>
    <property name="html">
     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Had an intern make your system, and then realized just how easily broken into their code was? Don't want to waste money on actually hiring someone to fix it? We'll do it for you! That's right, for the low low price of only $400&lt;/span&gt;&lt;span style=&quot; font-size:12pt; vertical-align:super;&quot;&gt;00&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;, we'll slightly optimise the code and call it brand new! No more losing sleep worrying about people hacking into your system, because you don't know how many bugs we introduce! But that's not all! This plan comes with a one coupon for iCyberSecurity Cardboard Plan! Just order within .10 milliseconds, and we'll throw it in for only 4&lt;/span&gt;&lt;span style=&quot; font-size:12pt; vertical-align:super;&quot;&gt;99&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;!&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt;Had an intern make your system, and then realized just how easily broken into their code was? Don't want to waste money on actually hiring someone to fix it? We'll do it for you! That's right, for the low low price of only $400&lt;/span&gt;&lt;span style=&quot; font-size:18pt; vertical-align:super;&quot;&gt;00&lt;/span&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt;, we'll slightly optimise the code and call it brand new! No more losing sleep worrying about people hacking into your system, because you don't know how many bugs we introduce! &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:18pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt;But that's not all! This plan comes with a one coupon for iCyberSecurity Cardboard Plan! Just order within .10 milliseconds, and we'll throw it in for only 4&lt;/span&gt;&lt;span style=&quot; font-size:18pt; vertical-align:super;&quot;&gt;99&lt;/span&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt;!&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_2">
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>260</y>
-     <width>381</width>
+     <y>470</y>
+     <width>561</width>
      <height>41</height>
     </rect>
    </property>
    <property name="text">
-    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;Maintainance Plan - $400&lt;/span&gt;&lt;span style=&quot; font-size:16pt; vertical-align:super;&quot;&gt;00&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:28pt;&quot;&gt;Maintainance Plan - $400&lt;/span&gt;&lt;span style=&quot; font-size:28pt; vertical-align:super;&quot;&gt;00&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_3">
@@ -168,32 +277,42 @@ p, li { white-space: pre-wrap; }
     <rect>
      <x>10</x>
      <y>0</y>
-     <width>581</width>
-     <height>41</height>
+     <width>1581</width>
+     <height>91</height>
     </rect>
    </property>
    <property name="text">
-    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;Service Options&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:48pt;&quot;&gt;Service Options&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
   <widget class="QSpinBox" name="spinBox_4">
    <property name="geometry">
     <rect>
-     <x>550</x>
-     <y>420</y>
-     <width>42</width>
-     <height>22</height>
+     <x>1510</x>
+     <y>700</y>
+     <width>81</width>
+     <height>51</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>22</pointsize>
+    </font>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton_3">
    <property name="geometry">
     <rect>
-     <x>400</x>
-     <y>470</y>
-     <width>191</width>
-     <height>23</height>
+     <x>1270</x>
+     <y>830</y>
+     <width>321</width>
+     <height>61</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>18</pointsize>
+    </font>
    </property>
    <property name="text">
     <string>Submit Order</string>
@@ -202,11 +321,16 @@ p, li { white-space: pre-wrap; }
   <widget class="QLabel" name="label_4">
    <property name="geometry">
     <rect>
-     <x>400</x>
-     <y>331</y>
-     <width>141</width>
-     <height>20</height>
+     <x>939</x>
+     <y>520</y>
+     <width>531</width>
+     <height>51</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>22</pointsize>
+    </font>
    </property>
    <property name="text">
     <string>Cardboard</string>
@@ -215,11 +339,16 @@ p, li { white-space: pre-wrap; }
   <widget class="QLabel" name="label_5">
    <property name="geometry">
     <rect>
-     <x>400</x>
-     <y>361</y>
-     <width>141</width>
-     <height>20</height>
+     <x>939</x>
+     <y>580</y>
+     <width>531</width>
+     <height>51</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>22</pointsize>
+    </font>
    </property>
    <property name="text">
     <string>Gold</string>
@@ -228,11 +357,16 @@ p, li { white-space: pre-wrap; }
   <widget class="QLabel" name="label_6">
    <property name="geometry">
     <rect>
-     <x>400</x>
-     <y>391</y>
-     <width>141</width>
-     <height>20</height>
+     <x>939</x>
+     <y>640</y>
+     <width>531</width>
+     <height>51</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>22</pointsize>
+    </font>
    </property>
    <property name="text">
     <string>Platinum VIP</string>
@@ -241,16 +375,58 @@ p, li { white-space: pre-wrap; }
   <widget class="QLabel" name="label_7">
    <property name="geometry">
     <rect>
-     <x>400</x>
-     <y>421</y>
-     <width>141</width>
-     <height>20</height>
+     <x>939</x>
+     <y>700</y>
+     <width>531</width>
+     <height>51</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>22</pointsize>
+    </font>
    </property>
    <property name="text">
     <string>Maintainance Plan</string>
    </property>
   </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1601</width>
+     <height>901</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>CUSTOM IMAGES/icescape.jpg</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <zorder>label_8</zorder>
+  <zorder>pushButton</zorder>
+  <zorder>pushButton_2</zorder>
+  <zorder>label</zorder>
+  <zorder>textBrowser</zorder>
+  <zorder>spinBox</zorder>
+  <zorder>spinBox_2</zorder>
+  <zorder>spinBox_3</zorder>
+  <zorder>lineEdit</zorder>
+  <zorder>textBrowser_2</zorder>
+  <zorder>label_2</zorder>
+  <zorder>label_3</zorder>
+  <zorder>spinBox_4</zorder>
+  <zorder>pushButton_3</zorder>
+  <zorder>label_4</zorder>
+  <zorder>label_5</zorder>
+  <zorder>label_6</zorder>
+  <zorder>label_7</zorder>
  </widget>
  <resources/>
  <connections/>
