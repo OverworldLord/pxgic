@@ -7,6 +7,7 @@ MoreInformation::MoreInformation(QWidget *parent) :
     ui(new Ui::MoreInformation)
 {
     ui->setupUi(this);
+    setAttribute(Qt::WA_DeleteOnClose);
 }
 
 MoreInformation::~MoreInformation()
@@ -17,6 +18,6 @@ MoreInformation::~MoreInformation()
 void MoreInformation::on_pushButton_clicked()
 {
     MainWindow* menu = new MainWindow;
-    this->close();
     menu->show();
+    this->close();
 }

@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'delcustomer.ui'
 **
-** Created by: Qt User Interface Compiler version 5.10.1
+** Created by: Qt User Interface Compiler version 5.8.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -94,8 +94,9 @@ public:
         nameLineEdit->setFont(font3);
         label_2 = new QLabel(DelCustomer);
         label_2->setObjectName(QStringLiteral("label_2"));
-        label_2->setGeometry(QRect(10, 10, 1581, 881));
+        label_2->setGeometry(QRect(0, 0, 1601, 901));
         label_2->setPixmap(QPixmap(QString::fromUtf8("CUSTOM IMAGES/space.jpg")));
+        label_2->setScaledContents(true);
         label_2->raise();
         pushButton->raise();
         label_9->raise();
@@ -114,12 +115,12 @@ public:
 
     void retranslateUi(QDialog *DelCustomer)
     {
-        DelCustomer->setWindowTitle(QApplication::translate("DelCustomer", "Dialog", nullptr));
-        pushButton->setText(QApplication::translate("DelCustomer", "Back", nullptr));
-        label_9->setText(QApplication::translate("DelCustomer", "<html><head/><body><p><span style=\" font-size:48pt; color:#ffffff;\">Delete Customer</span></p></body></html>", nullptr));
-        pushButton_2->setText(QApplication::translate("DelCustomer", "Remove Customer", nullptr));
-        label->setText(QApplication::translate("DelCustomer", "<html><head/><body><p><span style=\" font-size:36pt; color:#ffffff;\">Customer To Delete:</span></p></body></html>", nullptr));
-        nameLineEdit->setPlaceholderText(QApplication::translate("DelCustomer", "Insert Customer Name", nullptr));
+        DelCustomer->setWindowTitle(QApplication::translate("DelCustomer", "Dialog", Q_NULLPTR));
+        pushButton->setText(QApplication::translate("DelCustomer", "Back", Q_NULLPTR));
+        label_9->setText(QApplication::translate("DelCustomer", "<html><head/><body><p><span style=\" font-size:48pt; color:#ffffff;\">Delete Customer</span></p></body></html>", Q_NULLPTR));
+        pushButton_2->setText(QApplication::translate("DelCustomer", "Remove Customer", Q_NULLPTR));
+        label->setText(QApplication::translate("DelCustomer", "<html><head/><body><p><span style=\" font-size:36pt; color:#ffffff;\">Customer To Delete:</span></p></body></html>", Q_NULLPTR));
+        nameLineEdit->setPlaceholderText(QApplication::translate("DelCustomer", "Insert Customer Name", Q_NULLPTR));
         label_2->setText(QString());
     } // retranslateUi
 

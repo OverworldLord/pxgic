@@ -9,6 +9,7 @@ CustomerListing::CustomerListing(QWidget *parent) :
     ui(new Ui::CustomerListing)
 {
     ui->setupUi(this);
+    setAttribute(Qt::WA_DeleteOnClose);
 
     dBManager.openDB();
     QSqlQueryModel * modal = new QSqlQueryModel(this);
@@ -31,9 +32,9 @@ CustomerListing::~CustomerListing()
 
 void CustomerListing::on_pushButton_clicked()
 {
-    AdminMenu *menu = new AdminMenu(this);
-    this->close();
+    AdminMenu *menu = new AdminMenu;
     menu->show();
+    this->close();
 }
 
 void CustomerListing::on_checkBox_stateChanged(int arg1)
@@ -61,16 +62,16 @@ void CustomerListing::on_checkBox_stateChanged(int arg1)
 
 void CustomerListing::on_pushButton_2_clicked()
 {
-    AddCustomer *addCustomerWindow = new AddCustomer(this);
-    this->close();
+    AddCustomer *addCustomerWindow = new AddCustomer;
     addCustomerWindow->show();
+    this->close();
 }
 
 void CustomerListing::on_pushButton_3_clicked()
 {
-    DelCustomer *delCustomerWindow = new DelCustomer(this);
-    this->close();
+    DelCustomer *delCustomerWindow = new DelCustomer;
     delCustomerWindow->show();
+    this->close();
 }
 
 

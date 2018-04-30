@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'mainwindow.ui'
 **
-** Created by: Qt User Interface Compiler version 5.10.1
+** Created by: Qt User Interface Compiler version 5.8.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -77,10 +77,10 @@ public:
 
     void retranslateUi(QMainWindow *MainWindow)
     {
-        MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", nullptr));
-        pushButton->setText(QApplication::translate("MainWindow", "Login as Administrator", nullptr));
-        label->setText(QApplication::translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:48pt;\">iCyberSecurity Inc.</span></p></body></html>", nullptr));
-        pushButton_2->setText(QApplication::translate("MainWindow", "Contact Us", nullptr));
+        MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", Q_NULLPTR));
+        pushButton->setText(QApplication::translate("MainWindow", "Login as Administrator", Q_NULLPTR));
+        label->setText(QApplication::translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:48pt;\">iCyberSecurity Inc.</span></p></body></html>", Q_NULLPTR));
+        pushButton_2->setText(QApplication::translate("MainWindow", "Contact Us", Q_NULLPTR));
         textBrowser->setHtml(QApplication::translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
@@ -95,10 +95,10 @@ public:
 "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:14pt;\"><br /></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt; font-weight:600;\">Concept of Operations</span></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt;\">    Our company is truly dedicated to protecting our users from their cash by protecting their money for them. We make it a point to assist customers in charitably donating their money. To us! By giving you the ability to give us money you made, we hope to protect your money and also your systems from other people who "
-                        "want your money- as well as vicious attackers.</span></p></body></html>", nullptr));
-        pushButton_3->setText(QApplication::translate("MainWindow", "More Information", nullptr));
-        pushButton_4->setText(QApplication::translate("MainWindow", "Make A Purchase", nullptr));
-        pushButton_5->setText(QApplication::translate("MainWindow", "Request Copy Pamphlet", nullptr));
+                        "want your money- as well as vicious attackers.</span></p></body></html>", Q_NULLPTR));
+        pushButton_3->setText(QApplication::translate("MainWindow", "More Information", Q_NULLPTR));
+        pushButton_4->setText(QApplication::translate("MainWindow", "Make A Purchase", Q_NULLPTR));
+        pushButton_5->setText(QApplication::translate("MainWindow", "Request Copy Pamphlet", Q_NULLPTR));
     } // retranslateUi
 
 };

@@ -6,6 +6,7 @@ AddCustomer::AddCustomer(QWidget *parent) :
     ui(new Ui::AddCustomer)
 {
     ui->setupUi(this);
+    setAttribute(Qt::WA_DeleteOnClose);
 }
 
 AddCustomer::~AddCustomer()
@@ -15,9 +16,9 @@ AddCustomer::~AddCustomer()
 
 void AddCustomer::on_pushButton_2_clicked()
 {
-    CustomerListing *list = new CustomerListing(this);
-    this->close();
+    CustomerListing *list = new CustomerListing;
     list->show();
+    this->close();
 }
 
 void AddCustomer::on_pushButton_clicked()

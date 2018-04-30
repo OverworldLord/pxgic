@@ -7,6 +7,7 @@ LoginWindow::LoginWindow(QWidget *parent) :
     ui(new Ui::LoginWindow)
 {
     ui->setupUi(this);
+    setAttribute(Qt::WA_DeleteOnClose);
 }
 
 LoginWindow::~LoginWindow()
@@ -22,8 +23,8 @@ void LoginWindow::on_LoginButton_clicked()
     if(dBManager.testUser(username, password) == 1)
     {
         AdminMenu *menu = new AdminMenu;
-        this->close();
         menu->show();
+        this->close();
     }
     else if (dBManager.testUser(username, password) == 0)
     {
@@ -55,6 +56,6 @@ void LoginWindow::on_Username_returnPressed()
 void LoginWindow::on_pushButton_clicked()
 {
     MainWindow* menu = new MainWindow;
-    this->close();
     menu->show();
+    this->close();
 }
