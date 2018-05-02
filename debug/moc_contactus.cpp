@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'contactus.h'
 **
-** Created by: The Qt Meta Object Compiler version 67 (Qt 5.10.1)
+** Created by: The Qt Meta Object Compiler version 67 (Qt 5.8.0)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
@@ -12,7 +12,7 @@
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'contactus.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 67
-#error "This file was generated using the moc from 5.10.1. It"
+#error "This file was generated using the moc from 5.8.0. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
@@ -75,9 +75,9 @@ void ContactUs::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, v
     Q_UNUSED(_a);
 }
 
-QT_INIT_METAOBJECT const QMetaObject ContactUs::staticMetaObject = {
+const QMetaObject ContactUs::staticMetaObject = {
     { &QDialog::staticMetaObject, qt_meta_stringdata_ContactUs.data,
-      qt_meta_data_ContactUs,  qt_static_metacall, nullptr, nullptr}
+      qt_meta_data_ContactUs,  qt_static_metacall, Q_NULLPTR, Q_NULLPTR}
 };
 
 
@@ -88,9 +88,9 @@ const QMetaObject *ContactUs::metaObject() const
 
 void *ContactUs::qt_metacast(const char *_clname)
 {
-    if (!_clname) return nullptr;
+    if (!_clname) return Q_NULLPTR;
     if (!strcmp(_clname, qt_meta_stringdata_ContactUs.stringdata0))
-        return static_cast<void*>(this);
+        return static_cast<void*>(const_cast< ContactUs*>(this));
     return QDialog::qt_metacast(_clname);
 }
 
