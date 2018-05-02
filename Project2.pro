@@ -53,7 +53,9 @@ HEADERS += \
     guaranteepolicy.h \
     loginwindow.h \
     pamphlet.h \
-    saleslisting.h
+    saleslisting.h \
+    simplemaths.h \
+    advancedmaths.h
 
 FORMS += \
     addcustomer.ui \
