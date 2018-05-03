@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'pamphlet.ui'
 **
-** Created by: Qt User Interface Compiler version 5.8.0
+** Created by: Qt User Interface Compiler version 5.10.1
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -90,8 +90,8 @@ public:
 
     void retranslateUi(QDialog *pamphlet)
     {
-        pamphlet->setWindowTitle(QApplication::translate("pamphlet", "Dialog", Q_NULLPTR));
-        label->setText(QApplication::translate("pamphlet", "<html><head/><body><p align=\"center\"><span style=\" font-size:48pt; color:#ffffff;\">Request a Pamphlet</span></p></body></html>", Q_NULLPTR));
+        pamphlet->setWindowTitle(QApplication::translate("pamphlet", "Dialog", nullptr));
+        label->setText(QApplication::translate("pamphlet", "<html><head/><body><p align=\"center\"><span style=\" font-size:48pt; color:#ffffff;\">Request a Pamphlet</span></p></body></html>", nullptr));
         textBrowser->setHtml(QApplication::translate("pamphlet", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
@@ -107,10 +107,10 @@ public:
 "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; "
                         "margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:22pt;\"><br /></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:22pt;\">Fake companies will not be tolerated. </span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:22pt;\">You will be fined and prosecuted for obstruction of justice.</span></p></body></html>", Q_NULLPTR));
-        lineEdit->setPlaceholderText(QApplication::translate("pamphlet", "Enter your Company Name", Q_NULLPTR));
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:22pt;\">You will be fined and prosecuted for obstruction of justice.</span></p></body></html>", nullptr));
+        lineEdit->setPlaceholderText(QApplication::translate("pamphlet", "Enter your Company Name", nullptr));
         commandLinkButton->setText(QString());
-        pushButton->setText(QApplication::translate("pamphlet", "Back", Q_NULLPTR));
+        pushButton->setText(QApplication::translate("pamphlet", "Back", nullptr));
         label_2->setText(QString());
     } // retranslateUi
 

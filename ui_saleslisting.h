@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'saleslisting.ui'
 **
-** Created by: Qt User Interface Compiler version 5.8.0
+** Created by: Qt User Interface Compiler version 5.10.1
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -82,9 +82,9 @@ public:
 
     void retranslateUi(QDialog *salesListing)
     {
-        salesListing->setWindowTitle(QApplication::translate("salesListing", "Dialog", Q_NULLPTR));
-        label->setText(QApplication::translate("salesListing", "<html><head/><body><p align=\"center\"><span style=\" font-size:48pt; color:#ffffff;\">Sales List</span></p></body></html>", Q_NULLPTR));
-        pushButton->setText(QApplication::translate("salesListing", "Back", Q_NULLPTR));
+        salesListing->setWindowTitle(QApplication::translate("salesListing", "Dialog", nullptr));
+        label->setText(QApplication::translate("salesListing", "<html><head/><body><p align=\"center\"><span style=\" font-size:48pt; color:#ffffff;\">Sales List</span></p></body></html>", nullptr));
+        pushButton->setText(QApplication::translate("salesListing", "Back", nullptr));
         label_2->setText(QString());
     } // retranslateUi
 

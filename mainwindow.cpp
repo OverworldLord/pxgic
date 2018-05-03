@@ -48,3 +48,15 @@ void MainWindow::on_pushButton_5_clicked()
     requestP->show();
     this->close();
 }
+
+void MainWindow::on_checkBox_toggled(bool checked)
+{
+    if (checked)
+    {
+        ui->textBrowser->hide();
+    }
+    else if (!checked)
+    {
+        ui->textBrowser->show();
+    }
+}
