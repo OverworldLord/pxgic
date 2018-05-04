@@ -67,9 +67,9 @@ public:
         pushButton->setFont(font1);
         label_2 = new QLabel(salesListing);
         label_2->setObjectName(QStringLiteral("label_2"));
-        label_2->setGeometry(QRect(0, 2, 1601, 901));
+        label_2->setGeometry(QRect(0, 0, 1600, 900));
         label_2->setPixmap(QPixmap(QString::fromUtf8("CUSTOM IMAGES/redneb.jpg")));
-        label_2->setScaledContents(true);
+        label_2->setScaledContents(false);
         label_2->raise();
         tableView->raise();
         label->raise();

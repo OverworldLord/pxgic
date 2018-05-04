@@ -65,7 +65,7 @@ void MakePurchase::on_pushButton_3_clicked()
             Database->addPurchase(CustName, Product, AmtBought, PricePer);
         }
 
-
+        QMessageBox::information(this, "Purchase Success!", "Check Your E-mail for Verification.", QMessageBox::Ok);
     }
     else {
         QMessageBox::critical(this, "Company Name Not Found!", "Re-enter Company Name.", QMessageBox::Ok);
