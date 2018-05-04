@@ -5,8 +5,10 @@ MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
+    DataBaseManager dBManager;
     ui->setupUi(this);
     setAttribute(Qt::WA_DeleteOnClose);
+    ui->textBrowser_3->append(dBManager.retrieveTestimonials());
 }
 
 MainWindow::~MainWindow()
@@ -58,5 +60,26 @@ void MainWindow::on_checkBox_toggled(bool checked)
     else if (!checked)
     {
         ui->textBrowser->show();
+    }
+}
+
+void MainWindow::on_pushButton_6_clicked()
+{
+    DataBaseManager dBManager;
+    if (!dBManager.customerExists(ui->lineEdit->text()))
+    {
+        QMessageBox::critical(this, "Company Name Not Found!", "Re-enter Company Name.", QMessageBox::Ok);
+    }
+    else if (dBManager.customerExists(ui->lineEdit->text()) && !dBManager.testimonyExists(ui->lineEdit->text()))
+    {
+        dBManager.submitTestimony(ui->lineEdit->text(), ui->textEdit->toPlainText());
+        QMessageBox::information(this, "Testimony Submitted!", "Thank You For Submitting.", QMessageBox::Ok);
+        ui->textEdit->clear();
+        ui->lineEdit->clear();
+        ui->textBrowser_3->append(dBManager.retrieveTestimonials());
+    }
+    else
+    {
+        QMessageBox::critical(this, "Your Testimony Already Exists!", "You Can Only Submit One Testimony.", QMessageBox::Ok);
     }
 }

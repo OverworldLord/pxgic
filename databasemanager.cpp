@@ -186,3 +186,57 @@ bool DataBaseManager::sendPamphlet(QString name) {
     closeDB();
     return pamphletSentMultTimes;
 }
+
+void DataBaseManager::submitTestimony(QString name, QString test)
+{
+    openDB();
+    QSqlQuery query;
+    query.prepare("INSERT INTO Testimonials (CustomerName, Testimony) VALUES (:custName, :test)");
+    query.bindValue(":custName", name);
+    query.bindValue(":test", test);
+    qryExec(query, "submitTestimony()");
+    closeDB();
+}
+
+QString DataBaseManager::retrieveTestimonials()
+{
+    QString total;
+
+    openDB();
+    QSqlQuery query;
+    query.prepare("SELECT CustomerName, Testimony FROM Testimonials");
+    qryExec(query, "sendPamphlet()");
+
+    while(query.next())
+    {
+        total.append(query.value(0).toString());
+        total.append("\n");
+        total.append(query.value(1).toString());
+        total.append("\n\n");
+    }
+    qDebug() << total;
+    return total;
+}
+
+bool DataBaseManager::testimonyExists(QString name) {
+    bool exists = false;
+
+    openDB();
+    QSqlQuery query;
+
+    query.prepare("SELECT CustomerName FROM Testimonials WHERE CustomerName = :name");
+    query.bindValue(":name", name);
+
+    qryExec(query, "customerExists()");
+
+    query.next();
+    if(query.value(0).toString().isEmpty()) {
+        exists = false;
+    } else {
+        exists = true;
+    }
+
+    closeDB();
+
+    return exists;
+}

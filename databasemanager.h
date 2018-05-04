@@ -7,6 +7,7 @@
 #include <QString>
 #include <QMessageBox>
 #include "constants.h"
+#include "mainwindow.h"
 
 class DataBaseManager
 {
@@ -26,6 +27,9 @@ public:
     bool customerExists(QString name);
     void addPurchase(QString cName, QString pName, int amtBought, double price);
     bool sendPamphlet(QString name);
+    void submitTestimony(QString name, QString test);
+    QString retrieveTestimonials();
+    bool testimonyExists(QString name);
 };
 
 #endif // DATABASEMANAGER_H

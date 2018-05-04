@@ -7,7 +7,6 @@
 #include <QPushButton>
 #include "databasemanager.h"
 
-
 namespace Ui {
 class LoginWindow;
 }
@@ -43,7 +42,6 @@ private:
     QPushButton *LoginButton;
     QString username;
     QString password;
-    DataBaseManager dBManager;
 };
 
 #endif // LOGINWINDOW_H

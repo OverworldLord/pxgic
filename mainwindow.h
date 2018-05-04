@@ -7,6 +7,7 @@
 #include "loginwindow.h"
 #include "makepurchase.h"
 #include "pamphlet.h"
+#include "databasemanager.h"
 
 namespace Ui {
 class MainWindow;
@@ -32,6 +33,8 @@ private slots:
     void on_pushButton_5_clicked();
 
     void on_checkBox_toggled(bool checked);
+
+    void on_pushButton_6_clicked();
 
 private:
     Ui::MainWindow *ui;

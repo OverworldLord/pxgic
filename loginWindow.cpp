@@ -17,6 +17,7 @@ LoginWindow::~LoginWindow()
 
 void LoginWindow::on_LoginButton_clicked()
 {
+    DataBaseManager dBManager;
     Password_textEdited(password);
     Username_textEdited(username);
 
