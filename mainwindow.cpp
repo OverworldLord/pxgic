@@ -7,6 +7,7 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     DataBaseManager dBManager;
     ui->setupUi(this);
+    ui->textBrowser_2->hide();
     setAttribute(Qt::WA_DeleteOnClose);
     ui->textBrowser_3->append(dBManager.retrieveTestimonials());
 }
@@ -56,9 +57,11 @@ void MainWindow::on_checkBox_toggled(bool checked)
     if (checked)
     {
         ui->textBrowser->hide();
+        ui->textBrowser_2->show();
     }
     else if (!checked)
     {
+        ui->textBrowser_2->hide();
         ui->textBrowser->show();
     }
 }

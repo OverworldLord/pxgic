@@ -10,12 +10,12 @@ MoreInformation::MoreInformation(QWidget *parent) :
     setAttribute(Qt::WA_DeleteOnClose);
 }
 
-MoreInformation::~MoreInformation()
+MoreInformation::~MoreInformation() ///class deconstructor
 {
     delete ui;
 }
 
-void MoreInformation::on_pushButton_clicked()
+void MoreInformation::on_pushButton_clicked() ///Brings user to the main menu from the current window
 {
     MainWindow* menu = new MainWindow;
     menu->show();

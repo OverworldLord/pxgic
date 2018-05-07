@@ -9,6 +9,7 @@ salesListing::salesListing(QWidget *parent) :
     setAttribute(Qt::WA_DeleteOnClose);
 
     dBManager.openDB();
+    ///Creates a new Query
     QSqlQueryModel * modal = new QSqlQueryModel(this);
     modal->setQuery("SELECT * FROM Sales");
 
@@ -22,12 +23,12 @@ salesListing::salesListing(QWidget *parent) :
     dBManager.closeDB();
 }
 
-salesListing::~salesListing()
+salesListing::~salesListing() ///Class Deconstructor
 {
     delete ui;
 }
 
-void salesListing::on_pushButton_clicked()
+void salesListing::on_pushButton_clicked() ///Sets up the Admin Menu from the Sales Listing
 {
     AdminMenu* list = new AdminMenu;
     list->show();

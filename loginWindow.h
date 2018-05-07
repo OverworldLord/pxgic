@@ -12,16 +12,20 @@ class LoginWindow;
 }
 
 
-class LoginWindow : public QMainWindow
+class LoginWindow : public QMainWindow ///Class used for the login UI
 {
     Q_OBJECT
 
 public:
+    ///Class Constructor
     explicit LoginWindow(QWidget *parent = 0);
+    ///Class Destructor
     ~LoginWindow();
 
+    ///Function used in order to set the name of a user
     void setName(const QString &name);
-     QString name() const;
+    ///Function related to the name of a user
+    QString name() const;
 
 private slots:
 

@@ -13,13 +13,15 @@ namespace Ui {
 class MainWindow;
 }
 
-class MainWindow : public QMainWindow
+class MainWindow : public QMainWindow ///Displays the UI of the main window
 {
     Q_OBJECT
 
 public:
+    ///Class Constructor
     explicit MainWindow(QWidget *parent = 0);
-    ~MainWindow();
+    ///Class Destructor
+    ~MainWindow(); ///Class Destructor
 
 private slots:
     void on_pushButton_2_clicked();

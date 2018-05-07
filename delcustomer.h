@@ -9,12 +9,14 @@ namespace Ui {
 class DelCustomer;
 }
 
-class DelCustomer : public QDialog
+class DelCustomer : public QDialog ///Class used in order to remove a customer
 {
     Q_OBJECT
 
 public:
+    ///Class Constructor
     explicit DelCustomer(QWidget *parent = 0);
+    ///Class Destructor
     ~DelCustomer();
 
 private slots:

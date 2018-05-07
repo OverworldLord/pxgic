@@ -7,12 +7,14 @@ namespace Ui {
 class ContactUs;
 }
 
-class ContactUs : public QDialog
+class ContactUs : public QDialog ///Class used for the Contact UI
 {
     Q_OBJECT
 
 public:
+    ///Class constructor
     explicit ContactUs(QWidget *parent = 0);
+    ///class destructor
     ~ContactUs();
 
 private slots:

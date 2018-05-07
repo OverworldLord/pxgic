@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'loginwindow.ui'
 **
-** Created by: Qt User Interface Compiler version 5.10.1
+** Created by: Qt User Interface Compiler version 5.8.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -129,15 +129,15 @@ public:
 
     void retranslateUi(QMainWindow *LoginWindow)
     {
-        LoginWindow->setWindowTitle(QApplication::translate("LoginWindow", "Login", nullptr));
-        label->setText(QApplication::translate("LoginWindow", "<html><head/><body><p><span style=\" font-size:48pt; color:#ffffff;\">iCyberSecurity Administrator Login</span></p></body></html>", nullptr));
-        label_3->setText(QApplication::translate("LoginWindow", "<html><head/><body><p><span style=\" font-size:36pt; color:#ffffff;\">Username:</span></p></body></html>", nullptr));
-        label_4->setText(QApplication::translate("LoginWindow", "<html><head/><body><p><span style=\" font-size:36pt; color:#ffffff;\">Password:</span></p></body></html>", nullptr));
-        Password->setPlaceholderText(QApplication::translate("LoginWindow", "Enter password", nullptr));
+        LoginWindow->setWindowTitle(QApplication::translate("LoginWindow", "Login", Q_NULLPTR));
+        label->setText(QApplication::translate("LoginWindow", "<html><head/><body><p><span style=\" font-size:48pt; color:#ffffff;\">iCyberSecurity Administrator Login</span></p></body></html>", Q_NULLPTR));
+        label_3->setText(QApplication::translate("LoginWindow", "<html><head/><body><p><span style=\" font-size:36pt; color:#ffffff;\">Username:</span></p></body></html>", Q_NULLPTR));
+        label_4->setText(QApplication::translate("LoginWindow", "<html><head/><body><p><span style=\" font-size:36pt; color:#ffffff;\">Password:</span></p></body></html>", Q_NULLPTR));
+        Password->setPlaceholderText(QApplication::translate("LoginWindow", "Enter password", Q_NULLPTR));
         Username->setText(QString());
-        Username->setPlaceholderText(QApplication::translate("LoginWindow", "Enter username", nullptr));
-        LoginButton->setText(QApplication::translate("LoginWindow", "Log In", nullptr));
-        pushButton->setText(QApplication::translate("LoginWindow", "Back", nullptr));
+        Username->setPlaceholderText(QApplication::translate("LoginWindow", "Enter username", Q_NULLPTR));
+        LoginButton->setText(QApplication::translate("LoginWindow", "Log In", Q_NULLPTR));
+        pushButton->setText(QApplication::translate("LoginWindow", "Back", Q_NULLPTR));
         label_2->setText(QString());
     } // retranslateUi
 

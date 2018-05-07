@@ -9,13 +9,15 @@ namespace Ui {
 class pamphlet;
 }
 
-class pamphlet : public QDialog
+class pamphlet : public QDialog ///Used in the UI to request a pamphlet
 {
     Q_OBJECT
 
 public:
+    ///Class Constructor
     explicit pamphlet(QWidget *parent = 0);
-    ~pamphlet();
+    ///Class Destructor
+    ~pamphlet(); ///Class Destructor
 
 private slots:
     void on_pushButton_clicked();

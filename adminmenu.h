@@ -10,12 +10,14 @@ namespace Ui {
 class AdminMenu;
 }
 
-class AdminMenu : public QDialog
+class AdminMenu : public QDialog ///UI class of the administrator menu
 {
     Q_OBJECT
 
 public:
+    ///class constructor
     explicit AdminMenu(QWidget *parent = 0);
+    ///Class destructor
     ~AdminMenu();
 
 private slots:

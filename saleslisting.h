@@ -9,12 +9,14 @@ namespace Ui {
 class salesListing;
 }
 
-class salesListing : public QDialog
+class salesListing : public QDialog ///UI used to display sales
 {
     Q_OBJECT
 
 public:
+    ///Class Constructor
     explicit salesListing(QWidget *parent = 0);
+    ///Class Destructor
     ~salesListing();
 
 private slots:

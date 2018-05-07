@@ -2,33 +2,33 @@
 #include "ui_makepurchase.h"
 
 MakePurchase::MakePurchase(QWidget *parent) :
-    QDialog(parent),
+    QDialog(parent), ///Class constructor
     ui(new Ui::MakePurchase)
 {
     ui->setupUi(this);
     setAttribute(Qt::WA_DeleteOnClose);
 }
 
-MakePurchase::~MakePurchase()
+MakePurchase::~MakePurchase() ///Class Deconstructor
 {
     delete ui;
 }
 
-void MakePurchase::on_pushButton_clicked()
+void MakePurchase::on_pushButton_clicked() ///Brings user to the main window from the purchase window
 {
     MainWindow* menu = new MainWindow;
     menu->show();
     this->close();
 }
 
-void MakePurchase::on_pushButton_2_clicked()
+void MakePurchase::on_pushButton_2_clicked() ///Brings user to the guarantee policy menu from the purchase menu
 {
     GuaranteePolicy* policy = new GuaranteePolicy;
     policy->show();
     this->close();
 }
 
-void MakePurchase::on_pushButton_3_clicked()
+void MakePurchase::on_pushButton_3_clicked() ///Function that allows a user to make a purchase
 {
     DataBaseManager* Database = new DataBaseManager;
     if(Database->customerExists(ui->lineEdit->text())) {

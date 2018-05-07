@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'contactus.ui'
 **
-** Created by: Qt User Interface Compiler version 5.10.1
+** Created by: Qt User Interface Compiler version 5.8.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -77,8 +77,8 @@ public:
 
     void retranslateUi(QDialog *ContactUs)
     {
-        ContactUs->setWindowTitle(QApplication::translate("ContactUs", "Dialog", nullptr));
-        label->setText(QApplication::translate("ContactUs", "<html><head/><body><p align=\"center\">iCyberSecurity Inc. Contact Information</p></body></html>", nullptr));
+        ContactUs->setWindowTitle(QApplication::translate("ContactUs", "Dialog", Q_NULLPTR));
+        label->setText(QApplication::translate("ContactUs", "<html><head/><body><p align=\"center\">iCyberSecurity Inc. Contact Information</p></body></html>", Q_NULLPTR));
         textBrowser->setHtml(QApplication::translate("ContactUs", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
@@ -100,8 +100,8 @@ public:
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:22pt;\">Technophilia, CA 93456</span></p>\n"
 "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:22pt;\"><br /></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-                        "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:22pt;\">Expect a response within 5-7 business days. We look forward to answering any potential questions you might have about our company!</span></p></body></html>", nullptr));
-        pushButton->setText(QApplication::translate("ContactUs", "Back to Main Menu", nullptr));
+                        "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:22pt;\">Expect a response within 5-7 business days. We look forward to answering any potential questions you might have about our company!</span></p></body></html>", Q_NULLPTR));
+        pushButton->setText(QApplication::translate("ContactUs", "Back to Main Menu", Q_NULLPTR));
         label_2->setText(QString());
     } // retranslateUi
 

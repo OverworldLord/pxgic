@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'makepurchase.ui'
 **
-** Created by: Qt User Interface Compiler version 5.10.1
+** Created by: Qt User Interface Compiler version 5.8.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -167,10 +167,10 @@ public:
 
     void retranslateUi(QDialog *MakePurchase)
     {
-        MakePurchase->setWindowTitle(QApplication::translate("MakePurchase", "Dialog", nullptr));
-        pushButton->setText(QApplication::translate("MakePurchase", "Back", nullptr));
-        pushButton_2->setText(QApplication::translate("MakePurchase", "Guarantee Policy", nullptr));
-        label->setText(QApplication::translate("MakePurchase", "<html><head/><body><p align=\"center\"><span style=\" font-size:28pt;\">Make A Purchase</span></p></body></html>", nullptr));
+        MakePurchase->setWindowTitle(QApplication::translate("MakePurchase", "Dialog", Q_NULLPTR));
+        pushButton->setText(QApplication::translate("MakePurchase", "Back", Q_NULLPTR));
+        pushButton_2->setText(QApplication::translate("MakePurchase", "Guarantee Policy", Q_NULLPTR));
+        label->setText(QApplication::translate("MakePurchase", "<html><head/><body><p align=\"center\"><span style=\" font-size:28pt;\">Make A Purchase</span></p></body></html>", Q_NULLPTR));
         textBrowser->setHtml(QApplication::translate("MakePurchase", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
@@ -189,9 +189,9 @@ public:
                         "text-decoration: underline; color:#00aaff;\">Platinum VIP Plan</span></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:18pt; font-weight:600; font-style:italic; color:#00aaff;\">$9999</span><span style=\" font-size:18pt; font-weight:600; font-style:italic; color:#00aaff; vertical-align:super;\">99 </span><span style=\" font-size:18pt; font-weight:600; font-style:italic; color:#00aaff;\">per week</span></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:18pt; color:#000000;\">So let's get real. You don't really even care about security at this point, you've just got a ton of money that you're more than willing to give to us. Well, we'll give you both of the above plans plus a lifetime membership! Just keep paying weekly! You'll recieve a special edition T-Shirt, custom made to have your name on it! It says,"
-                        " 'I am rich' and iCyberSecurity is written on the back. Show all your friends how rich you are!</span></p></body></html>", nullptr));
+                        " 'I am rich' and iCyberSecurity is written on the back. Show all your friends how rich you are!</span></p></body></html>", Q_NULLPTR));
         lineEdit->setText(QString());
-        lineEdit->setPlaceholderText(QApplication::translate("MakePurchase", "Enter Your Company Name", nullptr));
+        lineEdit->setPlaceholderText(QApplication::translate("MakePurchase", "Enter Your Company Name", Q_NULLPTR));
         textBrowser_2->setHtml(QApplication::translate("MakePurchase", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
@@ -199,14 +199,14 @@ public:
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:18pt;\">Had an intern make your system, and then realized just how easily broken into their code was? Don't want to waste money on actually hiring someone to fix it? We'll do it for you! That's right, for the low low price of only $400</span><span style=\" font-size:18pt; vertical-align:super;\">00</span><span style=\" font-size:18pt;\">, we'll slightly optimise the code and call it brand new! No more losing sleep worrying about people hacking into your system, because you don't know how many bugs we introduce! </span></p>\n"
 "<p"
                         " style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:18pt;\"><br /></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:18pt;\">But that's not all! This plan comes with a one coupon for iCyberSecurity Cardboard Plan! Just order within .10 milliseconds, and we'll throw it in for only 4</span><span style=\" font-size:18pt; vertical-align:super;\">99</span><span style=\" font-size:18pt;\">!</span></p></body></html>", nullptr));
-        label_2->setText(QApplication::translate("MakePurchase", "<html><head/><body><p><span style=\" font-size:28pt;\">Maintainance Plan - $400</span><span style=\" font-size:28pt; vertical-align:super;\">00</span></p></body></html>", nullptr));
-        label_3->setText(QApplication::translate("MakePurchase", "<html><head/><body><p align=\"center\"><span style=\" font-size:48pt;\">Service Options</span></p></body></html>", nullptr));
-        pushButton_3->setText(QApplication::translate("MakePurchase", "Submit Order", nullptr));
-        label_4->setText(QApplication::translate("MakePurchase", "Cardboard", nullptr));
-        label_5->setText(QApplication::translate("MakePurchase", "Gold", nullptr));
-        label_6->setText(QApplication::translate("MakePurchase", "Platinum VIP", nullptr));
-        label_7->setText(QApplication::translate("MakePurchase", "Maintainance Plan", nullptr));
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:18pt;\">But that's not all! This plan comes with a one coupon for iCyberSecurity Cardboard Plan! Just order within .10 milliseconds, and we'll throw it in for only 4</span><span style=\" font-size:18pt; vertical-align:super;\">99</span><span style=\" font-size:18pt;\">!</span></p></body></html>", Q_NULLPTR));
+        label_2->setText(QApplication::translate("MakePurchase", "<html><head/><body><p><span style=\" font-size:28pt;\">Maintainance Plan - $400</span><span style=\" font-size:28pt; vertical-align:super;\">00</span></p></body></html>", Q_NULLPTR));
+        label_3->setText(QApplication::translate("MakePurchase", "<html><head/><body><p align=\"center\"><span style=\" font-size:48pt;\">Service Options</span></p></body></html>", Q_NULLPTR));
+        pushButton_3->setText(QApplication::translate("MakePurchase", "Submit Order", Q_NULLPTR));
+        label_4->setText(QApplication::translate("MakePurchase", "Cardboard", Q_NULLPTR));
+        label_5->setText(QApplication::translate("MakePurchase", "Gold", Q_NULLPTR));
+        label_6->setText(QApplication::translate("MakePurchase", "Platinum VIP", Q_NULLPTR));
+        label_7->setText(QApplication::translate("MakePurchase", "Maintainance Plan", Q_NULLPTR));
         label_8->setText(QString());
     } // retranslateUi
 

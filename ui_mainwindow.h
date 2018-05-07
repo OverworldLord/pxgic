@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'mainwindow.ui'
 **
-** Created by: Qt User Interface Compiler version 5.10.1
+** Created by: Qt User Interface Compiler version 5.8.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -43,6 +43,7 @@ public:
     QPushButton *pushButton_6;
     QTextEdit *textEdit;
     QLineEdit *lineEdit;
+    QLabel *label_3;
 
     void setupUi(QMainWindow *MainWindow)
     {
@@ -67,6 +68,15 @@ public:
         textBrowser = new QTextBrowser(centralWidget);
         textBrowser->setObjectName(QStringLiteral("textBrowser"));
         textBrowser->setGeometry(QRect(80, 110, 1161, 391));
+        QPalette palette;
+        QBrush brush(QColor(255, 255, 255, 160));
+        brush.setStyle(Qt::SolidPattern);
+        palette.setBrush(QPalette::Active, QPalette::Base, brush);
+        palette.setBrush(QPalette::Inactive, QPalette::Base, brush);
+        QBrush brush1(QColor(240, 240, 240, 255));
+        brush1.setStyle(Qt::SolidPattern);
+        palette.setBrush(QPalette::Disabled, QPalette::Base, brush1);
+        textBrowser->setPalette(palette);
         QFont font1;
         font1.setPointSize(18);
         textBrowser->setFont(font1);
@@ -85,6 +95,15 @@ public:
         checkBox = new QCheckBox(centralWidget);
         checkBox->setObjectName(QStringLiteral("checkBox"));
         checkBox->setGeometry(QRect(1010, 500, 231, 51));
+        QPalette palette1;
+        QBrush brush2(QColor(255, 255, 255, 255));
+        brush2.setStyle(Qt::SolidPattern);
+        palette1.setBrush(QPalette::Active, QPalette::WindowText, brush2);
+        palette1.setBrush(QPalette::Inactive, QPalette::WindowText, brush2);
+        QBrush brush3(QColor(120, 120, 120, 255));
+        brush3.setStyle(Qt::SolidPattern);
+        palette1.setBrush(QPalette::Disabled, QPalette::WindowText, brush3);
+        checkBox->setPalette(palette1);
         QFont font2;
         font2.setPointSize(18);
         font2.setUnderline(false);
@@ -92,9 +111,19 @@ public:
         textBrowser_2 = new QTextBrowser(centralWidget);
         textBrowser_2->setObjectName(QStringLiteral("textBrowser_2"));
         textBrowser_2->setGeometry(QRect(80, 110, 1161, 391));
+        QPalette palette2;
+        palette2.setBrush(QPalette::Active, QPalette::Base, brush);
+        palette2.setBrush(QPalette::Inactive, QPalette::Base, brush);
+        palette2.setBrush(QPalette::Disabled, QPalette::Base, brush1);
+        textBrowser_2->setPalette(palette2);
         textBrowser_3 = new QTextBrowser(centralWidget);
         textBrowser_3->setObjectName(QStringLiteral("textBrowser_3"));
         textBrowser_3->setGeometry(QRect(80, 580, 871, 231));
+        QPalette palette3;
+        palette3.setBrush(QPalette::Active, QPalette::Base, brush);
+        palette3.setBrush(QPalette::Inactive, QPalette::Base, brush);
+        palette3.setBrush(QPalette::Disabled, QPalette::Base, brush1);
+        textBrowser_3->setPalette(palette3);
         textBrowser_3->setFont(font1);
         label_2 = new QLabel(centralWidget);
         label_2->setObjectName(QStringLiteral("label_2"));
@@ -110,13 +139,28 @@ public:
         textEdit = new QTextEdit(centralWidget);
         textEdit->setObjectName(QStringLiteral("textEdit"));
         textEdit->setGeometry(QRect(980, 620, 541, 191));
+        QPalette palette4;
+        palette4.setBrush(QPalette::Active, QPalette::Base, brush);
+        palette4.setBrush(QPalette::Inactive, QPalette::Base, brush);
+        palette4.setBrush(QPalette::Disabled, QPalette::Base, brush1);
+        textEdit->setPalette(palette4);
         textEdit->setFont(font1);
         textEdit->viewport()->setProperty("cursor", QVariant(QCursor(Qt::IBeamCursor)));
         lineEdit = new QLineEdit(centralWidget);
         lineEdit->setObjectName(QStringLiteral("lineEdit"));
         lineEdit->setGeometry(QRect(980, 579, 541, 31));
+        QPalette palette5;
+        palette5.setBrush(QPalette::Active, QPalette::Base, brush);
+        palette5.setBrush(QPalette::Inactive, QPalette::Base, brush);
+        palette5.setBrush(QPalette::Disabled, QPalette::Base, brush1);
+        lineEdit->setPalette(palette5);
         lineEdit->setFont(font1);
+        label_3 = new QLabel(centralWidget);
+        label_3->setObjectName(QStringLiteral("label_3"));
+        label_3->setGeometry(QRect(-4, -8, 1631, 921));
+        label_3->setPixmap(QPixmap(QString::fromUtf8("CUSTOM IMAGES/icyber-background3.png")));
         MainWindow->setCentralWidget(centralWidget);
+        label_3->raise();
         label->raise();
         textBrowser_2->raise();
         pushButton->raise();
@@ -139,10 +183,10 @@ public:
 
     void retranslateUi(QMainWindow *MainWindow)
     {
-        MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", nullptr));
-        pushButton->setText(QApplication::translate("MainWindow", "Login as Administrator", nullptr));
-        label->setText(QApplication::translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:48pt;\">iCyberSecurity Inc.</span></p></body></html>", nullptr));
-        pushButton_2->setText(QApplication::translate("MainWindow", "Contact Us", nullptr));
+        MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", Q_NULLPTR));
+        pushButton->setText(QApplication::translate("MainWindow", "Login as Administrator", Q_NULLPTR));
+        label->setText(QApplication::translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:48pt; color:#ffffff;\">iCyberSecurity Inc.</span></p></body></html>", Q_NULLPTR));
+        pushButton_2->setText(QApplication::translate("MainWindow", "Contact Us", Q_NULLPTR));
         textBrowser->setHtml(QApplication::translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
@@ -156,11 +200,11 @@ public:
                         "ks.</p>\n"
 "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600;\">Concept of Operations</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Our company is truly dedicated to protecting our users from their cash by protecting their money for them. We make it a point to assist customers in charitably donating their money. To us! By giving you the ability to give us money you made, we hope to protect your money and also your systems from other people who want your money- as well as vicious attackers.</p></body></html>", nullptr));
-        pushButton_3->setText(QApplication::translate("MainWindow", "More Information", nullptr));
-        pushButton_4->setText(QApplication::translate("MainWindow", "Make A Purchase", nullptr));
-        pushButton_5->setText(QApplication::translate("MainWindow", "Request Copy Pamphlet", nullptr));
-        checkBox->setText(QApplication::translate("MainWindow", "View Help Message", nullptr));
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Our company is truly dedicated to protecting our users from their cash by protecting their money for them. We make it a point to assist customers in charitably donating their money. To us! By giving you the ability to give us money you made, we hope to protect your money and also your systems from other people who want your money- as well as vicious attackers.</p></body></html>", Q_NULLPTR));
+        pushButton_3->setText(QApplication::translate("MainWindow", "More Information", Q_NULLPTR));
+        pushButton_4->setText(QApplication::translate("MainWindow", "Make A Purchase", Q_NULLPTR));
+        pushButton_5->setText(QApplication::translate("MainWindow", "Request Copy Pamphlet", Q_NULLPTR));
+        checkBox->setText(QApplication::translate("MainWindow", "View Help Message", Q_NULLPTR));
         textBrowser_2->setHtml(QApplication::translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
@@ -180,21 +224,22 @@ public:
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:18pt;\">If you are an admin, why did you click this button?</span></p>\n"
 "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:18pt;\"><br /></p>\n"
 ""
-                        "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:18pt;\">If you would like to view the help button, and you don't already know how to do that, then we have none to give to you.</span></p></body></html>", nullptr));
+                        "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:18pt;\">If you would like to view the help button, and you don't already know how to do that, then we have none to give to you.</span></p></body></html>", Q_NULLPTR));
         textBrowser_3->setHtml(QApplication::translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:18pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8.25pt;\"><br /></p></body></html>", nullptr));
-        label_2->setText(QApplication::translate("MainWindow", "Testimonials", nullptr));
-        pushButton_6->setText(QApplication::translate("MainWindow", "Submit Testimonial", nullptr));
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8.25pt;\"><br /></p></body></html>", Q_NULLPTR));
+        label_2->setText(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" color:#ffffff;\">Testimonials</span></p></body></html>", Q_NULLPTR));
+        pushButton_6->setText(QApplication::translate("MainWindow", "Submit Testimonial", Q_NULLPTR));
         textEdit->setHtml(QApplication::translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:18pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8.25pt;\"><br /></p></body></html>", nullptr));
-        textEdit->setPlaceholderText(QApplication::translate("MainWindow", "Enter Testimonial", nullptr));
-        lineEdit->setPlaceholderText(QApplication::translate("MainWindow", "Enter Company Name", nullptr));
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8.25pt;\"><br /></p></body></html>", Q_NULLPTR));
+        textEdit->setPlaceholderText(QApplication::translate("MainWindow", "Enter Testimonial", Q_NULLPTR));
+        lineEdit->setPlaceholderText(QApplication::translate("MainWindow", "Enter Company Name", Q_NULLPTR));
+        label_3->setText(QString());
     } // retranslateUi
 
 };
