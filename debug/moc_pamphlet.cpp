@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'pamphlet.h'
 **
-** Created by: The Qt Meta Object Compiler version 67 (Qt 5.8.0)
+** Created by: The Qt Meta Object Compiler version 67 (Qt 5.10.1)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
@@ -12,7 +12,7 @@
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'pamphlet.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 67
-#error "This file was generated using the moc from 5.8.0. It"
+#error "This file was generated using the moc from 5.10.1. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
@@ -80,9 +80,9 @@ void pamphlet::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, vo
     Q_UNUSED(_a);
 }
 
-const QMetaObject pamphlet::staticMetaObject = {
+QT_INIT_METAOBJECT const QMetaObject pamphlet::staticMetaObject = {
     { &QDialog::staticMetaObject, qt_meta_stringdata_pamphlet.data,
-      qt_meta_data_pamphlet,  qt_static_metacall, Q_NULLPTR, Q_NULLPTR}
+      qt_meta_data_pamphlet,  qt_static_metacall, nullptr, nullptr}
 };
 
 
@@ -93,9 +93,9 @@ const QMetaObject *pamphlet::metaObject() const
 
 void *pamphlet::qt_metacast(const char *_clname)
 {
-    if (!_clname) return Q_NULLPTR;
+    if (!_clname) return nullptr;
     if (!strcmp(_clname, qt_meta_stringdata_pamphlet.stringdata0))
-        return static_cast<void*>(const_cast< pamphlet*>(this));
+        return static_cast<void*>(this);
     return QDialog::qt_metacast(_clname);
 }
 
