@@ -6,7 +6,7 @@
 
 CustomerListing::CustomerListing(QWidget *parent) :
     QDialog(parent),
-    ui(new Ui::CustomerListing)
+    ui(new Ui::CustomerListing)///Constructor
 {
     ui->setupUi(this);
     setAttribute(Qt::WA_DeleteOnClose);
@@ -25,19 +25,19 @@ CustomerListing::CustomerListing(QWidget *parent) :
     dBManager.closeDB();
 }
 
-CustomerListing::~CustomerListing()
+CustomerListing::~CustomerListing()///Deconstructor
 {
     delete ui;
 }
 
-void CustomerListing::on_pushButton_clicked()
+void CustomerListing::on_pushButton_clicked()///Transitions to AdminMenu window
 {
     AdminMenu *menu = new AdminMenu;
     menu->show();
     this->close();
 }
 
-void CustomerListing::on_checkBox_stateChanged(int arg1)
+void CustomerListing::on_checkBox_stateChanged(int arg1)///Sorts and displays by key customers
 {
     dBManager.openDB();
     QSqlQueryModel *modal = new QSqlQueryModel(this);
@@ -60,7 +60,7 @@ void CustomerListing::on_checkBox_stateChanged(int arg1)
     dBManager.closeDB();
 }
 
-void CustomerListing::on_pushButton_2_clicked()
+void CustomerListing::on_pushButton_2_clicked()///Transitions to AddCustomer window
 {
     AddCustomer *addCustomerWindow = new AddCustomer;
     addCustomerWindow->show();
@@ -75,7 +75,7 @@ void CustomerListing::on_pushButton_3_clicked()
 }
 
 
-void CustomerListing::on_pushButton_4_clicked()
+void CustomerListing::on_pushButton_4_clicked()///Reads Customer from .txt document and reads to database via DataBaseManager::addCustomer
 {
     qDebug() << "error";
 

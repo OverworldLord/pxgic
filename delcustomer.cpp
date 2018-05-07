@@ -3,7 +3,7 @@
 
 DelCustomer::DelCustomer(QWidget *parent) :
     QDialog(parent),
-    ui(new Ui::DelCustomer)
+    ui(new Ui::DelCustomer)///Constructor
 {
     ui->setupUi(this);
     setAttribute(Qt::WA_DeleteOnClose);
@@ -22,19 +22,19 @@ DelCustomer::DelCustomer(QWidget *parent) :
     dBManager.closeDB();
 }
 
-DelCustomer::~DelCustomer()
+DelCustomer::~DelCustomer()///Deconstructor
 {
     delete ui;
 }
 
-void DelCustomer::on_pushButton_clicked()
+void DelCustomer::on_pushButton_clicked()///Transitions to the CustomerListing window
 {
     CustomerListing* list = new CustomerListing();
     list->show();
     this->close();
 }
 
-void DelCustomer::on_pushButton_2_clicked()
+void DelCustomer::on_pushButton_2_clicked()///Deletes the customer via DataBaseManager::deleteCustomer()
 {
     bool isSuccess;
     QString name = ui->nameLineEdit->text();
@@ -66,7 +66,7 @@ void DelCustomer::on_pushButton_2_clicked()
     ui->nameLineEdit->clear();
 }
 
-void DelCustomer::on_nameLineEdit_returnPressed()
+void DelCustomer::on_nameLineEdit_returnPressed()///Deletes the customer via DataBaseManager::deleteCustomer() when the enter button is pressed
 {
     on_pushButton_2_clicked();
 }

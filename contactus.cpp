@@ -4,18 +4,18 @@
 
 ContactUs::ContactUs(QWidget *parent) :
     QDialog(parent),
-    ui(new Ui::ContactUs)
+    ui(new Ui::ContactUs)///Constructor
 {
     ui->setupUi(this);
     setAttribute(Qt::WA_DeleteOnClose);
 }
 
-ContactUs::~ContactUs()
+ContactUs::~ContactUs()///Deconstructor
 {
     delete ui;
 }
 
-void ContactUs::on_pushButton_clicked()
+void ContactUs::on_pushButton_clicked()///Transitions to MainMenu window
 {
     MainWindow* menu = new MainWindow;
     menu->show();

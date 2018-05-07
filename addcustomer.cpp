@@ -3,25 +3,25 @@
 
 AddCustomer::AddCustomer(QWidget *parent) :
     QDialog(parent),
-    ui(new Ui::AddCustomer)
+    ui(new Ui::AddCustomer)///AddCustomer constructor
 {
     ui->setupUi(this);
     setAttribute(Qt::WA_DeleteOnClose);
 }
 
-AddCustomer::~AddCustomer()
+AddCustomer::~AddCustomer()///AddCustomer deconstructor
 {
     delete ui;
 }
 
-void AddCustomer::on_pushButton_2_clicked()
+void AddCustomer::on_pushButton_2_clicked()///Transitions to the CustomerListing window
 {
     CustomerListing *list = new CustomerListing;
     list->show();
     this->close();
 }
 
-void AddCustomer::on_pushButton_clicked()
+void AddCustomer::on_pushButton_clicked()///Reads in the lineEdits and submitts them to the database via DataBaseManager::addCustomer()
 {
     QString name = ui->nameLineEdit->text();
     QString address = ui->addressLineEdit->text();

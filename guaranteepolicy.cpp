@@ -3,18 +3,18 @@
 
 GuaranteePolicy::GuaranteePolicy(QWidget *parent) :
     QDialog(parent),
-    ui(new Ui::GuaranteePolicy)
+    ui(new Ui::GuaranteePolicy)///Constructor
 {
     ui->setupUi(this);
     setAttribute(Qt::WA_DeleteOnClose);
 }
 
-GuaranteePolicy::~GuaranteePolicy()
+GuaranteePolicy::~GuaranteePolicy()///Deconstructor
 {
     delete ui;
 }
 
-void GuaranteePolicy::on_pushButton_clicked()
+void GuaranteePolicy::on_pushButton_clicked()///Transitions to MakePurchase window
 {
     MakePurchase* menu = new MakePurchase;
     menu->show();

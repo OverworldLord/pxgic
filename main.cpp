@@ -2,7 +2,7 @@
 #include <QApplication>
 #include "advancedmaths.h"
 
-int main(int argc, char *argv[])
+int main(int argc, char *argv[])///Program starts here
 {
     QApplication a(argc, argv);
     MainWindow mainMenu;

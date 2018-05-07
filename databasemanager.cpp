@@ -1,41 +1,41 @@
 #include "databasemanager.h"
 #include "QMessageBox"
 
-DataBaseManager::DataBaseManager()
+DataBaseManager::DataBaseManager()///Constructor
 {
 
 }
 
-bool DataBaseManager::openDB()
+bool DataBaseManager::openDB()///Opens a conection to the sqlite database
 {
-    db = QSqlDatabase::addDatabase("QSQLITE");          // "QSQLITE" Defines the type of database(in this case sqlite version3)
+    db = QSqlDatabase::addDatabase("QSQLITE");          /// "QSQLITE" Defines the type of database(in this case sqlite version3)
     db.setDatabaseName(DB_DIRECTORY);
-                                                        // Links the  the directory to the database file to the database object
+                                                        /// Links the  the directory to the database file to the database object
 
-    if (!db.open())                                     // Opens a connection to the database and tests for connection failure
+    if (!db.open())                                     /// Opens a connection to the database and tests for connection failure
     {
         qDebug() << "Failed to connect";
         return false;
     }
-    else                                                // Defaults to connection success if did not fail
+    else                                                /// Defaults to connection success if did not fail
     {
         qDebug() << "Connected";
         return true;
     }
 }
 
-void DataBaseManager::closeDB()
+void DataBaseManager::closeDB()///Closes the connection to the sqlite database
 {
-    db.close();                                         // Closes a connection to the database
+    db.close();                                         /// Closes a connection to the database
     db.removeDatabase(QSqlDatabase::defaultConnection);
 }
 
-QSqlDatabase DataBaseManager::returnDB()
+QSqlDatabase DataBaseManager::returnDB()///Return a DataBaseManager object
 {
     return db;
 }
 
-bool DataBaseManager::qryExec(QSqlQuery &query, QString locOfErr) // Runs query.exec() and outputs if error
+bool DataBaseManager::qryExec(QSqlQuery &query, QString locOfErr) /// Runs query.exec() and outputs if an error occurs
 {
     if(!query.exec())
     {
@@ -50,7 +50,7 @@ bool DataBaseManager::qryExec(QSqlQuery &query, QString locOfErr) // Runs query.
     }
 }
 
-int DataBaseManager::testUser(QString user, QString pass)
+int DataBaseManager::testUser(QString user, QString pass)///Checks that the login credintials of admin are correct
 {
     int userType = 0;
 
@@ -70,7 +70,7 @@ int DataBaseManager::testUser(QString user, QString pass)
     return userType;
 }
 
-bool DataBaseManager::addCustomer(QString name, QString address, QString city, QString state, QString zip, QString interest, QString importance, bool recievedpamphlet)
+bool DataBaseManager::addCustomer(QString name, QString address, QString city, QString state, QString zip, QString interest, QString importance, bool recievedpamphlet)///Adds a customer to the database
 {
     bool isSuccess;
 
@@ -95,7 +95,8 @@ bool DataBaseManager::addCustomer(QString name, QString address, QString city, Q
     return isSuccess;
 }
 
-bool DataBaseManager::deleteCustomer(QString name) {
+bool DataBaseManager::deleteCustomer(QString name)///Deletes a customer from the database
+{
     bool isSuccess;
 
     openDB();
@@ -111,7 +112,8 @@ bool DataBaseManager::deleteCustomer(QString name) {
     return isSuccess;
 }
 
-bool DataBaseManager::customerExists(QString name) {
+bool DataBaseManager::customerExists(QString name)///Checks if a customer is already existing in the database
+{
     bool exists = false;
 
     openDB();
@@ -134,7 +136,8 @@ bool DataBaseManager::customerExists(QString name) {
     return exists;
 }
 
-void DataBaseManager::addPurchase(QString cName, QString pName, int amtBought, double price) {
+void DataBaseManager::addPurchase(QString cName, QString pName, int amtBought, double price)///Logs a transaction in the database
+{
     openDB();
     QSqlQuery query;
     int quantity = 0;
@@ -165,7 +168,8 @@ void DataBaseManager::addPurchase(QString cName, QString pName, int amtBought, d
     closeDB();
 }
 
-bool DataBaseManager::sendPamphlet(QString name) {
+bool DataBaseManager::sendPamphlet(QString name)///Updates the database to show that a customer has been sent a pamphlet
+{
     bool pamphletSentMultTimes = false;
     openDB();
     QSqlQuery query;
@@ -187,7 +191,7 @@ bool DataBaseManager::sendPamphlet(QString name) {
     return pamphletSentMultTimes;
 }
 
-void DataBaseManager::submitTestimony(QString name, QString test)
+void DataBaseManager::submitTestimony(QString name, QString test)///Adds a customers testimony to the database
 {
     openDB();
     QSqlQuery query;
@@ -198,7 +202,7 @@ void DataBaseManager::submitTestimony(QString name, QString test)
     closeDB();
 }
 
-QString DataBaseManager::retrieveTestimonials()
+QString DataBaseManager::retrieveTestimonials()///Gets the testimonies from the database
 {
     QString total;
 
@@ -218,7 +222,8 @@ QString DataBaseManager::retrieveTestimonials()
     return total;
 }
 
-bool DataBaseManager::testimonyExists(QString name) {
+bool DataBaseManager::testimonyExists(QString name)///Checks if a customer has already submitted a testimony
+{
     bool exists = false;
 
     openDB();

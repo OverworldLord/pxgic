@@ -3,7 +3,7 @@
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
-    ui(new Ui::MainWindow)
+    ui(new Ui::MainWindow)///Constructor
 {
     DataBaseManager dBManager;
     ui->setupUi(this);
@@ -12,47 +12,47 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->textBrowser_3->append(dBManager.retrieveTestimonials());
 }
 
-MainWindow::~MainWindow()
+MainWindow::~MainWindow()///Deconstructor
 {
     delete ui;
 }
 
-void MainWindow::on_pushButton_2_clicked()
+void MainWindow::on_pushButton_2_clicked()///Transitions to ContactUs window
 {
     ContactUs* contactWindow = new ContactUs;
     contactWindow->show();
     this->close();
 }
 
-void MainWindow::on_pushButton_clicked()
+void MainWindow::on_pushButton_clicked()///Transitions to LoginWindow window
 {
     LoginWindow* loginWindow = new LoginWindow;
     loginWindow->show();
     this->close();
 }
 
-void MainWindow::on_pushButton_3_clicked()
+void MainWindow::on_pushButton_3_clicked()///Transitions to MoreInformatoin window
 {
     MoreInformation* moreInfo = new MoreInformation;
     moreInfo->show();
     this->close();
 }
 
-void MainWindow::on_pushButton_4_clicked()
+void MainWindow::on_pushButton_4_clicked()///Transitions to MakePurchase window
 {
     MakePurchase* menu = new MakePurchase;
     menu->show();
     this->close();
 }
 
-void MainWindow::on_pushButton_5_clicked()
+void MainWindow::on_pushButton_5_clicked()///Transitions to pamphlet window
 {
     pamphlet* requestP = new pamphlet;
     requestP->show();
     this->close();
 }
 
-void MainWindow::on_checkBox_toggled(bool checked)
+void MainWindow::on_checkBox_toggled(bool checked)///Toggles between iCyberSecurity information and help information
 {
     if (checked)
     {
@@ -66,7 +66,7 @@ void MainWindow::on_checkBox_toggled(bool checked)
     }
 }
 
-void MainWindow::on_pushButton_6_clicked()
+void MainWindow::on_pushButton_6_clicked()///Reads in and submits customer testimony via DataBaseManager::submitTestimony()
 {
     DataBaseManager dBManager;
     if (!dBManager.customerExists(ui->lineEdit->text()))
