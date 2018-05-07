@@ -6,7 +6,6 @@ AdminMenu::AdminMenu(QWidget *parent) :
     ui(new Ui::AdminMenu)
 {
     ui->setupUi(this);
-    setAttribute(Qt::WA_DeleteOnClose);
 }
 
 AdminMenu::~AdminMenu()
@@ -17,20 +16,20 @@ AdminMenu::~AdminMenu()
 void AdminMenu::on_pushButton_clicked()
 {
     MainWindow* main = new MainWindow;
-    main->show();
     this->close();
+    main->show();
 }
 
 void AdminMenu::on_pushButton_2_clicked()
 {
     CustomerListing* list = new CustomerListing;
-    list->show();
     this->close();
+    list->show();
 }
 
 void AdminMenu::on_pushButton_3_clicked()
 {
     salesListing* list = new salesListing;
-    list->show();
     this->close();
+    list->show();
 }

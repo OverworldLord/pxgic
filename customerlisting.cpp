@@ -9,7 +9,6 @@ CustomerListing::CustomerListing(QWidget *parent) :
     ui(new Ui::CustomerListing)
 {
     ui->setupUi(this);
-    setAttribute(Qt::WA_DeleteOnClose);
 
     dBManager.openDB();
     QSqlQueryModel * modal = new QSqlQueryModel(this);
@@ -32,9 +31,9 @@ CustomerListing::~CustomerListing()
 
 void CustomerListing::on_pushButton_clicked()
 {
-    AdminMenu *menu = new AdminMenu;
-    menu->show();
+    AdminMenu *menu = new AdminMenu(this);
     this->close();
+    menu->show();
 }
 
 void CustomerListing::on_checkBox_stateChanged(int arg1)
@@ -62,16 +61,16 @@ void CustomerListing::on_checkBox_stateChanged(int arg1)
 
 void CustomerListing::on_pushButton_2_clicked()
 {
-    AddCustomer *addCustomerWindow = new AddCustomer;
-    addCustomerWindow->show();
+    AddCustomer *addCustomerWindow = new AddCustomer(this);
     this->close();
+    addCustomerWindow->show();
 }
 
 void CustomerListing::on_pushButton_3_clicked()
 {
-    DelCustomer *delCustomerWindow = new DelCustomer;
-    delCustomerWindow->show();
+    DelCustomer *delCustomerWindow = new DelCustomer(this);
     this->close();
+    delCustomerWindow->show();
 }
 
 
@@ -109,4 +108,11 @@ void CustomerListing::on_pushButton_4_clicked()
                               QString::fromStdString(interestLevel),
                               QString::fromStdString(key), 1);
     }
+}
+
+void CustomerListing::on_pushButton_5_clicked()
+{
+    editCustomer *editCustomerWindow = new editCustomer(this);
+    this->close();
+    editCustomerWindow->show();
 }

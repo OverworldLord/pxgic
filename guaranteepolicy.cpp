@@ -6,7 +6,6 @@ GuaranteePolicy::GuaranteePolicy(QWidget *parent) :
     ui(new Ui::GuaranteePolicy)
 {
     ui->setupUi(this);
-    setAttribute(Qt::WA_DeleteOnClose);
 }
 
 GuaranteePolicy::~GuaranteePolicy()
@@ -17,6 +16,6 @@ GuaranteePolicy::~GuaranteePolicy()
 void GuaranteePolicy::on_pushButton_clicked()
 {
     MakePurchase* menu = new MakePurchase;
-    menu->show();
     this->close();
+    menu->show();
 }

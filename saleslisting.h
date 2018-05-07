@@ -20,8 +20,6 @@ public:
 private slots:
     void on_pushButton_clicked();
 
-    void on_label_2_destroyed();
-
 private:
     Ui::salesListing *ui;
     DataBaseManager dBManager;

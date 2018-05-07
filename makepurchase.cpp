@@ -6,7 +6,6 @@ MakePurchase::MakePurchase(QWidget *parent) :
     ui(new Ui::MakePurchase)
 {
     ui->setupUi(this);
-    setAttribute(Qt::WA_DeleteOnClose);
 }
 
 MakePurchase::~MakePurchase()
@@ -17,15 +16,15 @@ MakePurchase::~MakePurchase()
 void MakePurchase::on_pushButton_clicked()
 {
     MainWindow* menu = new MainWindow;
-    menu->show();
     this->close();
+    menu->show();
 }
 
 void MakePurchase::on_pushButton_2_clicked()
 {
     GuaranteePolicy* policy = new GuaranteePolicy;
-    policy->show();
     this->close();
+    policy->show();
 }
 
 void MakePurchase::on_pushButton_3_clicked()

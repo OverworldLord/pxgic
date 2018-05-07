@@ -13,6 +13,9 @@ INPUT(
 ./debug\loginwindow.o
 ./debug\pamphlet.o
 ./debug\saleslisting.o
+./debug\help.o
+./debug\editcustomer.o
+./debug\editinfo.o
 ./debug\moc_addcustomer.o
 ./debug\moc_adminmenu.o
 ./debug\moc_contactus.o
@@ -25,4 +28,7 @@ INPUT(
 ./debug\moc_loginwindow.o
 ./debug\moc_pamphlet.o
 ./debug\moc_saleslisting.o
+./debug\moc_help.o
+./debug\moc_editcustomer.o
+./debug\moc_editinfo.o
 );

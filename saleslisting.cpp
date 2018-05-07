@@ -6,7 +6,6 @@ salesListing::salesListing(QWidget *parent) :
     ui(new Ui::salesListing)
 {
     ui->setupUi(this);
-    setAttribute(Qt::WA_DeleteOnClose);
 
     dBManager.openDB();
     QSqlQueryModel * modal = new QSqlQueryModel(this);
@@ -30,6 +29,6 @@ salesListing::~salesListing()
 void salesListing::on_pushButton_clicked()
 {
     AdminMenu* list = new AdminMenu;
-    list->show();
     this->close();
+    list->show();
 }

@@ -1,23 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>DelCustomer</class>
- <widget class="QDialog" name="DelCustomer">
+ <class>editCustomer</class>
+ <widget class="QDialog" name="editCustomer">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1600</width>
-    <height>900</height>
+    <width>1349</width>
+    <height>821</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>1130</x>
+     <y>80</y>
+     <width>181</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>36</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Edit</string>
+   </property>
+  </widget>
   <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
-     <x>20</x>
-     <y>822</y>
+     <x>10</x>
+     <y>750</y>
      <width>341</width>
      <height>61</height>
     </rect>
@@ -31,34 +49,26 @@
     <string>Back</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_9">
+  <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>10</y>
-     <width>1581</width>
-     <height>71</height>
+     <y>70</y>
+     <width>441</width>
+     <height>61</height>
     </rect>
    </property>
-   <property name="font">
-    <font>
-     <pointsize>14</pointsize>
-    </font>
-   </property>
    <property name="text">
-    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:48pt; color:#ffffff;&quot;&gt;Delete Customer&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:36pt; color:#ffffff;&quot;&gt;Customer To Edit:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
   <widget class="QTableView" name="tableView">
    <property name="geometry">
     <rect>
-     <x>20</x>
-     <y>148</y>
-     <width>1561</width>
-     <height>671</height>
+     <x>10</x>
+     <y>140</y>
+     <width>1291</width>
+     <height>591</height>
     </rect>
    </property>
    <property name="sizePolicy">
@@ -143,43 +153,12 @@
     </font>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_2">
-   <property name="geometry">
-    <rect>
-     <x>1170</x>
-     <y>90</y>
-     <width>411</width>
-     <height>51</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>36</pointsize>
-    </font>
-   </property>
-   <property name="text">
-    <string>Remove Customer</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>80</y>
-     <width>441</width>
-     <height>61</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:36pt; color:#ffffff;&quot;&gt;Customer To Delete:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-   </property>
-  </widget>
   <widget class="QLineEdit" name="nameLineEdit">
    <property name="geometry">
     <rect>
-     <x>470</x>
-     <y>90</y>
-     <width>691</width>
+     <x>410</x>
+     <y>80</y>
+     <width>711</width>
      <height>51</height>
     </rect>
    </property>
@@ -192,11 +171,32 @@
     <string>Insert Customer Name</string>
    </property>
   </widget>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1331</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:48pt; color:#ffffff;&quot;&gt;Edit Customer&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
   <widget class="QLabel" name="label_2">
    <property name="geometry">
     <rect>
-     <x>10</x>
-     <y>10</y>
+     <x>-10</x>
+     <y>-10</y>
      <width>1581</width>
      <height>881</height>
     </rect>
@@ -209,19 +209,13 @@
    </property>
   </widget>
   <zorder>label_2</zorder>
-  <zorder>pushButton</zorder>
-  <zorder>label_9</zorder>
-  <zorder>tableView</zorder>
   <zorder>pushButton_2</zorder>
+  <zorder>pushButton</zorder>
   <zorder>label</zorder>
+  <zorder>tableView</zorder>
   <zorder>nameLineEdit</zorder>
+  <zorder>label_9</zorder>
  </widget>
- <tabstops>
-  <tabstop>pushButton_2</tabstop>
-  <tabstop>pushButton</tabstop>
-  <tabstop>tableView</tabstop>
-  <tabstop>nameLineEdit</tabstop>
- </tabstops>
  <resources/>
  <connections/>
 </ui>

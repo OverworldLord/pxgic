@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'mainwindow.ui'
 **
-** Created by: Qt User Interface Compiler version 5.8.0
+** Created by: Qt User Interface Compiler version 5.10.1
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -33,6 +33,8 @@ public:
     QPushButton *pushButton_3;
     QPushButton *pushButton_4;
     QPushButton *pushButton_5;
+    QPushButton *pushButton_6;
+    QTextBrowser *textBrowser_2;
 
     void setupUi(QMainWindow *MainWindow)
     {
@@ -68,6 +70,13 @@ public:
         pushButton_5->setObjectName(QStringLiteral("pushButton_5"));
         pushButton_5->setGeometry(QRect(1320, 440, 201, 51));
         pushButton_5->setFont(font);
+        pushButton_6 = new QPushButton(centralWidget);
+        pushButton_6->setObjectName(QStringLiteral("pushButton_6"));
+        pushButton_6->setGeometry(QRect(1320, 550, 201, 51));
+        pushButton_6->setFont(font);
+        textBrowser_2 = new QTextBrowser(centralWidget);
+        textBrowser_2->setObjectName(QStringLiteral("textBrowser_2"));
+        textBrowser_2->setGeometry(QRect(80, 520, 1161, 351));
         MainWindow->setCentralWidget(centralWidget);
 
         retranslateUi(MainWindow);
@@ -77,10 +86,10 @@ public:
 
     void retranslateUi(QMainWindow *MainWindow)
     {
-        MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", Q_NULLPTR));
-        pushButton->setText(QApplication::translate("MainWindow", "Login as Administrator", Q_NULLPTR));
-        label->setText(QApplication::translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:48pt;\">iCyberSecurity Inc.</span></p></body></html>", Q_NULLPTR));
-        pushButton_2->setText(QApplication::translate("MainWindow", "Contact Us", Q_NULLPTR));
+        MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", nullptr));
+        pushButton->setText(QApplication::translate("MainWindow", "Login as Administrator", nullptr));
+        label->setText(QApplication::translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:48pt;\">iCyberSecurity Inc.</span></p></body></html>", nullptr));
+        pushButton_2->setText(QApplication::translate("MainWindow", "Contact Us", nullptr));
         textBrowser->setHtml(QApplication::translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
@@ -95,10 +104,26 @@ public:
 "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:14pt;\"><br /></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt; font-weight:600;\">Concept of Operations</span></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt;\">    Our company is truly dedicated to protecting our users from their cash by protecting their money for them. We make it a point to assist customers in charitably donating their money. To us! By giving you the ability to give us money you made, we hope to protect your money and also your systems from other people who "
-                        "want your money- as well as vicious attackers.</span></p></body></html>", Q_NULLPTR));
-        pushButton_3->setText(QApplication::translate("MainWindow", "More Information", Q_NULLPTR));
-        pushButton_4->setText(QApplication::translate("MainWindow", "Make A Purchase", Q_NULLPTR));
-        pushButton_5->setText(QApplication::translate("MainWindow", "Request Copy Pamphlet", Q_NULLPTR));
+                        "want your money- as well as vicious attackers.</span></p></body></html>", nullptr));
+        pushButton_3->setText(QApplication::translate("MainWindow", "More Information", nullptr));
+        pushButton_4->setText(QApplication::translate("MainWindow", "Make A Purchase", nullptr));
+        pushButton_5->setText(QApplication::translate("MainWindow", "Request Copy Pamphlet", nullptr));
+        pushButton_6->setText(QApplication::translate("MainWindow", "Help", nullptr));
+        textBrowser_2->setHtml(QApplication::translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt;\">iCyberSecurity has provided a great platform for our company and helped us in preventing many much Russian hackers from doing the bad things that bear jockey Putin is trying to accomplish</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt;\">* CIA</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
+                        "size:14pt;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt;\">We feel a lot safer knowing that iCyberSecurity is always watching our back just like we watch everyone else!</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt;\">* FBI</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:14pt;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt;\">We have been with iCyberSecurity for years now, and they have helped us prevent hackers stuck on 4 hour layovers or individuals who are displeased with United Flights</span></p>\n"
+"<p style=\" margin-top:0px; ma"
+                        "rgin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt;\">* Los Angeles Airport</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:14pt;\"><br /></p></body></html>", nullptr));
     } // retranslateUi
 
 };

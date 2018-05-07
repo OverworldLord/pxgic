@@ -6,6 +6,7 @@
 #include "databasemanager.h"
 #include "addcustomer.h"
 #include "delcustomer.h"
+#include "editcustomer.h"
 
 namespace Ui {
 class CustomerListing;
@@ -29,6 +30,8 @@ private slots:
     void on_pushButton_3_clicked();
 
     void on_pushButton_4_clicked();
+
+    void on_pushButton_5_clicked();
 
 private:
     Ui::CustomerListing *ui;

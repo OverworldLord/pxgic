@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'guaranteepolicy.ui'
 **
-** Created by: Qt User Interface Compiler version 5.8.0
+** Created by: Qt User Interface Compiler version 5.10.1
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -64,9 +64,8 @@ public:
         pushButton->setFont(font);
         label_2 = new QLabel(GuaranteePolicy);
         label_2->setObjectName(QStringLiteral("label_2"));
-        label_2->setGeometry(QRect(0, 0, 1601, 901));
+        label_2->setGeometry(QRect(10, 10, 1581, 881));
         label_2->setPixmap(QPixmap(QString::fromUtf8("CUSTOM IMAGES/icyber-background2.jpg")));
-        label_2->setScaledContents(true);
         label_2->raise();
         label->raise();
         textBrowser->raise();
@@ -79,8 +78,8 @@ public:
 
     void retranslateUi(QDialog *GuaranteePolicy)
     {
-        GuaranteePolicy->setWindowTitle(QApplication::translate("GuaranteePolicy", "Dialog", Q_NULLPTR));
-        label->setText(QApplication::translate("GuaranteePolicy", "<html><head/><body><p align=\"center\"><span style=\" font-size:48pt; color:#0000b5;\">Guarantee Policy</span></p></body></html>", Q_NULLPTR));
+        GuaranteePolicy->setWindowTitle(QApplication::translate("GuaranteePolicy", "Dialog", nullptr));
+        label->setText(QApplication::translate("GuaranteePolicy", "<html><head/><body><p align=\"center\"><span style=\" font-size:48pt; color:#0000b5;\">Guarantee Policy</span></p></body></html>", nullptr));
         textBrowser->setHtml(QApplication::translate("GuaranteePolicy", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
@@ -94,8 +93,8 @@ public:
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:36pt;\">1-(949)-ICYTECSUP</span></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:36pt;\">1-(949)-429832787</span></p>\n"
 "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:"
-                        "0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:36pt;\"><br /></p></body></html>", Q_NULLPTR));
-        pushButton->setText(QApplication::translate("GuaranteePolicy", "Back", Q_NULLPTR));
+                        "0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:36pt;\"><br /></p></body></html>", nullptr));
+        pushButton->setText(QApplication::translate("GuaranteePolicy", "Back", nullptr));
         label_2->setText(QString());
     } // retranslateUi
 

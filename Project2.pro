@@ -37,7 +37,10 @@ SOURCES += \
     guaranteepolicy.cpp \
     loginwindow.cpp \
     pamphlet.cpp \
-    saleslisting.cpp
+    saleslisting.cpp \
+    help.cpp \
+    editcustomer.cpp \
+    editinfo.cpp
 
 HEADERS += \
     addcustomer.h \
@@ -53,7 +56,10 @@ HEADERS += \
     guaranteepolicy.h \
     loginwindow.h \
     pamphlet.h \
-    saleslisting.h
+    saleslisting.h \
+    help.h \
+    editcustomer.h \
+    editinfo.h
 
 FORMS += \
     addcustomer.ui \
@@ -67,4 +73,10 @@ FORMS += \
     makepurchase.ui \
     guaranteepolicy.ui \
     pamphlet.ui \
-    saleslisting.ui
+    saleslisting.ui \
+    help.ui \
+    editcustomer.ui \
+    editinfo.ui
+
+DISTFILES += \
+    customerTestomonials.txt

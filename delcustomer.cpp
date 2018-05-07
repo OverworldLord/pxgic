@@ -6,7 +6,6 @@ DelCustomer::DelCustomer(QWidget *parent) :
     ui(new Ui::DelCustomer)
 {
     ui->setupUi(this);
-    setAttribute(Qt::WA_DeleteOnClose);
 
     dBManager.openDB();
     QSqlQueryModel * modal = new QSqlQueryModel(this);
@@ -30,8 +29,8 @@ DelCustomer::~DelCustomer()
 void DelCustomer::on_pushButton_clicked()
 {
     CustomerListing* list = new CustomerListing();
-    list->show();
     this->close();
+    list->show();
 }
 
 void DelCustomer::on_pushButton_2_clicked()

@@ -13,6 +13,9 @@ INPUT(
 ./release\loginwindow.o
 ./release\pamphlet.o
 ./release\saleslisting.o
+./release\help.o
+./release\editcustomer.o
+./release\editinfo.o
 ./release\moc_addcustomer.o
 ./release\moc_adminmenu.o
 ./release\moc_contactus.o
@@ -25,4 +28,7 @@ INPUT(
 ./release\moc_loginwindow.o
 ./release\moc_pamphlet.o
 ./release\moc_saleslisting.o
+./release\moc_help.o
+./release\moc_editcustomer.o
+./release\moc_editinfo.o
 );
