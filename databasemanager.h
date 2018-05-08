@@ -26,7 +26,6 @@ public:
     bool customerExists(QString name);
     void addPurchase(QString cName, QString pName, int amtBought, double price);
     bool sendPamphlet(QString name);
-    bool editCustomer(QString name);
 };
 
 #endif // DATABASEMANAGER_H

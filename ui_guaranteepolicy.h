@@ -64,8 +64,9 @@ public:
         pushButton->setFont(font);
         label_2 = new QLabel(GuaranteePolicy);
         label_2->setObjectName(QStringLiteral("label_2"));
-        label_2->setGeometry(QRect(10, 10, 1581, 881));
+        label_2->setGeometry(QRect(0, 0, 1601, 901));
         label_2->setPixmap(QPixmap(QString::fromUtf8("CUSTOM IMAGES/icyber-background2.jpg")));
+        label_2->setScaledContents(true);
         label_2->raise();
         label->raise();
         textBrowser->raise();

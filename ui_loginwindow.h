@@ -100,7 +100,7 @@ public:
         pushButton->setFont(font5);
         label_2 = new QLabel(centralWidget);
         label_2->setObjectName(QStringLiteral("label_2"));
-        label_2->setGeometry(QRect(10, 0, 1581, 861));
+        label_2->setGeometry(QRect(0, 0, 1601, 871));
         label_2->setPixmap(QPixmap(QString::fromUtf8("CUSTOM IMAGES/icyber-background1.jpg")));
         label_2->setScaledContents(true);
         LoginWindow->setCentralWidget(centralWidget);

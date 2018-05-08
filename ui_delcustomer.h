@@ -94,8 +94,9 @@ public:
         nameLineEdit->setFont(font3);
         label_2 = new QLabel(DelCustomer);
         label_2->setObjectName(QStringLiteral("label_2"));
-        label_2->setGeometry(QRect(10, 10, 1581, 881));
+        label_2->setGeometry(QRect(0, 0, 1601, 901));
         label_2->setPixmap(QPixmap(QString::fromUtf8("CUSTOM IMAGES/space.jpg")));
+        label_2->setScaledContents(true);
         label_2->raise();
         pushButton->raise();
         label_9->raise();

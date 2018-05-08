@@ -138,6 +138,9 @@ p, li { white-space: pre-wrap; }
    <property name="pixmap">
     <pixmap>CUSTOM IMAGES/taravua1.jpg</pixmap>
    </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
   </widget>
   <zorder>label_2</zorder>
   <zorder>label</zorder>

@@ -33,7 +33,6 @@ public:
     QPushButton *pushButton_3;
     QPushButton *pushButton_4;
     QPushButton *pushButton_5;
-    QPushButton *pushButton_6;
     QTextBrowser *textBrowser_2;
 
     void setupUi(QMainWindow *MainWindow)
@@ -70,13 +69,9 @@ public:
         pushButton_5->setObjectName(QStringLiteral("pushButton_5"));
         pushButton_5->setGeometry(QRect(1320, 440, 201, 51));
         pushButton_5->setFont(font);
-        pushButton_6 = new QPushButton(centralWidget);
-        pushButton_6->setObjectName(QStringLiteral("pushButton_6"));
-        pushButton_6->setGeometry(QRect(1320, 550, 201, 51));
-        pushButton_6->setFont(font);
         textBrowser_2 = new QTextBrowser(centralWidget);
         textBrowser_2->setObjectName(QStringLiteral("textBrowser_2"));
-        textBrowser_2->setGeometry(QRect(80, 520, 1161, 351));
+        textBrowser_2->setGeometry(QRect(80, 560, 1161, 321));
         MainWindow->setCentralWidget(centralWidget);
 
         retranslateUi(MainWindow);
@@ -108,22 +103,11 @@ public:
         pushButton_3->setText(QApplication::translate("MainWindow", "More Information", nullptr));
         pushButton_4->setText(QApplication::translate("MainWindow", "Make A Purchase", nullptr));
         pushButton_5->setText(QApplication::translate("MainWindow", "Request Copy Pamphlet", nullptr));
-        pushButton_6->setText(QApplication::translate("MainWindow", "Help", nullptr));
         textBrowser_2->setHtml(QApplication::translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt;\">iCyberSecurity has provided a great platform for our company and helped us in preventing many much Russian hackers from doing the bad things that bear jockey Putin is trying to accomplish</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt;\">* CIA</span></p>\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
-                        "size:14pt;\"><br /></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt;\">We feel a lot safer knowing that iCyberSecurity is always watching our back just like we watch everyone else!</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt;\">* FBI</span></p>\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:14pt;\"><br /></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt;\">We have been with iCyberSecurity for years now, and they have helped us prevent hackers stuck on 4 hour layovers or individuals who are displeased with United Flights</span></p>\n"
-"<p style=\" margin-top:0px; ma"
-                        "rgin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt;\">* Los Angeles Airport</span></p>\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:14pt;\"><br /></p></body></html>", nullptr));
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>", nullptr));
     } // retranslateUi
 
 };

@@ -409,6 +409,24 @@ p, li { white-space: pre-wrap; }
     <bool>true</bool>
    </property>
   </widget>
+  <widget class="QPushButton" name="pushButton_4">
+   <property name="geometry">
+    <rect>
+     <x>920</x>
+     <y>830</y>
+     <width>321</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Leave a Review</string>
+   </property>
+  </widget>
   <zorder>label_8</zorder>
   <zorder>pushButton</zorder>
   <zorder>pushButton_2</zorder>
@@ -427,6 +445,7 @@ p, li { white-space: pre-wrap; }
   <zorder>label_5</zorder>
   <zorder>label_6</zorder>
   <zorder>label_7</zorder>
+  <zorder>pushButton_4</zorder>
  </widget>
  <resources/>
  <connections/>

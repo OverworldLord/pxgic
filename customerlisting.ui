@@ -36,23 +36,17 @@
     <rect>
      <x>20</x>
      <y>830</y>
-     <width>231</width>
+     <width>351</width>
      <height>51</height>
     </rect>
    </property>
    <property name="font">
     <font>
-     <pointsize>22</pointsize>
+     <pointsize>28</pointsize>
     </font>
    </property>
    <property name="text">
-    <string>Return To Menu</string>
-   </property>
-   <property name="iconSize">
-    <size>
-     <width>12</width>
-     <height>16</height>
-    </size>
+    <string>Admin Menu</string>
    </property>
   </widget>
   <widget class="QTableView" name="tableView">
@@ -192,39 +186,33 @@
   <widget class="QPushButton" name="pushButton_2">
    <property name="geometry">
     <rect>
-     <x>600</x>
+     <x>380</x>
      <y>830</y>
-     <width>321</width>
+     <width>411</width>
      <height>51</height>
     </rect>
    </property>
    <property name="font">
     <font>
-     <pointsize>22</pointsize>
+     <pointsize>28</pointsize>
     </font>
    </property>
    <property name="text">
     <string>Add Customer Maunally</string>
    </property>
-   <property name="iconSize">
-    <size>
-     <width>12</width>
-     <height>16</height>
-    </size>
-   </property>
   </widget>
   <widget class="QPushButton" name="pushButton_3">
    <property name="geometry">
     <rect>
-     <x>1250</x>
+     <x>1230</x>
      <y>830</y>
-     <width>331</width>
+     <width>351</width>
      <height>51</height>
     </rect>
    </property>
    <property name="font">
     <font>
-     <pointsize>22</pointsize>
+     <pointsize>28</pointsize>
     </font>
    </property>
    <property name="text">
@@ -234,25 +222,19 @@
   <widget class="QPushButton" name="pushButton_4">
    <property name="geometry">
     <rect>
-     <x>270</x>
+     <x>810</x>
      <y>830</y>
-     <width>331</width>
+     <width>411</width>
      <height>51</height>
     </rect>
    </property>
    <property name="font">
     <font>
-     <pointsize>22</pointsize>
+     <pointsize>28</pointsize>
     </font>
    </property>
    <property name="text">
     <string>Add Customer from File</string>
-   </property>
-   <property name="iconSize">
-    <size>
-     <width>12</width>
-     <height>16</height>
-    </size>
    </property>
   </widget>
   <widget class="QLabel" name="label_2">
@@ -274,24 +256,6 @@
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_5">
-   <property name="geometry">
-    <rect>
-     <x>920</x>
-     <y>830</y>
-     <width>331</width>
-     <height>51</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>22</pointsize>
-    </font>
-   </property>
-   <property name="text">
-    <string>Edit Customer</string>
-   </property>
-  </widget>
   <zorder>label_2</zorder>
   <zorder>label</zorder>
   <zorder>pushButton</zorder>
@@ -300,7 +264,6 @@
   <zorder>pushButton_2</zorder>
   <zorder>pushButton_3</zorder>
   <zorder>pushButton_4</zorder>
-  <zorder>pushButton_5</zorder>
  </widget>
  <resources/>
  <connections/>

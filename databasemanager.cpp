@@ -186,10 +186,3 @@ bool DataBaseManager::sendPamphlet(QString name) {
     closeDB();
     return pamphletSentMultTimes;
 }
-
-bool DataBaseManager::editCustomer(QString name)
-{
-    bool editMade = false;
-
-    return editMade;
-}

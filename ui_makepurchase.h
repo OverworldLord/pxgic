@@ -44,6 +44,7 @@ public:
     QLabel *label_6;
     QLabel *label_7;
     QLabel *label_8;
+    QPushButton *pushButton_4;
 
     void setupUi(QDialog *MakePurchase)
     {
@@ -141,6 +142,10 @@ public:
         label_8->setGeometry(QRect(0, 0, 1601, 901));
         label_8->setPixmap(QPixmap(QString::fromUtf8("CUSTOM IMAGES/icescape.jpg")));
         label_8->setScaledContents(true);
+        pushButton_4 = new QPushButton(MakePurchase);
+        pushButton_4->setObjectName(QStringLiteral("pushButton_4"));
+        pushButton_4->setGeometry(QRect(920, 830, 321, 61));
+        pushButton_4->setFont(font);
         label_8->raise();
         pushButton->raise();
         pushButton_2->raise();
@@ -159,6 +164,7 @@ public:
         label_5->raise();
         label_6->raise();
         label_7->raise();
+        pushButton_4->raise();
 
         retranslateUi(MakePurchase);
 
@@ -208,6 +214,7 @@ public:
         label_6->setText(QApplication::translate("MakePurchase", "Platinum VIP", nullptr));
         label_7->setText(QApplication::translate("MakePurchase", "Maintainance Plan", nullptr));
         label_8->setText(QString());
+        pushButton_4->setText(QApplication::translate("MakePurchase", "Leave a Review", nullptr));
     } // retranslateUi
 
 };

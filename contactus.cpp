@@ -7,6 +7,7 @@ ContactUs::ContactUs(QWidget *parent) :
     ui(new Ui::ContactUs)
 {
     ui->setupUi(this);
+    setAttribute(Qt::WA_DeleteOnClose);
 }
 
 ContactUs::~ContactUs()
@@ -17,6 +18,6 @@ ContactUs::~ContactUs()
 void ContactUs::on_pushButton_clicked()
 {
     MainWindow* menu = new MainWindow;
-    this->close();
     menu->show();
+    this->close();
 }

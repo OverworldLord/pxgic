@@ -73,7 +73,7 @@ public:
         pushButton->setFont(font1);
         label_2 = new QLabel(pamphlet);
         label_2->setObjectName(QStringLiteral("label_2"));
-        label_2->setGeometry(QRect(6, 3, 1601, 901));
+        label_2->setGeometry(QRect(-4, 3, 1611, 901));
         label_2->setPixmap(QPixmap(QString::fromUtf8("CUSTOM IMAGES/landscape-1426609762-152887064.jpg")));
         label_2->setScaledContents(true);
         label_2->raise();

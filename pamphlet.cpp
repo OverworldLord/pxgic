@@ -6,6 +6,7 @@ pamphlet::pamphlet(QWidget *parent) :
     ui(new Ui::pamphlet)
 {
     ui->setupUi(this);
+    setAttribute(Qt::WA_DeleteOnClose);
 }
 
 pamphlet::~pamphlet()
@@ -16,8 +17,8 @@ pamphlet::~pamphlet()
 void pamphlet::on_pushButton_clicked()
 {
     MainWindow* menu = new MainWindow;
-    this->close();
     menu->show();
+    this->close();
 }
 
 void pamphlet::on_commandLinkButton_clicked()

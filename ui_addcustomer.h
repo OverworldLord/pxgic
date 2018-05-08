@@ -164,7 +164,7 @@ public:
         label_9->setAlignment(Qt::AlignCenter);
         label_10 = new QLabel(AddCustomer);
         label_10->setObjectName(QStringLiteral("label_10"));
-        label_10->setGeometry(QRect(10, 10, 1581, 881));
+        label_10->setGeometry(QRect(0, 0, 1601, 901));
         label_10->setPixmap(QPixmap(QString::fromUtf8("CUSTOM IMAGES/niagara-falls.jpg")));
         label_10->setScaledContents(true);
         label_10->raise();
