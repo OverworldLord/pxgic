@@ -3,6 +3,7 @@
 
 #include <QDialog>
 #include <QSqlQuery>
+#include <QModelIndex>
 #include "databasemanager.h"
 #include "addcustomer.h"
 #include "delcustomer.h"
@@ -35,6 +36,7 @@ private slots:
 private:
     Ui::CustomerListing *ui;
     DataBaseManager dBManager;
+    QSqlQueryModel *modal = new QSqlQueryModel(this);
 };
 
 #endif // CUSTOMERLISTING_H
