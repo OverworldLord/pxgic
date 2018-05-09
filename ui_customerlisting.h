@@ -33,6 +33,7 @@ public:
     QPushButton *pushButton_3;
     QPushButton *pushButton_4;
     QLabel *label_2;
+    QPushButton *pushButton_5;
 
     void setupUi(QDialog *CustomerListing)
     {
@@ -47,9 +48,9 @@ public:
         label->setFont(font);
         pushButton = new QPushButton(CustomerListing);
         pushButton->setObjectName(QStringLiteral("pushButton"));
-        pushButton->setGeometry(QRect(20, 830, 351, 51));
+        pushButton->setGeometry(QRect(20, 830, 201, 51));
         QFont font1;
-        font1.setPointSize(28);
+        font1.setPointSize(24);
         pushButton->setFont(font1);
         tableView = new QTableView(CustomerListing);
         tableView->setObjectName(QStringLiteral("tableView"));
@@ -84,21 +85,25 @@ public:
         checkBox->setFont(font);
         pushButton_2 = new QPushButton(CustomerListing);
         pushButton_2->setObjectName(QStringLiteral("pushButton_2"));
-        pushButton_2->setGeometry(QRect(380, 830, 411, 51));
+        pushButton_2->setGeometry(QRect(380, 830, 351, 51));
         pushButton_2->setFont(font1);
         pushButton_3 = new QPushButton(CustomerListing);
         pushButton_3->setObjectName(QStringLiteral("pushButton_3"));
-        pushButton_3->setGeometry(QRect(1230, 830, 351, 51));
+        pushButton_3->setGeometry(QRect(1330, 830, 251, 51));
         pushButton_3->setFont(font1);
         pushButton_4 = new QPushButton(CustomerListing);
         pushButton_4->setObjectName(QStringLiteral("pushButton_4"));
-        pushButton_4->setGeometry(QRect(810, 830, 411, 51));
+        pushButton_4->setGeometry(QRect(740, 830, 351, 51));
         pushButton_4->setFont(font1);
         label_2 = new QLabel(CustomerListing);
         label_2->setObjectName(QStringLiteral("label_2"));
         label_2->setGeometry(QRect(10, 10, 1581, 881));
         label_2->setPixmap(QPixmap(QString::fromUtf8("CUSTOM IMAGES/themoon.jpg")));
         label_2->setScaledContents(true);
+        pushButton_5 = new QPushButton(CustomerListing);
+        pushButton_5->setObjectName(QStringLiteral("pushButton_5"));
+        pushButton_5->setGeometry(QRect(1100, 830, 221, 51));
+        pushButton_5->setFont(font1);
         label_2->raise();
         label->raise();
         pushButton->raise();
@@ -107,6 +112,7 @@ public:
         pushButton_2->raise();
         pushButton_3->raise();
         pushButton_4->raise();
+        pushButton_5->raise();
 
         retranslateUi(CustomerListing);
 
@@ -119,10 +125,11 @@ public:
         label->setText(QApplication::translate("CustomerListing", "<html><head/><body><p align=\"center\"><span style=\" font-size:48pt; color:#ffffff;\">Customer List</span></p></body></html>", Q_NULLPTR));
         pushButton->setText(QApplication::translate("CustomerListing", "Admin Menu", Q_NULLPTR));
         checkBox->setText(QApplication::translate("CustomerListing", "Key Customers Only", Q_NULLPTR));
-        pushButton_2->setText(QApplication::translate("CustomerListing", "Add Customer Maunally", Q_NULLPTR));
+        pushButton_2->setText(QApplication::translate("CustomerListing", "Add Customer Manually", Q_NULLPTR));
         pushButton_3->setText(QApplication::translate("CustomerListing", "Delete Customer", Q_NULLPTR));
         pushButton_4->setText(QApplication::translate("CustomerListing", "Add Customer from File", Q_NULLPTR));
         label_2->setText(QString());
+        pushButton_5->setText(QApplication::translate("CustomerListing", "Edit Customer", Q_NULLPTR));
     } // retranslateUi
 
 };

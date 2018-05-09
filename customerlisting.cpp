@@ -66,37 +66,49 @@ void CustomerListing::on_pushButton_2_clicked()///Transitions to AddCustomer win
     this->close();
 }
 
+QString CustomerListing::returnNameFromCellRow()
+{
+    QModelIndex modalIndex;
+    modalIndex = ui->tableView->model()->index(ui->tableView->currentIndex().row(), 0);
+    return ui->tableView->model()->data(modalIndex).toString();
+}
+
 void CustomerListing::on_pushButton_3_clicked()
 {
     QString name;
-    QModelIndex modalIndex;
-    modalIndex = ui->tableView->model()->index(ui->tableView->currentIndex().row(), 0);
-    name = ui->tableView->model()->data(modalIndex).toString();
 
-    bool isSuccess = dBManager.deleteCustomer(name);
+    name = returnNameFromCellRow();
 
-    if (isSuccess == true)
+    if (!name.isEmpty())
     {
-        dBManager.openDB();
-        QSqlQueryModel * modal = new QSqlQueryModel(this);
-        modal->setQuery("SELECT * FROM Customers");
+        bool isSuccess = dBManager.deleteCustomer(name);
 
-        QSortFilterProxyModel * sortModal=new QSortFilterProxyModel(this);
-        sortModal->setDynamicSortFilter(true);
-        sortModal->setSourceModel(modal);
+        if (isSuccess == true)
+        {
+            dBManager.openDB();
+            QSqlQueryModel * modal = new QSqlQueryModel(this);
+            modal->setQuery("SELECT * FROM Customers");
 
-        ui->tableView->setSortingEnabled(true);
-        ui->tableView->setModel(sortModal);
-        ui->tableView->horizontalHeader()->setSectionResizeMode(QHeaderView::ResizeToContents);
-        dBManager.closeDB();
+            QSortFilterProxyModel * sortModal=new QSortFilterProxyModel(this);
+            sortModal->setDynamicSortFilter(true);
+            sortModal->setSourceModel(modal);
 
-        QMessageBox::information(this,QObject::tr("System Message"),tr("Customer entry has been deleted!"),QMessageBox::Ok);
+            ui->tableView->setSortingEnabled(true);
+            ui->tableView->setModel(sortModal);
+            ui->tableView->horizontalHeader()->setSectionResizeMode(QHeaderView::ResizeToContents);
+            dBManager.closeDB();
+
+            QMessageBox::information(this,QObject::tr("System Message"),tr("Customer entry has been deleted!"),QMessageBox::Ok);
+        }
+        else
+        {
+            QMessageBox::information(this,QObject::tr("System Message"),tr("An Error Occured!"),QMessageBox::Ok);
+        }
     }
     else
     {
-        QMessageBox::information(this,QObject::tr("System Message"),tr("An Error Occured!"),QMessageBox::Ok);
+        QMessageBox::information(this,QObject::tr("System Message"),tr("Select a Customer!"),QMessageBox::Ok);
     }
-
 }
 
 
@@ -134,4 +146,9 @@ void CustomerListing::on_pushButton_4_clicked()///Reads Customer from .txt docum
                               QString::fromStdString(interestLevel),
                               QString::fromStdString(key), 1);
     }
+}
+
+void CustomerListing::on_pushButton_5_clicked()
+{
+
 }

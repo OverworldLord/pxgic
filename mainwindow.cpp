@@ -79,6 +79,7 @@ void MainWindow::on_pushButton_6_clicked()///Reads in and submits customer testi
         QMessageBox::information(this, "Testimony Submitted!", "Thank You For Submitting.", QMessageBox::Ok);
         ui->textEdit->clear();
         ui->lineEdit->clear();
+        ui->textBrowser_3->clear();
         ui->textBrowser_3->append(dBManager.retrieveTestimonials());
     }
     else

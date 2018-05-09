@@ -36,13 +36,13 @@
     <rect>
      <x>20</x>
      <y>830</y>
-     <width>351</width>
+     <width>201</width>
      <height>51</height>
     </rect>
    </property>
    <property name="font">
     <font>
-     <pointsize>28</pointsize>
+     <pointsize>24</pointsize>
     </font>
    </property>
    <property name="text">
@@ -188,31 +188,31 @@
     <rect>
      <x>380</x>
      <y>830</y>
-     <width>411</width>
-     <height>51</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>28</pointsize>
-    </font>
-   </property>
-   <property name="text">
-    <string>Add Customer Maunally</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="pushButton_3">
-   <property name="geometry">
-    <rect>
-     <x>1230</x>
-     <y>830</y>
      <width>351</width>
      <height>51</height>
     </rect>
    </property>
    <property name="font">
     <font>
-     <pointsize>28</pointsize>
+     <pointsize>24</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Add Customer Manually</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_3">
+   <property name="geometry">
+    <rect>
+     <x>1330</x>
+     <y>830</y>
+     <width>251</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>24</pointsize>
     </font>
    </property>
    <property name="text">
@@ -222,15 +222,15 @@
   <widget class="QPushButton" name="pushButton_4">
    <property name="geometry">
     <rect>
-     <x>810</x>
+     <x>740</x>
      <y>830</y>
-     <width>411</width>
+     <width>351</width>
      <height>51</height>
     </rect>
    </property>
    <property name="font">
     <font>
-     <pointsize>28</pointsize>
+     <pointsize>24</pointsize>
     </font>
    </property>
    <property name="text">
@@ -256,6 +256,24 @@
     <bool>true</bool>
    </property>
   </widget>
+  <widget class="QPushButton" name="pushButton_5">
+   <property name="geometry">
+    <rect>
+     <x>1100</x>
+     <y>830</y>
+     <width>221</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>24</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Edit Customer</string>
+   </property>
+  </widget>
   <zorder>label_2</zorder>
   <zorder>label</zorder>
   <zorder>pushButton</zorder>
@@ -264,6 +282,7 @@
   <zorder>pushButton_2</zorder>
   <zorder>pushButton_3</zorder>
   <zorder>pushButton_4</zorder>
+  <zorder>pushButton_5</zorder>
  </widget>
  <resources/>
  <connections/>
