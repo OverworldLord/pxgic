@@ -6,7 +6,7 @@
 
 CustomerListing::CustomerListing(QWidget *parent) :
     QDialog(parent),
-    ui(new Ui::CustomerListing)
+    ui(new Ui::CustomerListing)///Constructor
 {
     ui->setupUi(this);
     setAttribute(Qt::WA_DeleteOnClose);
@@ -25,22 +25,21 @@ CustomerListing::CustomerListing(QWidget *parent) :
     dBManager.closeDB();
 }
 
-CustomerListing::~CustomerListing()
+CustomerListing::~CustomerListing()///Deconstructor
 {
     delete ui;
 }
 
-void CustomerListing::on_pushButton_clicked()
+void CustomerListing::on_pushButton_clicked()///Transitions to AdminMenu window
 {
     AdminMenu *menu = new AdminMenu;
     menu->show();
     this->close();
 }
 
-void CustomerListing::on_checkBox_stateChanged(int arg1)
+void CustomerListing::on_checkBox_stateChanged(int arg1)///Sorts and displays by key customers
 {
     dBManager.openDB();
-    QSqlQueryModel *modal = new QSqlQueryModel(this);
 
     switch (arg1)
     {
@@ -60,7 +59,7 @@ void CustomerListing::on_checkBox_stateChanged(int arg1)
     dBManager.closeDB();
 }
 
-void CustomerListing::on_pushButton_2_clicked()
+void CustomerListing::on_pushButton_2_clicked()///Transitions to AddCustomer window
 {
     AddCustomer *addCustomerWindow = new AddCustomer;
     addCustomerWindow->show();
@@ -69,13 +68,39 @@ void CustomerListing::on_pushButton_2_clicked()
 
 void CustomerListing::on_pushButton_3_clicked()
 {
-    DelCustomer *delCustomerWindow = new DelCustomer;
-    delCustomerWindow->show();
-    this->close();
+    QString name;
+    QModelIndex modalIndex;
+    modalIndex = ui->tableView->model()->index(ui->tableView->currentIndex().row(), 0);
+    name = ui->tableView->model()->data(modalIndex).toString();
+
+    bool isSuccess = dBManager.deleteCustomer(name);
+
+    if (isSuccess == true)
+    {
+        dBManager.openDB();
+        QSqlQueryModel * modal = new QSqlQueryModel(this);
+        modal->setQuery("SELECT * FROM Customers");
+
+        QSortFilterProxyModel * sortModal=new QSortFilterProxyModel(this);
+        sortModal->setDynamicSortFilter(true);
+        sortModal->setSourceModel(modal);
+
+        ui->tableView->setSortingEnabled(true);
+        ui->tableView->setModel(sortModal);
+        ui->tableView->horizontalHeader()->setSectionResizeMode(QHeaderView::ResizeToContents);
+        dBManager.closeDB();
+
+        QMessageBox::information(this,QObject::tr("System Message"),tr("Customer entry has been deleted!"),QMessageBox::Ok);
+    }
+    else
+    {
+        QMessageBox::information(this,QObject::tr("System Message"),tr("An Error Occured!"),QMessageBox::Ok);
+    }
+
 }
 
 
-void CustomerListing::on_pushButton_4_clicked()
+void CustomerListing::on_pushButton_4_clicked()///Reads Customer from .txt document and reads to database via DataBaseManager::addCustomer
 {
     qDebug() << "error";
 
