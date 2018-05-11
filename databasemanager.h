@@ -29,12 +29,14 @@ public:
     ///Adjust the customer table, effectively opening and/or refreshing it
     void showCustomerTable();
     ///Add an additional customer to records
-    bool addCustomer(QString name, QString address, QString city, QString state, QString Zip, QString interest, QString isKey, bool recievedpamphlet);
+    bool addCustomer(QString name, QString address, QString city, QString state, QString zip, QString interest, QString importance, bool recievedpamphlet);
     ///Delete customer from records
     bool deleteCustomer(QString name);
-     ///Verify if a customer exists in the records
+    ///Edit a customer's records
+    bool editCustomer(QString oldName, QString name, QString address, QString city, QString state, QString zip, QString interest, QString importance);
+    ///Verify if a customer exists in the records
     bool customerExists(QString name);
-     ///Add a purchase related to an existing customer
+    ///Add a purchase related to an existing customer
     void addPurchase(QString cName, QString pName, int amtBought, double price);
     ///If a customer exists, send a pamphlet to them.
     bool sendPamphlet(QString name);

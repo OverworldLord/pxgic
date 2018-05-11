@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'addcustomer.ui'
 **
-** Created by: Qt User Interface Compiler version 5.8.0
+** Created by: Qt User Interface Compiler version 5.10.1
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -194,25 +194,27 @@ public:
 
     void retranslateUi(QDialog *AddCustomer)
     {
-        AddCustomer->setWindowTitle(QApplication::translate("AddCustomer", "Dialog", Q_NULLPTR));
-        pushButton->setText(QApplication::translate("AddCustomer", "Submit", Q_NULLPTR));
-        pushButton_2->setText(QApplication::translate("AddCustomer", "Back", Q_NULLPTR));
-        nameLineEdit->setPlaceholderText(QApplication::translate("AddCustomer", "Insert Company Name", Q_NULLPTR));
-        addressLineEdit->setPlaceholderText(QApplication::translate("AddCustomer", "Insert Company Address", Q_NULLPTR));
-        cityLineEdit->setPlaceholderText(QApplication::translate("AddCustomer", "Insert Company City", Q_NULLPTR));
-        label->setText(QApplication::translate("AddCustomer", "<html><head/><body><p><span style=\" font-size:36pt; color:#ffffff;\">Name</span></p></body></html>", Q_NULLPTR));
-        label_2->setText(QApplication::translate("AddCustomer", "<html><head/><body><p><span style=\" font-size:36pt; color:#ffffff;\">Address</span></p></body></html>", Q_NULLPTR));
-        label_3->setText(QApplication::translate("AddCustomer", "<html><head/><body><p><span style=\" font-size:36pt; color:#ffffff;\">City</span></p></body></html>", Q_NULLPTR));
-        label_4->setText(QApplication::translate("AddCustomer", "<html><head/><body><p><span style=\" font-size:36pt; color:#ffffff;\">State</span></p></body></html>", Q_NULLPTR));
-        label_5->setText(QApplication::translate("AddCustomer", "<html><head/><body><p><span style=\" font-size:36pt; color:#ffffff;\">Zip</span></p></body></html>", Q_NULLPTR));
-        stateLineEdit->setPlaceholderText(QApplication::translate("AddCustomer", "Insert Company State", Q_NULLPTR));
-        zipLineEdit->setPlaceholderText(QApplication::translate("AddCustomer", "Insert Company Zip Code", Q_NULLPTR));
-        keyCheckBox->setText(QApplication::translate("AddCustomer", "Key Customer", Q_NULLPTR));
+        AddCustomer->setWindowTitle(QApplication::translate("AddCustomer", "Dialog", nullptr));
+        pushButton->setText(QApplication::translate("AddCustomer", "Submit", nullptr));
+        pushButton_2->setText(QApplication::translate("AddCustomer", "Back", nullptr));
+        nameLineEdit->setPlaceholderText(QApplication::translate("AddCustomer", "Insert Company Name", nullptr));
+        addressLineEdit->setPlaceholderText(QApplication::translate("AddCustomer", "Insert Company Address", nullptr));
+        cityLineEdit->setPlaceholderText(QApplication::translate("AddCustomer", "Insert Company City", nullptr));
+        label->setText(QApplication::translate("AddCustomer", "<html><head/><body><p><span style=\" font-size:36pt; color:#ffffff;\">Name</span></p></body></html>", nullptr));
+        label_2->setText(QApplication::translate("AddCustomer", "<html><head/><body><p><span style=\" font-size:36pt; color:#ffffff;\">Address</span></p></body></html>", nullptr));
+        label_3->setText(QApplication::translate("AddCustomer", "<html><head/><body><p><span style=\" font-size:36pt; color:#ffffff;\">City</span></p></body></html>", nullptr));
+        label_4->setText(QApplication::translate("AddCustomer", "<html><head/><body><p><span style=\" font-size:36pt; color:#ffffff;\">State</span></p></body></html>", nullptr));
+        label_5->setText(QApplication::translate("AddCustomer", "<html><head/><body><p><span style=\" font-size:36pt; color:#ffffff;\">Zip</span></p></body></html>", nullptr));
+        stateLineEdit->setPlaceholderText(QApplication::translate("AddCustomer", "Insert Company State", nullptr));
+        zipLineEdit->setPlaceholderText(QApplication::translate("AddCustomer", "Insert Company Zip Code", nullptr));
+        keyCheckBox->setText(QApplication::translate("AddCustomer", "Key Customer", nullptr));
+#ifndef QT_NO_SHORTCUT
         keyCheckBox->setShortcut(QString());
-        label_6->setText(QApplication::translate("AddCustomer", "<html><head/><body><p><span style=\" font-size:36pt; color:#ffffff;\">Low</span></p></body></html>", Q_NULLPTR));
-        label_7->setText(QApplication::translate("AddCustomer", "<html><head/><body><p><span style=\" color:#ffffff;\">Interest Level</span></p></body></html>", Q_NULLPTR));
-        label_8->setText(QApplication::translate("AddCustomer", "<html><head/><body><p><span style=\" font-size:36pt; color:#ffffff;\">High</span></p></body></html>", Q_NULLPTR));
-        label_9->setText(QApplication::translate("AddCustomer", "<html><head/><body><p><span style=\" font-size:48pt; color:#ffffff;\">Add Customer</span></p></body></html>", Q_NULLPTR));
+#endif // QT_NO_SHORTCUT
+        label_6->setText(QApplication::translate("AddCustomer", "<html><head/><body><p><span style=\" font-size:36pt; color:#ffffff;\">Low</span></p></body></html>", nullptr));
+        label_7->setText(QApplication::translate("AddCustomer", "<html><head/><body><p><span style=\" color:#ffffff;\">Interest Level</span></p></body></html>", nullptr));
+        label_8->setText(QApplication::translate("AddCustomer", "<html><head/><body><p><span style=\" font-size:36pt; color:#ffffff;\">High</span></p></body></html>", nullptr));
+        label_9->setText(QApplication::translate("AddCustomer", "<html><head/><body><p><span style=\" font-size:48pt; color:#ffffff;\">Add Customer</span></p></body></html>", nullptr));
         label_10->setText(QString());
     } // retranslateUi
 

@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'mainwindow.ui'
 **
-** Created by: Qt User Interface Compiler version 5.8.0
+** Created by: Qt User Interface Compiler version 5.10.1
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -183,10 +183,10 @@ public:
 
     void retranslateUi(QMainWindow *MainWindow)
     {
-        MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", Q_NULLPTR));
-        pushButton->setText(QApplication::translate("MainWindow", "Login as Administrator", Q_NULLPTR));
-        label->setText(QApplication::translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:48pt; color:#ffffff;\">iCyberSecurity Inc.</span></p></body></html>", Q_NULLPTR));
-        pushButton_2->setText(QApplication::translate("MainWindow", "Contact Us", Q_NULLPTR));
+        MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", nullptr));
+        pushButton->setText(QApplication::translate("MainWindow", "Login as Administrator", nullptr));
+        label->setText(QApplication::translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:48pt; color:#ffffff;\">iCyberSecurity Inc.</span></p></body></html>", nullptr));
+        pushButton_2->setText(QApplication::translate("MainWindow", "Contact Us", nullptr));
         textBrowser->setHtml(QApplication::translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
@@ -200,11 +200,11 @@ public:
                         "ks.</p>\n"
 "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600;\">Concept of Operations</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Our company is truly dedicated to protecting our users from their cash by protecting their money for them. We make it a point to assist customers in charitably donating their money. To us! By giving you the ability to give us money you made, we hope to protect your money and also your systems from other people who want your money- as well as vicious attackers.</p></body></html>", Q_NULLPTR));
-        pushButton_3->setText(QApplication::translate("MainWindow", "More Information", Q_NULLPTR));
-        pushButton_4->setText(QApplication::translate("MainWindow", "Make A Purchase", Q_NULLPTR));
-        pushButton_5->setText(QApplication::translate("MainWindow", "Request Copy Pamphlet", Q_NULLPTR));
-        checkBox->setText(QApplication::translate("MainWindow", "View Help Message", Q_NULLPTR));
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Our company is truly dedicated to protecting our users from their cash by protecting their money for them. We make it a point to assist customers in charitably donating their money. To us! By giving you the ability to give us money you made, we hope to protect your money and also your systems from other people who want your money- as well as vicious attackers.</p></body></html>", nullptr));
+        pushButton_3->setText(QApplication::translate("MainWindow", "More Information", nullptr));
+        pushButton_4->setText(QApplication::translate("MainWindow", "Make A Purchase", nullptr));
+        pushButton_5->setText(QApplication::translate("MainWindow", "Request Copy Pamphlet", nullptr));
+        checkBox->setText(QApplication::translate("MainWindow", "View Help Message", nullptr));
         textBrowser_2->setHtml(QApplication::translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
@@ -224,21 +224,21 @@ public:
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:18pt;\">If you are an admin, why did you click this button?</span></p>\n"
 "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:18pt;\"><br /></p>\n"
 ""
-                        "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:18pt;\">If you would like to view the help button, and you don't already know how to do that, then we have none to give to you.</span></p></body></html>", Q_NULLPTR));
+                        "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:18pt;\">If you would like to view the help button, and you don't already know how to do that, then we have none to give to you.</span></p></body></html>", nullptr));
         textBrowser_3->setHtml(QApplication::translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:18pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8.25pt;\"><br /></p></body></html>", Q_NULLPTR));
-        label_2->setText(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" color:#ffffff;\">Testimonials</span></p></body></html>", Q_NULLPTR));
-        pushButton_6->setText(QApplication::translate("MainWindow", "Submit Testimonial", Q_NULLPTR));
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8.25pt;\"><br /></p></body></html>", nullptr));
+        label_2->setText(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" color:#ffffff;\">Testimonials</span></p></body></html>", nullptr));
+        pushButton_6->setText(QApplication::translate("MainWindow", "Submit Testimonial", nullptr));
         textEdit->setHtml(QApplication::translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:18pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8.25pt;\"><br /></p></body></html>", Q_NULLPTR));
-        textEdit->setPlaceholderText(QApplication::translate("MainWindow", "Enter Testimonial", Q_NULLPTR));
-        lineEdit->setPlaceholderText(QApplication::translate("MainWindow", "Enter Company Name", Q_NULLPTR));
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8.25pt;\"><br /></p></body></html>", nullptr));
+        textEdit->setPlaceholderText(QApplication::translate("MainWindow", "Enter Testimonial", nullptr));
+        lineEdit->setPlaceholderText(QApplication::translate("MainWindow", "Enter Company Name", nullptr));
         label_3->setText(QString());
     } // retranslateUi
 

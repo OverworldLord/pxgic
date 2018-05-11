@@ -31,7 +31,12 @@ void MakePurchase::on_pushButton_2_clicked() ///Brings user to the guarantee pol
 void MakePurchase::on_pushButton_3_clicked() ///Function that allows a user to make a purchase
 {
     DataBaseManager* Database = new DataBaseManager;
-    if(Database->customerExists(ui->lineEdit->text())) {
+    if((ui->spinBox->value() == 0) && (ui->spinBox_2->value() == 0) && (ui->spinBox_3->value() == 0) && (ui->spinBox_4->value() == 0))
+    {
+        QMessageBox::critical(this, "You're a smart one", "You must order at least one service", QMessageBox::Ok);
+    }
+    else if(Database->customerExists(ui->lineEdit->text()))
+    {
         QString CustName = ui->lineEdit->text();
         QString Product;
         int AmtBought;
@@ -67,7 +72,8 @@ void MakePurchase::on_pushButton_3_clicked() ///Function that allows a user to m
 
         QMessageBox::information(this, "Purchase Success!", "Check Your E-mail for Verification.", QMessageBox::Ok);
     }
-    else {
+    else
+    {
         QMessageBox::critical(this, "Company Name Not Found!", "Re-enter Company Name.", QMessageBox::Ok);
     }
 }

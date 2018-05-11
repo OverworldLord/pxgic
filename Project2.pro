@@ -37,7 +37,8 @@ SOURCES += \
     guaranteepolicy.cpp \
     loginwindow.cpp \
     pamphlet.cpp \
-    saleslisting.cpp
+    saleslisting.cpp \
+    editcustomer.cpp
 
 HEADERS += \
     addcustomer.h \
@@ -55,7 +56,8 @@ HEADERS += \
     pamphlet.h \
     saleslisting.h \
     simplemaths.h \
-    advancedmaths.h
+    advancedmaths.h \
+    editcustomer.h
 
 FORMS += \
     addcustomer.ui \
@@ -69,4 +71,5 @@ FORMS += \
     makepurchase.ui \
     guaranteepolicy.ui \
     pamphlet.ui \
-    saleslisting.ui
+    saleslisting.ui \
+    editcustomer.ui

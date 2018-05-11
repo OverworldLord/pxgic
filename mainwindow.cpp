@@ -73,6 +73,10 @@ void MainWindow::on_pushButton_6_clicked()///Reads in and submits customer testi
     {
         QMessageBox::critical(this, "Company Name Not Found!", "Re-enter Company Name.", QMessageBox::Ok);
     }
+    else if (ui->textEdit->toPlainText().isEmpty())
+    {
+        QMessageBox::critical(this, "Your testimony is empty", "You must enter something.", QMessageBox::Ok);
+    }
     else if (dBManager.customerExists(ui->lineEdit->text()) && !dBManager.testimonyExists(ui->lineEdit->text()))
     {
         dBManager.submitTestimony(ui->lineEdit->text(), ui->textEdit->toPlainText());

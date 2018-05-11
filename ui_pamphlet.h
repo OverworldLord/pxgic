@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'pamphlet.ui'
 **
-** Created by: Qt User Interface Compiler version 5.8.0
+** Created by: Qt User Interface Compiler version 5.10.1
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -32,6 +32,7 @@ public:
     QCommandLinkButton *commandLinkButton;
     QPushButton *pushButton;
     QLabel *label_2;
+    QLabel *label_3;
 
     void setupUi(QDialog *pamphlet)
     {
@@ -63,7 +64,7 @@ public:
         lineEdit->setCursor(QCursor(Qt::PointingHandCursor));
         commandLinkButton = new QCommandLinkButton(pamphlet);
         commandLinkButton->setObjectName(QStringLiteral("commandLinkButton"));
-        commandLinkButton->setGeometry(QRect(1510, 700, 81, 71));
+        commandLinkButton->setGeometry(QRect(1500, 700, 70, 70));
         commandLinkButton->setIconSize(QSize(20, 20));
         pushButton = new QPushButton(pamphlet);
         pushButton->setObjectName(QStringLiteral("pushButton"));
@@ -76,12 +77,18 @@ public:
         label_2->setGeometry(QRect(-4, 3, 1611, 901));
         label_2->setPixmap(QPixmap(QString::fromUtf8("CUSTOM IMAGES/landscape-1426609762-152887064.jpg")));
         label_2->setScaledContents(true);
+        label_3 = new QLabel(pamphlet);
+        label_3->setObjectName(QStringLiteral("label_3"));
+        label_3->setGeometry(QRect(1500, 700, 70, 70));
+        label_3->setPixmap(QPixmap(QString::fromUtf8("CUSTOM IMAGES/approve_arrow_arrows_cancel_close_continue_direction_door_exit_following_forward_log_out_login_logout_move_next_proceed_redo_right_start_icon-512.png")));
+        label_3->setScaledContents(true);
         label_2->raise();
         label->raise();
         textBrowser->raise();
         lineEdit->raise();
-        commandLinkButton->raise();
         pushButton->raise();
+        label_3->raise();
+        commandLinkButton->raise();
 
         retranslateUi(pamphlet);
 
@@ -90,8 +97,8 @@ public:
 
     void retranslateUi(QDialog *pamphlet)
     {
-        pamphlet->setWindowTitle(QApplication::translate("pamphlet", "Dialog", Q_NULLPTR));
-        label->setText(QApplication::translate("pamphlet", "<html><head/><body><p align=\"center\"><span style=\" font-size:48pt; color:#ffffff;\">Request a Pamphlet</span></p></body></html>", Q_NULLPTR));
+        pamphlet->setWindowTitle(QApplication::translate("pamphlet", "Dialog", nullptr));
+        label->setText(QApplication::translate("pamphlet", "<html><head/><body><p align=\"center\"><span style=\" font-size:48pt; color:#ffffff;\">Request a Pamphlet</span></p></body></html>", nullptr));
         textBrowser->setHtml(QApplication::translate("pamphlet", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
@@ -107,11 +114,12 @@ public:
 "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; "
                         "margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:22pt;\"><br /></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:22pt;\">Fake companies will not be tolerated. </span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:22pt;\">You will be fined and prosecuted for obstruction of justice.</span></p></body></html>", Q_NULLPTR));
-        lineEdit->setPlaceholderText(QApplication::translate("pamphlet", "Enter your Company Name", Q_NULLPTR));
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:22pt;\">You will be fined and prosecuted for obstruction of justice.</span></p></body></html>", nullptr));
+        lineEdit->setPlaceholderText(QApplication::translate("pamphlet", "Enter your Company Name", nullptr));
         commandLinkButton->setText(QString());
-        pushButton->setText(QApplication::translate("pamphlet", "Back", Q_NULLPTR));
+        pushButton->setText(QApplication::translate("pamphlet", "Back", nullptr));
         label_2->setText(QString());
+        label_3->setText(QString());
     } // retranslateUi
 
 };

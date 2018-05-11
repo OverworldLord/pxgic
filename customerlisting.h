@@ -7,6 +7,7 @@
 #include "databasemanager.h"
 #include "addcustomer.h"
 #include "delcustomer.h"
+#include "editcustomer.h"
 
 namespace Ui {
 class CustomerListing;

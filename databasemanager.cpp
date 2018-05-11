@@ -112,6 +112,29 @@ bool DataBaseManager::deleteCustomer(QString name)///Deletes a customer from the
     return isSuccess;
 }
 
+bool DataBaseManager::editCustomer(QString oldName, QString name, QString address, QString city, QString state, QString zip, QString interest, QString importance)
+{
+    bool isSuccess;
+
+    openDB();
+    QSqlQuery query;
+    query.prepare("UPDATE Customers SET Name = :name, Address = :address, City = :city, State = :state, Zip = :zip, Interest = :interest, Importance = :importance WHERE Name = :oldName");
+    query.bindValue(":name", name);
+    query.bindValue(":address", address);
+    query.bindValue(":city", city);
+    query.bindValue(":state", state);
+    query.bindValue(":zip", zip);
+    query.bindValue(":interest", interest);
+    query.bindValue(":importance", importance);
+    query.bindValue(":oldName", oldName);
+
+    isSuccess = qryExec(query, "editCustomer()");
+
+    closeDB();
+
+    return isSuccess;
+}
+
 bool DataBaseManager::customerExists(QString name)///Checks if a customer is already existing in the database
 {
     bool exists = false;

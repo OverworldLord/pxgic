@@ -87,7 +87,14 @@ void CustomerListing::on_pushButton_3_clicked()
         {
             dBManager.openDB();
             QSqlQueryModel * modal = new QSqlQueryModel(this);
-            modal->setQuery("SELECT * FROM Customers");
+            if (!ui->checkBox->isChecked())
+            {
+                modal->setQuery("SELECT * FROM Customers");
+            }
+            else
+            {
+                modal->setQuery("SELECT * FROM Customers WHERE Importance = 'key'");
+            }
 
             QSortFilterProxyModel * sortModal=new QSortFilterProxyModel(this);
             sortModal->setDynamicSortFilter(true);
@@ -146,9 +153,38 @@ void CustomerListing::on_pushButton_4_clicked()///Reads Customer from .txt docum
                               QString::fromStdString(interestLevel),
                               QString::fromStdString(key), 1);
     }
+
+    dBManager.openDB();
+    QSqlQueryModel * modal = new QSqlQueryModel(this);
+    if (!ui->checkBox->isChecked())
+    {
+        modal->setQuery("SELECT * FROM Customers");
+    }
+    else
+    {
+        modal->setQuery("SELECT * FROM Customers WHERE Importance = 'key'");
+    }
+
+    QSortFilterProxyModel * sortModal=new QSortFilterProxyModel(this);
+    sortModal->setDynamicSortFilter(true);
+    sortModal->setSourceModel(modal);
+
+    ui->tableView->setSortingEnabled(true);
+    ui->tableView->setModel(sortModal);
+    ui->tableView->horizontalHeader()->setSectionResizeMode(QHeaderView::ResizeToContents);
+    dBManager.closeDB();
 }
 
 void CustomerListing::on_pushButton_5_clicked()
 {
-
+    if (returnNameFromCellRow().isEmpty())
+    {
+        QMessageBox::information(this,QObject::tr("System Message"),tr("Select a Customer!"),QMessageBox::Ok);
+    }
+    else if (!returnNameFromCellRow().isEmpty())
+    {
+        EditCustomer *menu = new EditCustomer(0, returnNameFromCellRow());
+        menu->show();
+        this->close();
+    }
 }
